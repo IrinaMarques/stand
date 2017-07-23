@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+	<main id="root"></main>
+    
+    <!--
+    <script type="text/javascript">
+        <% 
+            var tempScripts = ''; 
+            var count       = 0;
+
+            for (var chunk in htmlWebpackPlugin.files.chunks) { 
+                if (htmlWebpackPlugin.files.chunks[chunk].entry.indexOf('.ei') > -1){
+                    tempScripts += ''.concat( (count > 0 ?  ',' : ''), '"', htmlWebpackPlugin.files.chunks[chunk].entry, '"')
+                };
+            };
+        %>
+
+        var scripts = [<%= tempScripts %>];
+        
+        if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+            for (var index = 0; index < scripts.length; index++) {
+                document.write('<script type="text/javascript" src="' + scripts[index] + '"><\/script>');
+            };
+        };
+    </script>
+
+    <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+
+        <% if (htmlWebpackPlugin.files.chunks[chunk].entry.indexOf('.ei') <= -1) { %>
+            <script type="text/javascript" src="<%=htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+        <% } %>
+    <% } %>
+    -->
+</body>
+</html>

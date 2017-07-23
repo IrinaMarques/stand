@@ -1,0 +1,1 @@
+cd ../ && npm version patch -m 'Bug fixes, upgraded to %s version'

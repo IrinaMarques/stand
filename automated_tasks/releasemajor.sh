@@ -1,0 +1,1 @@
+cd ../ && npm version major -m 'Change incompatible with previous versions, upgraded to %s version'
