@@ -1,5 +1,5 @@
 export default [{
     path       : '/dashboard',
-    component  : require('./components/dashboard/Dashboard'), 
+    component  : 'dashboard/Dashboard', 
     routes     : []
 }];

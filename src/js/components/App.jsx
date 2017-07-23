@@ -22,7 +22,7 @@ const renderComp = (ComponentClass, props, route) => {
 const SyncRouteWithSubRoutes = (route) => {
 	return (
 		<Route path={ (route.match ? `${ route.match.url + route.path }` : route.path) } render={ props => (
-				renderComp(route.component, props, route)
+				renderComp(require('./' + route.component), props, route)
 			)}
 		/>
 	);
@@ -31,8 +31,8 @@ const SyncRouteWithSubRoutes = (route) => {
 const AsyncRouteWithSubRoutes = (route) => {
 	return (
 		<Route path={ (route.match ? `${ route.match.url + route.path }` : route.path)} render = { props => (
-
-			<Bundle load={ route.component }>
+             
+			<Bundle load={ require('bundle-loader?lazy!./' + route.component) }>
 				{ ((ComponentClass) => renderComp(ComponentClass, props, route)) }
 			</Bundle>
 		)}/>
