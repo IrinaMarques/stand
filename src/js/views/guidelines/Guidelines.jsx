@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 
-class Dashboard extends Component {
+class Guidelines extends Component {
 	constructor(props) {
 		super(props);
 		this.state = this.buildState();
@@ -16,10 +16,11 @@ class Dashboard extends Component {
     render() {
 		return (
 			<div>
-				<h1>Dashboard!</h1>
+				<h1>Guidelines!</h1>
+                { this.props.children() } 
 			</div>
 		);
     }
 };
 
-export default Dashboard;
+export default Guidelines;
