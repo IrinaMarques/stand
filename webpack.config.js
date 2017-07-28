@@ -66,7 +66,7 @@ module.exports = (function(){
 						]
 					}
 				}],
-				exclude: /node_modules|test/
+				exclude: [/node_modules/,/test/]
 			}, {
                 test: /\.css$/,
                 use: ExtractTextPlugin.extract({

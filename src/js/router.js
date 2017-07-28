@@ -9,17 +9,19 @@ export default [
                 routes     : [
                     {
                         path       : '/basic-information',
-                        component  : 'dashboard/newArticle/NewArticleBasicData', 
+                        async: false,
+                        component  : require('./views/dashboard/newArticle/NewArticleBasicData'), 
                         routes     : []
                     }, 
                     {
                         path       : '/more-details',
-                        component  : 'dashboard/newArticle/NewArticleMoreDetails', 
+                        async: false,
+                        component  : require('./views/dashboard/newArticle/NewArticleMoreDetails'), 
                         routes     : []
                     }, 
                     {
                         path       : '/images',
-                        component  : 'dashboard/newArticle/NewArticleImages', 
+                        component  : require('./views/dashboard/newArticle/NewArticleImages'), 
                         routes     : []
                     }
                 ]
@@ -29,17 +31,17 @@ export default [
                 routes     : [
                     {
                         path       : '/last-messages',
-                        component  : 'dashboard/landingPage/LastMessages', 
+                        component  : require('./views/dashboard/landingPage/LastMessages'), 
                         routes     : []
                     },
                     {
                         path       : '/general-statistics',
-                        component  : 'dashboard/landingPage/GeneralStatistics', 
+                        component  : require('./views/dashboard/landingPage/GeneralStatistics'), 
                         routes     : []
                     },
                     {
                         path       : '/articles-statistics',
-                        component  : 'dashboard/landingPage/ArticlesStatistics', 
+                        component  : require('./views/dashboard/landingPage/ArticlesStatistics'), 
                         routes     : []
                     }
                 ]
