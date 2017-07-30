@@ -86,8 +86,6 @@ module.exports = (function(){
 		},
 
 		plugins: [
-			new CleanWebpackPlugin(['index.js'], { 'root': basePath }),
-			
 			new webpack.EnvironmentPlugin(['NODE_ENV']),
 
 			new HtmlWebpackPlugin({

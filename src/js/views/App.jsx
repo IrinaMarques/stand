@@ -24,7 +24,7 @@ const renderComp = (ComponentClass, props, route) => {
 const SyncRouteWithSubRoutes = (route) => {
 	return (
 		<Route path={ (route.match ? `${ route.match.url + route.path }` : route.path) } render={ props => (
-				renderComp(require('./' + route.component), props, route)
+				renderComp(require('./' + route.component).default, props, route)
 			)}
 		/>
 	);
@@ -61,10 +61,11 @@ class App extends Component {
 
 		return (
 			<div>
-				
-				
 				{routes.map((route, i) => (
-					<AsyncRouteWithSubRoutes key={i} {...route}/>
+					route.async || route.async === undefined ?
+						<AsyncRouteWithSubRoutes key={i} {...route}/>
+					:
+						<SyncRouteWithSubRoutes key={i} {...route}/>
 				))}
 			</div>
 		);
