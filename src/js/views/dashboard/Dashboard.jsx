@@ -23,7 +23,6 @@ class Dashboard extends Component {
 			<div>
 				<TopMenu/>
 				<AsideMenu/>
-				<p>adad adad</p>
 				<section>
 					{ this.props.children() } 
 				</section>

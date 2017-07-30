@@ -1,6 +1,9 @@
 $fa-font-path: "~font-awesome-sass/assets/fonts/font-awesome/";
 @import '~font-awesome-sass/assets/stylesheets/font-awesome';
+@import './variables';
+@import '../../components/dashboard/typography/Typography';
+
 
 body{
-    background-color:green;   
+    background-color: white;   
 }

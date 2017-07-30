@@ -27,7 +27,7 @@ class TopMenu extends Component {
                 		<li>
                 			<a href='#'>
                 				<i className="fa fa-home" aria-hidden="true"></i>
-                				<h3>Home1</h3>
+                				<h3>Home</h3>
                 			</a>
                 		</li>
                 		<li>

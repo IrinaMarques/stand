@@ -61,7 +61,7 @@ class App extends Component {
 
 		return (
 			<div>
-				<Redirect to="/dashboard"/>
+				
 				
 				{routes.map((route, i) => (
 					<AsyncRouteWithSubRoutes key={i} {...route}/>

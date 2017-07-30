@@ -49,8 +49,8 @@ export default [
         ]
     },
     {
-        path       : '/components',
-        component  : 'guidelines/Guidelines', 
+        path       : '/ui-style-guide',
+        component  : 'uiStyleGuide/UIStyleGuide', 
         routes     : []
     }
 ];

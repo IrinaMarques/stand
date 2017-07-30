@@ -1,0 +1,38 @@
+.p-font{
+	font-family: Verdana, Geneva, sans-serif;
+	
+	&h1{
+		font-size: 32px;
+		color: $blue;
+
+		&.light {
+			color: $grey;
+		}
+	}
+
+	&h2{
+		font-size: 26px;
+		color: $blue;
+
+		&.light {
+			color: $grey;
+		}
+	}
+}
+
+.s-font{
+	font-family: "Lucida Sans", "Lucida Grande", sans-serif;
+
+	&p {
+		font-size: 18px;
+		color: $blue;
+
+		&.light {
+			color: $light-grey;
+		}
+
+		&.sm {
+			font-size: 16px;
+		}
+	}
+}
