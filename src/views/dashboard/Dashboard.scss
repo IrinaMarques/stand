@@ -1,10 +1,15 @@
 $fa-font-path: "~font-awesome-sass/assets/fonts/font-awesome/";
 @import '~font-awesome-sass/assets/stylesheets/font-awesome';
+
 @import './variables';
+@import './mixins';
+
 @import '../../components/dashboard/typography/Typography';
 @import '../../components/dashboard/topMenu/TopMenu';
-/*@import '../../components/dashboard/asideMenu/AsideMenu';*/
+@import '../../components/dashboard/asideMenu/AsideMenu';
 
+
+@import './mediaQueries';
 
 body{
     background-color: white;
