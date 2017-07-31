@@ -22,7 +22,7 @@ class TopMenu extends Component {
                     <ul>
                         <li>
                             <Link to="/dashboard">
-                                <img src="" alt="Logo"/>
+                                <img src={require("images/brand.png")} alt="Logo"/>
                             </Link>   
                         </li>
                     	<li className='tm-btt'>  

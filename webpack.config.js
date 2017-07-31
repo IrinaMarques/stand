@@ -33,7 +33,11 @@ module.exports = (function(){
 		},
 
 		resolve: {
-			extensions: ['.js', '.jsx']
+			extensions: ['.js', '.jsx'],
+
+			alias: {
+				images: join(context, 'assets/images/')
+			}
 		},
 
 		module: {
