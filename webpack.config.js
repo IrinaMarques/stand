@@ -22,7 +22,7 @@ module.exports = (function(){
 		context : context,
 		
 		entry   : {
-			main: './js/main.js'
+			main: './main.js'
 		},
 
 		output: {
@@ -36,7 +36,7 @@ module.exports = (function(){
 			extensions: ['.js', '.jsx'],
 
 			alias: {
-				images: join(context, 'assets/images/')
+				dashboardImages: join(context, 'assets/dashboard/images/')
 			}
 		},
 
