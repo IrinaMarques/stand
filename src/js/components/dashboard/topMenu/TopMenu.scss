@@ -1,0 +1,60 @@
+.tm-box {
+	width: 100%;
+	background-color: $brown;
+	font-family: $pfont;
+	-webkit-box-shadow: 0px 6px 15px -5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 6px 15px -5px rgba(0,0,0,0.75);
+	box-shadow: 0px 6px 15px -5px rgba(0,0,0,0.75);
+	position: relative;
+	z-index: 2;
+
+	ul {
+		width: 100%;
+		padding: 10px 0;
+
+		li {
+			display: inline-block;
+			text-align: center;
+			margin: 10px auto;
+
+			a {
+				color: $grey;
+				text-decoration: none;
+
+				i {
+					display: block;
+					font-size: 24px;
+					margin-top: 10px;
+				}
+
+				h3 {
+					display: block;
+					margin: 10px 0;
+				}
+			}
+
+			&.tm-btt {
+				width: 16%;
+				
+			}
+
+			&:first-child {
+				width: 15%;
+				height: 100%;
+				vertical-align: top;
+				display: inline-block;
+				border: 2px solid $dark-brown;
+			}
+
+			&:last-child {
+				width: 25%;
+				float: right;
+				display: inline-block;
+				
+				p {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}

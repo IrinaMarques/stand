@@ -1,5 +1,5 @@
 .p-font{
-	font-family: Verdana, Geneva, sans-serif;
+	font-family: $pfont;
 	
 	&h1{
 		font-size: 32px;
@@ -18,10 +18,14 @@
 			color: $grey;
 		}
 	}
+
+	&h3 {
+		font-size: 24px;
+	}
 }
 
 .s-font{
-	font-family: "Lucida Sans", "Lucida Grande", sans-serif;
+	font-family: $sfont;
 
 	&p {
 		font-size: 18px;

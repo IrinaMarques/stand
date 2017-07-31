@@ -16,34 +16,39 @@ class TopMenu extends Component {
 
     render() {
 		return (
-			<header>
-				<Link to="/dashboard">
-                    <img src="" alt="Logo"/>
-                </Link>
+			<header role='banner'>
 
-                <div className='tm-box'>
-                	<div className='logo'></div>
-                	<ul>
-                		<li>
-                			<a href='#'>
-                				<i className="fa fa-home" aria-hidden="true"></i>
-                				<h3>Home</h3>
-                			</a>
-                		</li>
-                		<li>
-                			<a href='#'>
-                				<i className="fa fa-power-off" aria-hidden="true"></i>
-                				<h3>Sair</h3>
-                			</a>
-                		</li>
-                		<li>
-                			<a href='#'>
-                				<h3>Notificações</h3>
-                			</a>
-                		</li>
-                	</ul>
-                	<div className='tm-user'></div>
-                </div>
+                <nav className='tm-box'>
+                    <ul>
+                        <li>
+                            <Link to="/dashboard">
+                                <img src="" alt="Logo"/>
+                            </Link>   
+                        </li>
+                    	<li className='tm-btt'>  
+                    		<a href='#'>
+                    			<i className="fa fa-home" aria-hidden="true"></i>
+                    			<h3>Home</h3>
+                    		</a>
+                    	</li>
+                    	<li className='tm-btt'>
+                    		<a href='#'>
+                    			<i className="fa fa-power-off" aria-hidden="true"></i>
+                    			<h3>Sair</h3>
+                    		</a>
+                    	</li>
+                    	<li className='tm-btt'>
+                    		<a href='#'>
+                                <i className="fa fa-bullhorn" aria-hidden="true"></i>
+                    			<h3>Notificações</h3>
+                    		</a>
+                    	</li>
+                    	<li>
+                            <img src="" alt="user image"/>
+                            <p>Nome Sobrenome</p>
+                        </li>
+                    </ul>   
+                </nav>
 
 			</header>
 		);

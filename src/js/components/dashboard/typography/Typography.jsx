@@ -19,10 +19,11 @@ class Typography extends Component {
 
                 <div className='heading left'>
                     <h1 className='p-font'>Verdana h1 - 32px blue</h1>
-                    <h2 className='p-font'>Verdana h2</h2>
-                    <h3 className='p-font'>Verdana h3</h3>
-                    <h4 className='p-font'>Verdana h4</h4>
-                    <h5 className='p-font'>Verdana h5</h5>
+                    <h2 className='p-font'>Verdana h2 - 26px blue</h2>
+                    <h3 className='p-font'>Verdana h3 - 24px blue</h3>
+                    <h4 className='p-font'>Verdana h4 - 22px blue</h4>
+                    <h5 className='p-font'>Verdana h5 - 20px blue</h5>
+                    <h6 className='p-font'>Verdana h6 - 18px blue</h6>
                 </div>
 
                 <br/>

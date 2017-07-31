@@ -2,8 +2,17 @@ $fa-font-path: "~font-awesome-sass/assets/fonts/font-awesome/";
 @import '~font-awesome-sass/assets/stylesheets/font-awesome';
 @import './variables';
 @import '../../components/dashboard/typography/Typography';
+@import '../../components/dashboard/topMenu/TopMenu';
+/*@import '../../components/dashboard/asideMenu/AsideMenu';*/
 
 
 body{
-    background-color: white;   
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
 }

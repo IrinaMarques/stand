@@ -19,12 +19,14 @@ class UIStyleGuide extends Component {
     render() {
 		return (
 			<div className='box'>
-				<h1>UI Style Guide!</h1>
-				<ul>
-					<li>Backgrounds</li>
-					<li>Colors</li>
-					<li>Typography</li>
-				</ul>
+				<div className='box-menu'>
+					<h1>UI Style Guide!</h1>
+					<ul>
+						<li>Backgrounds</li>
+						<li>Colors</li>
+						<li>Typography</li>
+					</ul>
+				</div>	
 
 				<h3>Backgrounds</h3>
 				<hr/>
