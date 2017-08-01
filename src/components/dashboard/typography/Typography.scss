@@ -1,42 +1,97 @@
-.p-font{
+/* VERDANA */
+
+.p-font {
 	font-family: $pfont;
-	
-	&h1{
-		font-size: 32px;
-		color: $blue;
+	color: $blue;
+}
 
-		&.light {
-			color: $grey;
-		}
-	}
-
-	&h2{
-		font-size: 26px;
-		color: $blue;
-
-		&.light {
-			color: $grey;
-		}
-	}
-
-	&h3 {
-		font-size: 24px;
+h1{
+	font-size: 32px;
+	&.p-font {
+		@extend .p-font;
 	}
 }
 
-.s-font{
+h2{
+	font-size: 26px;
+	&.p-font {
+		@extend .p-font;
+	}
+}
+
+h3 {
+	font-size: 24px;
+	&.p-font {
+		@extend .p-font;
+	}
+}
+
+h4 {
+	font-size: 22px;
+	&.p-font {
+		@extend .p-font;
+	}
+}
+
+h5 {
+	font-size: 20px;
+	&.p-font {
+		@extend .p-font;
+	}
+}
+
+h6 {
+	font-size: 18px;
+	&.p-font {
+		@extend .p-font;
+	}
+}
+
+/* LIGHT VERDANA */
+.p-light {
+	@extend .p-font;
+	color: $grey;
+}
+
+/* LUCIDA SANS */
+.s-font {
 	font-family: $sfont;
+	color: $blue;
 
-	&p {
-		font-size: 18px;
-		color: $blue;
+	&.p-md {
+		font-size: $pmd;
+	}
 
-		&.light {
-			color: $light-grey;
-		}
-
-		&.sm {
-			font-size: 16px;
-		}
+	&.p-sm {
+		font-size: $psm;
 	}
 }
+
+p {
+	font-size: 18px;
+
+	&.s-font {
+		@extend .s-font;
+	}
+}
+
+/* DARK LUCIDA */
+.s-dgrey {
+	@extend .s-font;
+	color: $dark-grey;
+}
+
+/* GREY LUCIDA */
+.s-grey {
+	@extend .s-font;
+	color: $grey;
+}
+
+/* LIGHT LUCIDA */
+.s-light {
+	@extend .s-font;
+	color: $light-grey;
+}
+
+
+

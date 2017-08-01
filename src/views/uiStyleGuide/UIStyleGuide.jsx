@@ -25,6 +25,9 @@ class UIStyleGuide extends Component {
 						<li>Backgrounds</li>
 						<li>Colors</li>
 						<li>Typography</li>
+						<li>Forms</li>
+						<li>Iconography</li>
+						<li>Buttons</li>
 					</ul>
 				</div>	
 
@@ -70,9 +73,7 @@ class UIStyleGuide extends Component {
 
 				<Typography />
 
-				<h2>Text</h2>
-
-				<h2>Text light</h2>
+				
 
 				<h3>Forms</h3>
 				<hr/>
@@ -85,7 +86,49 @@ class UIStyleGuide extends Component {
 
 				<h3>Buttons</h3>
 				<hr/>
+
+				<div className='btt'>
+					<button className='btn-lg btn-grey'>
+						<p>Pesquisar</p>
+						<i className="fa fa-search" aria-hidden="true"></i>
+					</button>
+				
+					<br/>
+				
+					<button className='btn-sm'>
+						<i className="fa fa-search" aria-hidden="true"></i>
+					</button>
+				</div>
+
+				<br/>
+
+				<div className='btt'>
+					<button className='btn-lg btn-brown'>
+						<p>Pesquisar</p>
+						<i className="fa fa-search" aria-hidden="true"></i>
+					</button>
+				
+					<br/>
+				
+					<button className='btn-sm btn-brown'>
+						<i className="fa fa-search" aria-hidden="true"></i>
+					</button>
+				</div>
 					
+				<br/>
+
+				<div className='btt'>
+					<button className='btn-lg btn-dbrown'>
+						<p>Pesquisar</p>
+						<i className="fa fa-search" aria-hidden="true"></i>
+					</button>
+				
+					<br/>
+				
+					<button className='btn-sm btn-dbrown'>
+						<i className="fa fa-search" aria-hidden="true"></i>
+					</button>
+				</div>
 
                 { this.props.children() } 
 			</div>

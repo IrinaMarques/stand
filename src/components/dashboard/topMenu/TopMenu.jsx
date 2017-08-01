@@ -18,34 +18,34 @@ class TopMenu extends Component {
 		return (
 			<header role='banner'>
 
-                <nav className='tm-box'>
+                <nav className='tm-box' role='navigation'>
                     <ul>
                         <li>
                             <Link to="/dashboard">
-                                <img src={require("dashboardImages/brand.png")} alt="Logo"/>
+                                <img src={require("dashboardImages/brand-50px.png")} alt="Logo"/>
                             </Link>   
                         </li>
                     	<li className='tm-btt'>  
                     		<a href='#'>
                     			<i className="fa fa-home" aria-hidden="true"></i>
-                    			<h3>Home</h3>
+                    			<h5>Home</h5>
                     		</a>
                     	</li>
                     	<li className='tm-btt'>
                     		<a href='#'>
                     			<i className="fa fa-power-off" aria-hidden="true"></i>
-                    			<h3>Sair</h3>
+                    			<h5>Sair</h5>
                     		</a>
                     	</li>
                     	<li className='tm-btt'>
                     		<a href='#'>
                                 <i className="fa fa-bullhorn" aria-hidden="true"></i>
-                    			<h3>Notificações</h3>
+                    			<h5>Notificações</h5>
                     		</a>
                     	</li>
                     	<li>
-                            <img src="" alt="user image"/>
-                            <p>Nome Sobrenome</p>
+                            <img src={require("dashboardImages/img-avatar-50px.jpg")} alt="user image"/>
+                            <p className='s-dgrey p-md'>Nome Sobrenome</p>
                         </li>
                     </ul>   
                 </nav>

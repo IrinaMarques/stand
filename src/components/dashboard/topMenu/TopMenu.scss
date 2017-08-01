@@ -18,7 +18,7 @@
 			margin: 10px auto;
 
 			a {
-				color: $grey;
+				color: $dark-grey;
 				text-decoration: none;
 
 				i {
@@ -27,32 +27,40 @@
 					margin-top: 10px;
 				}
 
-				h3 {
+				h5 {
 					display: block;
-					margin: 10px 0;
+					margin: 5px 0;
 				}
 			}
 
 			&.tm-btt {
-				width: 16%;
+				width: 140px;
 				
 			}
 
 			&:first-child {
-				width: 15%;
+				width: 200px;
 				height: 100%;
+				margin: 20px auto;
 				vertical-align: top;
 				display: inline-block;
 				border: 2px solid $dark-brown;
 			}
 
 			&:last-child {
-				width: 25%;
+				width: 150px;
+				margin-right: 20px;
 				float: right;
 				display: inline-block;
 				
 				p {
-					font-size: 18px;
+
+					margin-top: 5px;
+				}
+				
+				img {
+					border-radius: 50%;
+					border: 2px solid $grey;
 				}
 			}
 		}

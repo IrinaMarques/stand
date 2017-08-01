@@ -6,6 +6,22 @@
 	background-color: rgb(246, 246, 246);
 }
 
+.box-menu {
+	background-color: $blue;
+	color: $white;
+	padding: 15px;
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+
+		li {
+			font-weight: 900;
+			margin: 5px;
+		}
+	}
+}
+
 .square-containers {
 	width: 10%;
 	height: 100px;
@@ -92,5 +108,44 @@
  	background-color: $dark-red;
 }
 
+/*BUTTONS*/
 
+.btt {
+	display: inline;
+
+	.btn-lg {
+		display: inline;
+		margin: 0;
+		padding: 0;
+		border-radius: 5px;
+
+		&.btn-grey {
+			background-color: $light-grey;
+		}
+
+		&.btn-brown {
+			background-color: $brown;
+		}
+
+		&.btn-dbrown {
+			background-color: $dark-brown;
+		}
+
+		p {
+			padding: 5px 10px;
+		    display: inline-block;
+		    margin: 0;
+		    border-right: 1px solid $blue;
+		}
+
+		i {
+			padding: 5px 9px 5px 7px;
+			margin: 0 auto;
+		}
+	}
+}
+
+.btn-sm {
+	@extend .btn-lg
+}
 
