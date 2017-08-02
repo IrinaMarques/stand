@@ -15,22 +15,41 @@ class AsideMenu extends Component {
 
     render() {
 		return (
-			<nav>
+			<nav className='sm-box' role='navigation'>
 				<ul>
 					<li>
-						<Link to="/dashboard/entry">Dashboard</Link>
+						<div className='side-button'>
+							<i class="fa fa-bars" aria-hidden="true"></i>
+						</div> 
 					</li>
 					<li>
-						<Link to="/dashboard/new-article">Criar Anúncio</Link>
+						<Link to="/dashboard/entry">
+							<i class="fa fa-desktop" aria-hidden="true"></i>
+							<h5>Dashboard</h5>
+						</Link>
 					</li>
 					<li>
-						<Link to="/dashboard">Gerir Anuncio</Link>
+						<Link to="/dashboard/new-article">
+							
+							<h5>Criar Anúncio</h5>
+						</Link>
 					</li>
 					<li>
-						<Link to="/dashboard">Mensagens</Link>
+						<Link to="/dashboard">
+							<i class="fa fa-retweet" aria-hidden="true"></i>
+							<h5>Gerir Anuncio</h5>
+						</Link>
 					</li>
 					<li>
-						<Link to="/dashboard">Utilizadores</Link>
+						<Link to="/dashboard">
+							<h5>Mensagens</h5>
+						</Link>
+					</li>
+					<li>
+						<Link to="/dashboard">
+							<i class="fa fa-users" aria-hidden="true"></i>
+							<h5>Utilizadores</h5>
+						</Link>
 					</li>
 				</ul>
 			</nav>
