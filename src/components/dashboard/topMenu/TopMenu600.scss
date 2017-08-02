@@ -1,0 +1,13 @@
+.tm-box {
+
+	div {
+
+		&:first-child {
+			width: 20%;
+
+			img {
+				display: none;
+			}
+		}
+	}
+}

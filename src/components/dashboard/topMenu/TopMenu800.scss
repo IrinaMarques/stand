@@ -1,7 +1,22 @@
-ul {
-	li {
-		img {
-			max-width: 100%;
+.tm-box {
+
+	div {
+		float: right;
+
+		&:first-child {
+			float: left;
+			width: 20%;
+		}
+
+		&:last-child {
+			display: none;
+		}
+
+		ul {
+
+			li {
+				width: 120px;
+			}
 		}
 	}
 }

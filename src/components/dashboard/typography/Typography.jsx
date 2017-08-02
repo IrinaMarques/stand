@@ -77,8 +77,6 @@ class Typography extends Component {
             
                 <h3 className='s-light p-sm'>Lucida Sans 14px light grey small</h3>
                 <p className='s-light p-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada. Vestibulum pellentesque, orci in laoreet molestie, quam tortor facilisis neque, a elementum sapien risus nec ante. </p>    
-                
-
 
                 <br/>
 			</div>
