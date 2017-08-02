@@ -20,26 +20,31 @@ class TopMenu extends Component {
                 <nav className='tm-box' role='navigation'>
 
                     <div className='brand'>
-                        <Link to="/dashboard">
-                            <img src={require("dashboardImages/brand-50px.png")} alt="Logo"/>
-                        </Link>   
+                        <div className='img-brand'>
+                            <Link to="/dashboard">
+                                <img src={require("dashboardImages/brand-50px.png")} alt="Logo"/>
+                            </Link>
+                        </div>
+                        <div className='menu-button'>
+                            <i className="fa fa-bars" aria-hidden="true"></i>
+                        </div>
                     </div>
 
                     <div>
                         <ul>
-                    	   <li className='tm-btt'>  
+                    	   <li>  
                         		<a href='#'>
                         			<i className="fa fa-home" aria-hidden="true"></i>
                         			<h5>Home</h5>
                         		</a>
                         	</li>
-                        	<li className='tm-btt'>
+                        	<li>
                         		<a href='#'>
                         			<i className="fa fa-power-off" aria-hidden="true"></i>
                         			<h5>Sair</h5>
                         		</a>
                         	</li>
-                        	<li className='tm-btt'>
+                        	<li>
                         		<a href='#'>
                                     <i className="fa fa-bullhorn" aria-hidden="true"></i>
                         			<h5>Alertas</h5>
@@ -47,7 +52,7 @@ class TopMenu extends Component {
                         	</li>
                     	</ul>
                     </div>
-                    
+
                     <div>   
                         <img src={require("dashboardImages/img-avatar-50px.jpg")} alt="user image"/>
                         <p className='s-dgrey p-md'>Nome Sobrenome</p>

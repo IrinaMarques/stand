@@ -18,15 +18,25 @@
 		&:first-child {
 			width: 200px;
 			height: 100%;
-			margin: 0 auto;
+			/*margin: 0 auto;*/
 			display: inline-block;
 			border: 2px solid $dark-brown;
 			text-align: center;
 
-			img {
-				margin: 31px 0;
+			.img-brand {
+				width: 100%;
+
+				img {
+						margin: 31px 0;
+				}
+			}
+
+			.menu-button {
+				display: none;
+				visibility: hidden;
 			}
 		}
+	
 		
 		&:last-child {
 				width: 150px;

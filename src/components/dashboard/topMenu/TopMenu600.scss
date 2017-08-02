@@ -5,9 +5,47 @@
 		&:first-child {
 			width: 20%;
 
-			img {
+			.menu-button {
+				width: 100%;
+				display: inline-block; 
+				font-size: 26px;
+				margin: 0 auto;
+
+				i {
+					margin: 43px 0;
+					color: #797979;
+				}
+			}
+
+			.img-brand {
 				display: none;
 			}
+		}
+
+		ul {
+			height: 100%;
+			margin: 2px auto;
+
+			li {
+				height: 100%;
+
+				a {
+
+					i {
+						font-size: 26px;
+						margin: 42px 0;
+					}
+				}
+
+				h5 {
+					display: none;
+					visibility: hidden;
+				}
+			}
+		}	
+
+		&:last-child {
+			 clear: left;
 		}
 	}
 }
