@@ -70,6 +70,14 @@
 					color: $dark-grey;
 					text-decoration: none;
 
+					&:hover {
+						color: $light-blue;
+					}
+				
+					&:active {
+						color: $blue;
+					}
+
 					img {
 						margin: 20px 0;
 					}

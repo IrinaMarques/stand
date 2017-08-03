@@ -1,28 +1,59 @@
-.sm-box {
-	width: 200px;
-	background-color: $brown;
-	font-family: $pfont;
-	color: $dark-grey;
-	position: absolute;
-	z-index: 2;
-	top: 0;
+.box-container {
+	width: 100%;
 	
 
-	ul {
-		width: 100%;
-		list-style-type: none;
+	.sm-box {
+		display: inline;
+		float: left;
+		width: 200px;
+		background-color: $brown;
+		font-family: $pfont;
+		color: $dark-grey;
 		
-		li {
-			height: 115px;
+		ul {
 			width: 100%;
+			list-style-type: none;
+			text-align: center;
+			
+			li {
+				height: 115px;
+				width: 100%;
+				border: 2px solid $dark-brown;
+				
+				a {
+					color: $dark-grey;
+					text-decoration: none;
 
-			&:first-child {
-				visibility: hidden;
-			}
+					&:hover {
+						color: $light-blue;
+					}
+				
+					&:active {
+						color: $blue;
+					}
 
-			h5 {
-				margin: 0 auto;
+					.fa {
+						padding: 27px 85px 10px;
+						font-size: 24px;
+					}
+
+					h5 {
+						margin: 0 auto;
+					}
+				}
+
+				&:active {
+					border: 2px solid $blue;
+				}
 			}
 		}
+	}
+
+	.main-box {
+		background-color: green;
+		max-width: 100%;
+		height: 575px; 
+		margin-left: 200px;
+
 	}
 }

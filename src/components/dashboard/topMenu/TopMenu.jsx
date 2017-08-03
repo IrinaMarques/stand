@@ -46,7 +46,7 @@ class TopMenu extends Component {
                         	</li>
                         	<li>
                         		<a href='#'>
-                                    <i className="fa fa-bullhorn" aria-hidden="true"></i>
+                                    <i className="fa fa-bell" aria-hidden="true"></i>
                         			<h5>Alertas</h5>
                         		</a>
                         	</li>

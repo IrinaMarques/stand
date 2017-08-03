@@ -20,12 +20,12 @@ class Dashboard extends Component {
     render() {
 		/** Escrever html aqui ( ... ) */
 		return (
-			<div>
+			<div className='box-container'>
 				<TopMenu/>
 				<AsideMenu/>
-				<section>
+				<main className='main-box'>
 					{ this.props.children() } 
-				</section>
+				</main>
 			</div>
 		);
     }
