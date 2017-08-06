@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import Tabs from '../../../components/dashboard/tabs/Tabs'
 
 class Landingpage extends Component {
 	constructor(props) {
@@ -15,11 +15,16 @@ class Landingpage extends Component {
 
     render() {
 		return (
-			<div className='main-header'>
-				<h1 className='p-font'>Dashboard</h1>
-				<p className='s-font'>Resumo de todas as actividades no website</p>
-
-                { this.props.children() } 
+			<div>
+				<div className='main-header'>
+					<h1 className='p-font'>Dashboard</h1>
+					<p className='s-font'>Resumo de todas as actividades no website</p>
+				</div>
+				<div>
+					<Tabs>
+						{ this.props.children() } 
+					</Tabs>
+				</div>
 			</div>
 		);
     }
