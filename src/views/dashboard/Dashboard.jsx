@@ -22,10 +22,12 @@ class Dashboard extends Component {
 		return (
 			<div className='box-container'>
 				<TopMenu/>
-				<AsideMenu/>
-				<main className='main-box'>
-					{ this.props.children() } 
-				</main>
+				<div className="content-main-container">
+					<AsideMenu/>
+					<main className='main-box'>
+						{ this.props.children() } 
+					</main>
+				</div>
 			</div>
 		);
     }

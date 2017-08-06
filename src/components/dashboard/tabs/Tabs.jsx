@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import { NavLink } from 'react-router-dom';
 
 class Tabs extends Component {
 	constructor(props) {
@@ -17,21 +17,30 @@ class Tabs extends Component {
 		return (
 			<div>
                 <div className="tabs-header">
-                    <ul className='tabs tabs-nav'>
-                        <li className='tabs-item'>
-                            <a className='tabs-link p-font' href="/dashboard/entry/last-messages">
+                    <ul>
+                        <li>
+                            <NavLink 
+                                to="/dashboard/entry/last-messages"
+                                activeClassName="selected"
+                            >
                                 Mensagens
-                            </a>
+                            </NavLink>
                         </li>
-                        <li className='tabs-item'>
-                            <a className='tabs-link p-font' href="/dashboard/entry/general-statistics">
+                        <li>
+                            <NavLink 
+                                to="/dashboard/entry/general-statistics"
+                                activeClassName="selected"
+                            >
                                 Visitas
-                            </a>
+                            </NavLink>
                         </li>
-                        <li className='tabs-item'>
-                            <a className='tabs-link p-font' href="/dashboard/entry/articles-statistics">
+                        <li>
+                            <NavLink 
+                                to="/dashboard/entry/articles-statistics"
+                                activeClassName="selected"
+                            >
                                 Visualizações
-                            </a>
+                            </NavLink>
                         </li>
                     </ul>
                 </div>

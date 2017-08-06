@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 class AsideMenu extends Component {
 	constructor(props) {
@@ -18,34 +18,54 @@ class AsideMenu extends Component {
 			<nav className='sm-box' role='navigation'>
 				<ul>
 					<li>
-						<Link to="/dashboard/entry">
+						<NavLink
+							exact 
+							to="/dashboard/entry"
+							activeClassName="selected"
+						>
 							<i className="fa fa-desktop" aria-hidden="true"></i>
 							<h5>Dashboard</h5>
-						</Link>
+						</NavLink>
 					</li>
 					<li>
-						<Link to="/dashboard/new-article">
+						<NavLink
+							exact 
+							to="/dashboard/new-article"
+							activeClassName="selected"
+						>
 							<i className="fa fa-pencil-square-o" aria-hidden="true"></i>
 							<h5>Criar Anúncio</h5>
-						</Link>
+						</NavLink>
 					</li>
 					<li>
-						<Link to="/dashboard">
+						<NavLink
+							exact 
+							to="/dashboard"
+							activeClassName="selected"
+						>
 							<i className="fa fa-retweet" aria-hidden="true"></i>
 							<h5>Gerir Anuncio</h5>
-						</Link>
+						</NavLink>
 					</li>
 					<li>
-						<Link to="/dashboard">
+						<NavLink
+							exact 
+							to="/dashboard"
+							activeClassName="selected"
+						>
 							<i className="fa fa-envelope" aria-hidden="true"></i>
 							<h5>Mensagens</h5>
-						</Link>
+						</NavLink>
 					</li>
 					<li>
-						<Link to="/dashboard">
+						<NavLink
+							exact 
+							to="/dashboard"
+							activeClassName="selected"
+						>
 							<i className="fa fa-users" aria-hidden="true"></i>
 							<h5>Utilizadores</h5>
-						</Link>
+						</NavLink>
 					</li>
 				</ul>
 			</nav>
