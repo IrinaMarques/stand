@@ -15,7 +15,7 @@ class Tabs extends Component {
 
     render() {
 		return (
-			<div>
+			<div className='tabs-container'>
                 <div className="tabs-header">
                     <ul className="tabs">
                         <li className="tabs-item">

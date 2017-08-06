@@ -8,6 +8,9 @@
 		background-color: $brown;
 		font-family: $pfont;
 		color: $dark-grey;
+		-webkit-box-shadow: 3px 3px 15px -3px rgba(0,0,0,0.75);
+		-moz-box-shadow: 3px 3px 15px -3px rgba(0,0,0,0.75);
+		box-shadow: 3px 3px 15px -3px rgba(0,0,0,0.75);
 		
 		ul {
 			width: 100%;
@@ -18,10 +21,15 @@
 				height: 115px;
 				width: 100%;
 				position: relative;
+
+				&.selected {
+					border: 2px solid $grey;
+				} 
 				
 				a {
 					color: $dark-grey;
 					border: 2px solid $dark-brown;
+					border-top:none;
 					text-decoration: none;
 					position: absolute;
 					width: 100%;
@@ -34,8 +42,13 @@
 					}
 				
 					&:active, &.selected {
+						border: 2px solid $grey;
 						color: $blue;
-						border: 2px solid $dark-grey;
+						box-shadow: -1px 3px 25px -1px rgba(0, 0, 0, 0.75);
+					}
+
+					&.disabled {
+					color: $light-grey;	
 					}
 
 					.fa {

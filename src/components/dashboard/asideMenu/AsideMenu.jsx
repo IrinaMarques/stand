@@ -29,6 +29,7 @@ class AsideMenu extends Component {
 					<li>
 						<NavLink 
 							to="/dashboard/new-article"
+							className='disabled'
 							activeClassName="selected"
 						>
 							<i className="fa fa-pencil-square-o" aria-hidden="true"></i>
@@ -38,6 +39,7 @@ class AsideMenu extends Component {
 					<li>
 						<NavLink 
 							to="/dashboard/manage-article"
+							className='disabled'
 							activeClassName="selected"
 						>
 							<i className="fa fa-retweet" aria-hidden="true"></i>
@@ -47,6 +49,7 @@ class AsideMenu extends Component {
 					<li>
 						<NavLink 
 							to="/dashboard/messages"
+							className='disabled'
 							activeClassName="selected"
 						>
 							<i className="fa fa-envelope" aria-hidden="true"></i>
@@ -56,6 +59,7 @@ class AsideMenu extends Component {
 					<li>
 						<NavLink 
 							to="/dashboard/users"
+							className='disabled'
 							activeClassName="selected"
 						>
 							<i className="fa fa-users" aria-hidden="true"></i>

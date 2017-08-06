@@ -1,28 +1,29 @@
-.tabs-header {
+.tabs-container {
+	margin: 0 20px;
+	border: 2px solid $grey;
 
-	.tabs {
-		margin: 2px 20px;
-		padding: 10px 0;
-		list-style-type: none; 
-		display: table;
-		table-layout: fixed;
-		width: 100%;
-		border: 2px solid $dark-brown;
-		background-color: $brown;
+	.tabs-header {
 
-		.tabs-item {
-			display: table-cell;
-			text-align: center;
-			border: 2px solid $dark-brown;
-			
+		.tabs {
+			list-style-type: none; 
+			display: table;
+			table-layout: fixed;
+			width: 100%;
+			background-color: $brown;
 
-			.tabs-link {
-				display: block;
-				font-size: 18px;
-				color: $dark-grey;
+			.tabs-item {
+				display: table-cell;
+				text-align: center;
+				border: 2px solid $dark-brown;
+				padding: 10px 0;
+				
+
+				.tabs-link {
+					display: block;
+					font-size: 18px;
+					color: $dark-grey;
+				}
 			}
 		}
 	}
-
-
 }
