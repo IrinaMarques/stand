@@ -17,27 +17,30 @@ class Tabs extends Component {
 		return (
 			<div>
                 <div className="tabs-header">
-                    <ul>
-                        <li>
+                    <ul className="tabs">
+                        <li className="tabs-item">
                             <NavLink 
                                 to="/dashboard/entry/last-messages"
                                 activeClassName="selected"
+                                className="tabs-link"
                             >
                                 Mensagens
                             </NavLink>
                         </li>
-                        <li>
+                        <li className="tabs-item">
                             <NavLink 
                                 to="/dashboard/entry/general-statistics"
                                 activeClassName="selected"
+                                className="tabs-link"
                             >
                                 Visitas
                             </NavLink>
                         </li>
-                        <li>
+                        <li className="tabs-item">
                             <NavLink 
                                 to="/dashboard/entry/articles-statistics"
                                 activeClassName="selected"
+                                className="tabs-link"
                             >
                                 Visualizações
                             </NavLink>

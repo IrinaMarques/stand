@@ -18,8 +18,7 @@ class AsideMenu extends Component {
 			<nav className='sm-box' role='navigation'>
 				<ul>
 					<li>
-						<NavLink
-							exact 
+						<NavLink 
 							to="/dashboard/entry"
 							activeClassName="selected"
 						>
@@ -28,8 +27,7 @@ class AsideMenu extends Component {
 						</NavLink>
 					</li>
 					<li>
-						<NavLink
-							exact 
+						<NavLink 
 							to="/dashboard/new-article"
 							activeClassName="selected"
 						>
@@ -38,9 +36,8 @@ class AsideMenu extends Component {
 						</NavLink>
 					</li>
 					<li>
-						<NavLink
-							exact 
-							to="/dashboard"
+						<NavLink 
+							to="/dashboard/manage-article"
 							activeClassName="selected"
 						>
 							<i className="fa fa-retweet" aria-hidden="true"></i>
@@ -48,9 +45,8 @@ class AsideMenu extends Component {
 						</NavLink>
 					</li>
 					<li>
-						<NavLink
-							exact 
-							to="/dashboard"
+						<NavLink 
+							to="/dashboard/messages"
 							activeClassName="selected"
 						>
 							<i className="fa fa-envelope" aria-hidden="true"></i>
@@ -58,9 +54,8 @@ class AsideMenu extends Component {
 						</NavLink>
 					</li>
 					<li>
-						<NavLink
-							exact 
-							to="/dashboard"
+						<NavLink 
+							to="/dashboard/users"
 							activeClassName="selected"
 						>
 							<i className="fa fa-users" aria-hidden="true"></i>
