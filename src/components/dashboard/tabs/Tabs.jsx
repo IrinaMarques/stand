@@ -17,20 +17,20 @@ class Tabs extends Component {
 		return (
 			<div>
                 <div className="tabs-header">
-                    <ul>
-                        <li>
-                            <a href="/dashboard/entry/last-messages">
-                                Últimas mensagens
+                    <ul className='tabs tabs-nav'>
+                        <li className='tabs-item'>
+                            <a className='tabs-link p-font' href="/dashboard/entry/last-messages">
+                                Mensagens
                             </a>
                         </li>
-                        <li>
-                            <a href="/dashboard/entry/general-statistics">
-                                Número de visitas
+                        <li className='tabs-item'>
+                            <a className='tabs-link p-font' href="/dashboard/entry/general-statistics">
+                                Visitas
                             </a>
                         </li>
-                        <li>
-                            <a href="/dashboard/entry/articles-statistics">
-                                Mais visualizados
+                        <li className='tabs-item'>
+                            <a className='tabs-link p-font' href="/dashboard/entry/articles-statistics">
+                                Visualizações
                             </a>
                         </li>
                     </ul>

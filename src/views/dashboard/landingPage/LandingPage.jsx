@@ -20,11 +20,9 @@ class Landingpage extends Component {
 					<h1 className='p-font'>Dashboard</h1>
 					<p className='s-font'>Resumo de todas as actividades no website</p>
 				</div>
-				<div>
-					<Tabs>
-						{ this.props.children() } 
-					</Tabs>
-				</div>
+				<Tabs>
+					{ this.props.children() } 
+				</Tabs>
 			</div>
 		);
     }
