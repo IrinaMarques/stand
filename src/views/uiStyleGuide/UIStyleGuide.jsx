@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import Typography from '../../components/dashboard/typography/Typography';
 
-require('./UIStylesGuide.scss');
+require('./UIStyleGuide.scss');
 
 class UIStyleGuide extends Component {
 	constructor(props) {
