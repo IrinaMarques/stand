@@ -1,14 +1,24 @@
-.sm-box {
+.box-container {
 
-	a {
+	.sm-box {
 
-		h5 {	
-			display: none;
-			visibility: hidden;
-		}
+		ul {
 
-		.fa {
-			font-size: 26px;
+		 	li {
+
+				a {
+
+					.fa {
+						font-size: 28px;
+						padding: 42px 0;
+					}
+		
+					h5 {	
+						display: none;
+						visibility: hidden;
+					}
+				}
+			}
 		}
 	}
 }

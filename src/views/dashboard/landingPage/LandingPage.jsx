@@ -15,8 +15,9 @@ class Landingpage extends Component {
 
     render() {
 		return (
-			<div>
-				<h1>Landingpage!</h1>
+			<div className='main-header'>
+				<h1 className='p-font'>Dashboard</h1>
+				<p className='s-font'>Resumo de todas as actividades no website</p>
 
                 { this.props.children() } 
 			</div>

@@ -2,27 +2,6 @@
 
 	div {
 
-		&:first-child {
-			width: 20%;
-
-			.menu-button {
-				width: 100%;
-				display: inline-block; 
-				font-size: 26px;
-				margin: 0 auto;
-				visibility: visible;
-
-				i {
-					margin: 43px 0;
-					color: #797979;
-				}
-			}
-
-			.img-brand {
-				display: none;
-			}
-		}
-
 		ul {
 			height: 100%;
 			margin: 2px auto;
