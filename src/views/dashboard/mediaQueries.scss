@@ -3,6 +3,7 @@
 @media (max-width: 800px) {
 	@import '../../components/dashboard/topMenu/TopMenu800';
 	@import '../../components/dashboard/asideMenu/AsideMenu800';
+	@import '../../components/dashboard/tabs/Tabs800';
 }
 
 @media (max-width: 680px) {
@@ -13,14 +14,17 @@
 @media (max-width: 600px) {
 	@import '../../components/dashboard/topMenu/TopMenu600';
 	@import '../../components/dashboard/asideMenu/AsideMenu600';
+	@import '../../components/dashboard/tabs/Tabs600';
 }
 
 @media (max-width: 480px) {
 	@import '../../components/dashboard/topMenu/TopMenu480';
 	@import '../../components/dashboard/asideMenu/AsideMenu480';
+	@import '../../components/dashboard/tabs/Tabs480';
 }
 
 @media (max-width: 320px) {
 	@import '../../components/dashboard/topMenu/TopMenu320';
 	@import '../../components/dashboard/asideMenu/AsideMenu320';
+	@import '../../components/dashboard/tabs/Tabs320';
 }

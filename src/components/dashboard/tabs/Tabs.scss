@@ -14,15 +14,38 @@
 			.tabs-item {
 				display: table-cell;
 				text-align: center;
-				border: 2px solid $dark-brown;
-				padding: 10px 0;
+				font-weight: bold;
 				
-
 				.tabs-link {
+					text-decoration: none;
 					display: block;
 					font-size: 18px;
-					color: $dark-grey;
+					padding: 10px 0;
+					color: $grey;
+					border: 2px solid $dark-brown; 
+					border-bottom: none;
+					border-top: none;
+
+					&:first-child {
+						border-left: none;
+					}
+
+					&:last-child {
+						border-right: none;
+					}
+					
+					&:hover {
+						color: $light-blue;
+					}
+
+					&.selected {
+						background-color: white;
+						color: $blue;
+						border-bottom: none;
+					}
 				}
+
+				
 			}
 		}
 	}
