@@ -14,13 +14,13 @@
 @media (max-width: 600px) {
 	@import '../../components/dashboard/topMenu/TopMenu600';
 	@import '../../components/dashboard/asideMenu/AsideMenu600';
-	@import '../../components/dashboard/tabs/Tabs600';
 }
 
 @media (max-width: 480px) {
 	@import '../../components/dashboard/topMenu/TopMenu480';
 	@import '../../components/dashboard/asideMenu/AsideMenu480';
 	@import '../../components/dashboard/tabs/Tabs480';
+	@import 'landingPage/LandingPage480';
 }
 
 @media (max-width: 320px) {

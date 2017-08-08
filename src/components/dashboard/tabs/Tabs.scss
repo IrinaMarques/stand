@@ -15,6 +15,22 @@
 				display: table-cell;
 				text-align: center;
 				font-weight: bold;
+				border-width: 0 0 2px 2px; 
+				border-style: solid;	
+				border-color: $dark-brown;
+				border-bottom: none;
+
+				.fa {
+					display: none;
+				}
+
+				&:last-child {
+					border-right: none;
+				}
+
+				&:first-child {
+					border-left: none;
+				}
 				
 				.tabs-link {
 					text-decoration: none;
@@ -22,17 +38,11 @@
 					font-size: 18px;
 					padding: 10px 0;
 					color: $grey;
-					border: 2px solid $dark-brown; 
-					border-bottom: none;
-					border-top: none;
 
-					&:first-child {
-						border-left: none;
+					&:not(.selected){
+						border-bottom: 2px solid $dark-brown;
 					}
 
-					&:last-child {
-						border-right: none;
-					}
 					
 					&:hover {
 						color: $light-blue;
@@ -40,12 +50,10 @@
 
 					&.selected {
 						background-color: white;
-						color: $blue;
-						border-bottom: none;
+						border-bottom: 2px solid $white;
+						color: $blue;	
 					}
-				}
-
-				
+				}	
 			}
 		}
 	}

@@ -42,7 +42,7 @@
 					}
 				
 					&:active, &.selected {
-						border: 2px solid $grey;
+						border-color:$grey;
 						color: $blue;
 						box-shadow: -1px 3px 25px -1px rgba(0, 0, 0, 0.75);
 					}

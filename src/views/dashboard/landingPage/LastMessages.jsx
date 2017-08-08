@@ -16,7 +16,16 @@ class LastMessages extends Component {
     render() {
 		return (
 			<div>
-				<h1>LastMessages!</h1>
+				<ul>
+					<li>
+						<p>Nome Sobrenome</p>
+						<p>Novo</p>
+						<p>Mensagem ou ref. não sei ainda tenho que ver como caber parte da mensagem aqui ou não por só a referencia da publicação ou o assunto</p>
+						<p>data</p>
+						<p>icon</p>
+						<p>icon</p>
+					</li>
+				</ul>
 
                 { this.props.children() } 
 			</div>

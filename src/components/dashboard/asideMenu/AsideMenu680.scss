@@ -1,6 +1,13 @@
 .box-container {
 
 	.sm-box {
+		&:not(.on){
+			display: none; 
+		}
+
+		&.on{
+			/* definir os estilos do menu aberto*/
+		}
 
 		ul {
 
@@ -20,5 +27,10 @@
 				}
 			}
 		}
+	}
+
+	.main-box {
+		margin-left: 0;
+		padding-left: 0;
 	}
 }

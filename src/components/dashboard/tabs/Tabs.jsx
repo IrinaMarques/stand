@@ -24,7 +24,8 @@ class Tabs extends Component {
                                 activeClassName="selected"
                                 className="tabs-link"
                             >
-                                Mensagens
+                                <span>Mensagens</span>
+                                <i className="fa fa-envelope-open-o" aria-hidden="true"></i>
                             </NavLink>
                         </li>
                         <li className="tabs-item">
@@ -33,7 +34,8 @@ class Tabs extends Component {
                                 activeClassName="selected"
                                 className="tabs-link"
                             >
-                                Visitas
+                                <span>Visitas</span>
+                                <i className="fa fa-pie-chart" aria-hidden="true"></i>
                             </NavLink>
                         </li>
                         <li className="tabs-item">
@@ -42,7 +44,8 @@ class Tabs extends Component {
                                 activeClassName="selected"
                                 className="tabs-link"
                             >
-                                Visualizações
+                                <span>Visualizações</span>
+                                <i className="fa fa-eye" aria-hidden="true"></i>
                             </NavLink>
                         </li>
                     </ul>
