@@ -6,8 +6,9 @@
 		}
 
 		&.on{
-			/* definir os estilos do menu aberto*/
-		
+			position: relative;
+			z-index: 2;
+
 			ul {
 
 		 		li {
@@ -30,6 +31,8 @@
 	}
 	
 	.main-box {
+		position: absolute;
+		z-index: 1;
 		margin-left: 0;
 		padding-left: 0;
 	}

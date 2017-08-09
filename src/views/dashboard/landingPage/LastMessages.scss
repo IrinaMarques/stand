@@ -1,0 +1,83 @@
+.rm-space {
+	font-size: 0; /*cleans the whitespace between the li*/
+
+	.msg-list {
+		list-style-type: none;
+		display: inline-block;
+		width: 100%;
+		background-color: #d6d6d6;
+		border: 1px solid #9e9e9e;
+
+		div {
+			display: block;
+			float: left;
+
+			&.msg-nome {
+				width: 20%;
+
+				p {
+					padding-left: 15px;
+				}
+			}
+
+			&.msg-novo {
+				width: 10%;
+				
+				.bg-red {
+					float: none;
+					margin: 0 auto;
+					width: 50px;
+					text-align: center;
+					background-color: #e01611; /*$red*/
+					color: white;
+					border-radius: 5px;
+
+					p {
+						font-weight: 800;
+					}
+
+					.fa {
+						display: none;
+					}
+				}
+			}
+
+			&.msg-assunto {
+					width: 40%;
+
+				p {
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+
+			}
+
+			&.msg-data {
+				width: 20%;
+				margin: 7px 0;
+				text-align: center;
+
+			}
+
+			&.msg-buttons {
+				width: 10%;
+
+				.box-buttons {
+					margin: 18px 0;
+					float: right;
+
+					.fa {
+						display: inline;
+						font-size: 22px;
+						padding: 0 15px;
+					}
+				}	
+			}
+		}
+
+		&:nth-child(odd) {
+			background-color: #efefef;
+		}	
+	}
+}

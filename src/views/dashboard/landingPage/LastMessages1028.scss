@@ -1,0 +1,33 @@
+.rm-space {
+	
+	.msg-list {
+
+		div {
+
+			&.msg-novo {
+
+				.bg-red {
+
+					p {
+						display: none;
+					}
+
+					.fa {
+						display: block;
+					}
+
+				}
+			}
+
+			&.msg-assunto {
+				width: 30%;
+
+				p {
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+			}
+		}
+	}
+}

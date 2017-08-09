@@ -1,5 +1,9 @@
 @import './variables';
 
+@media (max-width: 1028px) {
+	@import 'landingPage/LastMessages1028';
+}
+
 @media (max-width: 800px) {
 	@import '../../components/dashboard/topMenu/TopMenu800';
 	@import '../../components/dashboard/asideMenu/AsideMenu800';
@@ -26,5 +30,4 @@
 @media (max-width: 320px) {
 	@import '../../components/dashboard/topMenu/TopMenu320';
 	@import '../../components/dashboard/asideMenu/AsideMenu320';
-	@import '../../components/dashboard/tabs/Tabs320';
 }

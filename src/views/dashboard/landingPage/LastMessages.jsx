@@ -16,14 +16,101 @@ class LastMessages extends Component {
     render() {
 		return (
 			<div>
-				<ul>
-					<li>
-						<p>Nome Sobrenome</p>
-						<p>Novo</p>
-						<p>Mensagem ou ref. não sei ainda tenho que ver como caber parte da mensagem aqui ou não por só a referencia da publicação ou o assunto</p>
-						<p>data</p>
-						<p>icon</p>
-						<p>icon</p>
+				<ul className='rm-space'>
+					<li className='msg-list'>
+						<div className='msg-nome'>
+							<p>Barry Allan</p>
+						</div>
+						<div className='msg-novo'>
+							<div className='bg-red'>
+								<p>Novo</p>
+								<i className="fa fa-exclamation" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div className='msg-assunto'>
+							<p className='s-font p-md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada finibus magna, ut accumsan est. Suspendisse potenti.</p>
+						</div>
+						<div className='msg-data'>
+							<p className='s-font p-sm'>03 May, 2017</p>
+						</div>
+						<div className='msg-buttons'>
+							<div className='box-buttons'>
+								<i className="fa fa-trash-o" aria-hidden="true"></i>
+								<i className="fa fa-reply" aria-hidden="true"></i>
+							</div>
+						</div>
+					</li
+
+					><li className='msg-list'>
+						<div className='msg-nome'>
+							<p>Green Arrow</p>
+						</div>
+						<div className='msg-novo'>
+							<div className='bg-red'>
+								<p>Novo</p>
+								<i className="fa fa-exclamation" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div className='msg-assunto'>
+							<p className='s-font p-md'>Vivamus id eros vel justo pharetra tempor at a odio. Aliquam id cursus enim. Morbi lacinia nec neque hendrerit pharetra. </p>
+						</div>
+						<div className='msg-data'>
+							<p className='s-font p-sm'>20 Apr, 2017</p>
+						</div>
+						<div className='msg-buttons'>
+							<div className='box-buttons'>
+								<i className="fa fa-trash-o" aria-hidden="true"></i>
+								<i className="fa fa-reply" aria-hidden="true"></i>
+							</div>
+						</div>
+					</li
+
+					><li className='msg-list'>
+						<div className='msg-nome'>
+							<p>Wolverine</p>
+						</div>
+						<div className='msg-novo'>
+							<div className='bg-red'>
+								<p>Novo</p>
+								<i className="fa fa-exclamation" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div className='msg-assunto'>
+							<p className='s-font p-md'>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+						</div>
+						<div className='msg-data'>
+							<p className='s-font p-sm'>01 Apr, 2017</p>
+						</div>
+						<div className='msg-buttons'>
+							<div className='box-buttons'>
+								<i className="fa fa-trash-o" aria-hidden="true"></i>
+								<i className="fa fa-reply" aria-hidden="true"></i>
+							</div>
+						</div>
+					</li
+
+					><li className='msg-list'>
+						<div className='msg-nome'>
+							<p>Spider Man</p>
+						</div>
+						<div className='msg-novo'>
+							<div className='bg-red'>
+								<p>Novo</p>
+								<i className="fa fa-exclamation" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div className='msg-assunto'>
+							<p className='s-font p-md'>Aenean nec nunc mi. Pellentesque interdum, lorem in fermentum posuere, arcu leo luctus tortor, a dignissim ligula elit vitae lacus.</p>
+						</div>
+						<div className='msg-data'>
+							<p className='s-font p-sm'>15 Feb, 2017</p>
+						</div>
+						<div className='msg-buttons'>
+							<div className='box-buttons'>
+								<i className="fa fa-trash-o" aria-hidden="true"></i>
+								<i className="fa fa-reply" aria-hidden="true"></i>
+							</div>
+						</div>
 					</li>
 				</ul>
 
