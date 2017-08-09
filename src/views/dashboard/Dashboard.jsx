@@ -14,16 +14,27 @@ class Dashboard extends Component {
     
 	buildState(nextProps) {
 		return nextProps || {
+			asideMenuIsOpen: false
 		}
+	}
+
+	_onAsideMenuToggle() {
+		return this.setState({
+			asideMenuIsOpen: !this.state.asideMenuIsOpen
+		});
 	}
 
     render() {
 		/** Escrever html aqui ( ... ) */
 		return (
 			<div className='box-container'>
-				<TopMenu/>
+				<TopMenu 
+					onAsideMenuToggle={ state => this._onAsideMenuToggle(state) }
+					isOpen={ this.state.asideMenuIsOpen }
+				/>
+				
 				<div className="content-main-container">
-					<AsideMenu/>
+					<AsideMenu isOpen={ this.state.asideMenuIsOpen } />
 					<main className='main-box'>
 						{ this.props.children() } 
 					</main>

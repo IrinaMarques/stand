@@ -7,28 +7,28 @@
 
 		&.on{
 			/* definir os estilos do menu aberto*/
-		}
-
-		ul {
-
-		 	li {
-
-				a {
-
-					.fa {
-						font-size: 28px;
-						padding: 42px 0;
-					}
 		
-					h5 {	
-						display: none;
-						visibility: hidden;
+			ul {
+
+		 		li {
+
+					a {
+
+						.fa {
+							font-size: 28px;
+							padding: 42px 0;
+						}
+			
+						h5 {	
+							display: none;
+							visibility: hidden;
+						}
 					}
 				}
 			}
 		}
 	}
-
+	
 	.main-box {
 		margin-left: 0;
 		padding-left: 0;
