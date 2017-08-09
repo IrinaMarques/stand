@@ -21,6 +21,9 @@ $fa-font-path: "~font-awesome-sass/assets/fonts/font-awesome/";
 @import '../../components/dashboard/asideMenu/AsideMenu';
 @import '../../components/dashboard/tabs/Tabs';
 
+@import './landingPage/LandingPage';
+@import './landingPage/LastMessages';
+
 
 @import './mediaQueries';
 
