@@ -11,7 +11,18 @@ class TopMenu extends Component {
     
 	buildState(nextProps) {
 		return nextProps || {
+			isOpen           : this.props.isOpen || false,
+			hamburgerBtnClass: 'menu-button'
 		}
+	}
+
+	_toggle(evt) {
+		const nextOpenState = !this.state.isOpen;
+
+		return this.setState({
+			isOpen           : nextOpenState,
+			hamburgerBtnClass: nextOpenState ? 'menu-button on' : 'menu-button'
+		}, state => this.props.onAsideMenuToggle());
 	}
 
     render() {
@@ -25,9 +36,12 @@ class TopMenu extends Component {
                                 <img src={require("dashboardImages/brand-50px.png")} alt="Logo"/>
                             </Link>
                         </div>
-                        <div className='menu-button'>
+                        <button 
+							className={ this.state.hamburgerBtnClass } 
+							onMouseUp={ evt => this._toggle(evt) } 
+						>
                             <i className="fa fa-bars" aria-hidden="true"></i>
-                        </div>
+                        </button>
                     </div>
                     
                     <div>

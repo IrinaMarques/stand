@@ -9,13 +9,21 @@ class AsideMenu extends Component {
 	}
     
 	buildState(nextProps) {
-		return nextProps || {
+		const props = nextProps || this.props;
+		return {
+			isOpen   : props.isOpen || false,
+			className: props.isOpen ? 'sm-box on' : 'sm-box'
 		}
+	}
+
+	componentWillReceiveProps(nextProps, nextState) {
+		return this.setState(
+			this.buildState(nextProps))
 	}
 
     render() {
 		return (
-			<nav className='sm-box' role='navigation'>
+			<nav className={ this.state.className } role='navigation'>
 				<ul>
 					<li>
 						<NavLink 
@@ -38,9 +46,10 @@ class AsideMenu extends Component {
 					</li>
 					<li>
 						<NavLink 
-							to="/dashboard/manage-article"
-							className='disabled'
-							activeClassName="selected"
+							to              = "/dashboard/manage-article"
+							className       = 'disabled'
+							activeClassName = "selected"
+							isActive        = { () => false }
 						>
 							<i className="fa fa-retweet" aria-hidden="true"></i>
 							<h5>Gerir Anuncio</h5>
@@ -48,9 +57,10 @@ class AsideMenu extends Component {
 					</li>
 					<li>
 						<NavLink 
-							to="/dashboard/messages"
-							className='disabled'
-							activeClassName="selected"
+							to              = "/dashboard/messages"
+							className       = 'disabled'
+							activeClassName = "selected"
+							isActive        = { () => false }
 						>
 							<i className="fa fa-envelope" aria-hidden="true"></i>
 							<h5>Mensagens</h5>
@@ -58,9 +68,10 @@ class AsideMenu extends Component {
 					</li>
 					<li>
 						<NavLink 
-							to="/dashboard/users"
-							className='disabled'
-							activeClassName="selected"
+							to              = "/dashboard/users"
+							className       = 'disabled'
+							activeClassName = "selected"
+							isActive        = { () => false }
 						>
 							<i className="fa fa-users" aria-hidden="true"></i>
 							<h5>Utilizadores</h5>
