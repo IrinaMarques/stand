@@ -18,6 +18,10 @@
 				p {
 					padding-left: 15px;
 				}
+
+				&.nome-visto {
+					width: 30%
+				}
 			}
 
 			&.msg-novo {
@@ -40,6 +44,22 @@
 						display: none;
 					}
 				}
+
+				&.msg-visto {
+					width: 0;
+
+					.bg-red {
+						display: none;
+
+						p {
+							display: none;
+						}
+
+						.fa {
+							display: none;
+						}
+					}
+				}
 			}
 
 			&.msg-assunto {
@@ -49,6 +69,7 @@
 					white-space: nowrap;
 					overflow: hidden;
 					text-overflow: ellipsis;
+					margin: 19px 0;
 				}
 
 			}
@@ -58,6 +79,9 @@
 				margin: 7px 0;
 				text-align: center;
 
+				p {
+					font-size: 14px;
+				}
 			}
 
 			&.msg-buttons {
