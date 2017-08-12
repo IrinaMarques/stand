@@ -15,7 +15,7 @@ class GeneralStatistics extends Component {
 
     render() {
 		return (
-			<div>
+			<div className='row'>
 
 				<div className='row-visitas'>
 					<div className='col-sm-3 col-xs-6 visitas'>
@@ -26,7 +26,6 @@ class GeneralStatistics extends Component {
 						<p>148</p>
 						<h3 className='p-light'>M&ecirc;s</h3>
 					</div>
-					<div className='row'>
 					<div className='col-sm-3 col-xs-6 visitas'>
 						<p>52</p>
 						<h3 className='p-light'>Semana</h3>

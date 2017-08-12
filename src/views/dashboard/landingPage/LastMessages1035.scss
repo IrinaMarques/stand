@@ -1,18 +1,22 @@
-.msg-list {
+.msg-box{
+	.rm-space {
+		.msg-list {
 
-	div{
+			div{
 
-		&.msg-novo {
+				&.msg-novo {
 
-			.bg-red {
+					.bg-red {
 
-				h6 {
-					display: none;
-				}
+						h6 {
+							display: none;
+						}
 
-				.fa {
-					color: white;
-					display: block;
+						.fa {
+							color: white;
+							display: block;
+						}
+					}
 				}
 			}
 		}
