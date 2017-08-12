@@ -1,0 +1,20 @@
+.msg-list {
+
+	div{
+
+		&.msg-novo {
+
+			.bg-red {
+
+				h6 {
+					display: none;
+				}
+
+				.fa {
+					color: white;
+					display: block;
+				}
+			}
+		}
+	}
+}

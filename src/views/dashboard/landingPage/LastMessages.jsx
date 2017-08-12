@@ -15,17 +15,17 @@ class LastMessages extends Component {
 
     render() {
 		return (
-			<div>
+			<div className='msg-box'>
 				<ul className='rm-space'>
 					<li className='row msg-list'>
 
 						<div className='col-md-2 msg-nome'>
-							<p>Barry Allan</p>
+							<p className='p-md'>Barry Allan</p>
 						</div>
 
 						<div className='col-md-1 msg-novo'>
 							<div className='bg-red'>
-								<p>Novo</p>
+								<h6>Novo</h6>
 								<i className="fa fa-exclamation" aria-hidden="true"></i>
 							</div>
 						</div>
@@ -54,12 +54,12 @@ class LastMessages extends Component {
 
 					<li className='row msg-list'>
 						<div className='col-md-2 msg-nome'>
-							<p>Green Arrow</p>
+							<p className='p-md'>Green Arrow</p>
 						</div>
 
 						<div className='col-md-1 msg-novo'>
 							<div className='bg-red'>
-								<p>Novo</p>
+								<h6>Novo</h6>
 								<i className="fa fa-exclamation" aria-hidden="true"></i>
 							</div>
 						</div>
@@ -88,12 +88,12 @@ class LastMessages extends Component {
 
 					<li className='row msg-list'>
 						<div className='col-md-2 msg-nome'>
-							<p>Wolverine</p>
+							<p className='p-md'>Wolverine</p>
 						</div>
 
 						<div className='col-md-1 msg-novo'>
 							<div className='bg-red'>
-								<p>Novo</p>
+								<h6>Novo</h6>
 								<i className="fa fa-exclamation" aria-hidden="true"></i>
 							</div>
 						</div>
@@ -122,12 +122,12 @@ class LastMessages extends Component {
 
 					<li className='row msg-list'>
 						<div className='col-md-2 msg-nome'>
-							<p>Spider Man</p>
+							<p className='p-md'>Spider Man</p>
 						</div>
 
 						<div className='col-md-1 msg-novo'>
 							<div className='bg-red'>
-								<p>Novo</p>
+								<h6>Novo</h6>
 								<i className="fa fa-exclamation" aria-hidden="true"></i>
 							</div>
 						</div>
@@ -155,19 +155,19 @@ class LastMessages extends Component {
 					</li>
 
 					<li className='row msg-list s-grey'>
-						<div className='col-md-3 msg-nome nome-visto'>
-							<p>Barry Allan</p>
+						<div className='col-md-3 msg-nome'>
+							<p className='p-md'>Barry Allan</p>
 						</div>
 
 						<div className='col-md-5 msg-assunto'>
-							<p className='s-grey p-md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada finibus magna, ut accumsan est. Suspendisse potenti.</p>
+							<p className='p-md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada finibus magna, ut accumsan est. Suspendisse potenti.</p>
 						</div>
 
 						<div className='col-md-2 msg-data'>
 							<p className='p-sm'>05 May<span>, 2017</span></p>
 						</div>
 
-						<div className='col-md-2 msg-buttons'>
+						<div className='col-md-2 msg-buttons buttons-visto'>
 							<div className='col-xs-6'>
 								<a href='#'>
 									<i className="fa fa-trash-o" aria-hidden="true"></i>
@@ -182,8 +182,8 @@ class LastMessages extends Component {
 					</li>
 
 					<li className='row msg-list s-grey'>
-						<div className='col-md-3 msg-nome nome-visto'>
-							<p>Green Arrow</p>
+						<div className='col-md-3 msg-nome'>
+							<p className='p-md'>Green Arrow</p>
 						</div>
 
 						<div className='col-md-5 msg-assunto'>
@@ -194,7 +194,7 @@ class LastMessages extends Component {
 							<p className='p-sm'>20 Apr<span>, 2017</span></p>
 						</div>
 
-						<div className='col-md-2 msg-buttons'>
+						<div className='col-md-2 msg-buttons buttons-visto'>
 							<div className='col-xs-6'>
 								<a href='#'>
 									<i className="fa fa-trash-o" aria-hidden="true"></i>
@@ -209,8 +209,8 @@ class LastMessages extends Component {
 					</li>
 
 					<li className='row msg-list s-grey'>
-						<div className='col-md-3 msg-nome nome-visto'>
-							<p>Wolverine</p>
+						<div className='col-md-3 msg-nome'>
+							<p className='p-md'>Wolverine</p>
 						</div>
 
 						<div className='col-md-5 msg-assunto'>
@@ -221,7 +221,7 @@ class LastMessages extends Component {
 							<p className='p-sm'>01 Apr<span>, 2017</span></p>
 						</div>
 
-						<div className='col-md-2 msg-buttons'>
+						<div className='col-md-2 msg-buttons buttons-visto'>
 							<div className='col-xs-6'>
 								<a href='#'>
 									<i className="fa fa-trash-o" aria-hidden="true"></i>
@@ -236,8 +236,8 @@ class LastMessages extends Component {
 					</li>
 
 					<li className='row msg-list s-grey'>
-						<div className='col-md-3 msg-nome nome-visto'>
-							<p>Spider Man</p>
+						<div className='col-md-3 msg-nome'>
+							<p className='p-md'>Spider Man</p>
 						</div>
 
 						<div className='col-md-5 msg-assunto'>
@@ -248,7 +248,7 @@ class LastMessages extends Component {
 							<p className='p-sm'>15 Feb<span>, 2017</span></p>
 						</div>
 
-						<div className='col-md-2 msg-buttons'>
+						<div className='col-md-2 msg-buttons buttons-visto'>
 							<div className='col-xs-6'>
 								<a href='#'>
 									<i className="fa fa-trash-o" aria-hidden="true"></i>
@@ -263,19 +263,19 @@ class LastMessages extends Component {
 					</li>
 
 					<li className='row msg-list s-grey'>
-						<div className='col-md-3 msg-nome nome-visto'>
-							<p>Barry Allan</p>
+						<div className='col-md-3 msg-nome'>
+							<p className='p-md'>Barry Allan</p>
 						</div>
 
 						<div className='col-md-5 msg-assunto'>
-							<p className='s-grey p-md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada finibus magna, ut accumsan est. Suspendisse potenti.</p>
+							<p className='p-md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada finibus magna, ut accumsan est. Suspendisse potenti.</p>
 						</div>
 
 						<div className='col-md-2 msg-data'>
 							<p className='p-sm'>05 May<span>, 2017</span></p>
 						</div>
 
-						<div className='col-md-2 msg-buttons'>
+						<div className='col-md-2 msg-buttons buttons-visto'>
 							<div className='col-xs-6'>
 								<a href='#'>
 									<i className="fa fa-trash-o" aria-hidden="true"></i>
@@ -290,8 +290,8 @@ class LastMessages extends Component {
 					</li>
 
 					<li className='row msg-list s-grey'>
-						<div className='col-md-3 msg-nome nome-visto'>
-							<p>Green Arrow</p>
+						<div className='col-md-3 msg-nome'>
+							<p className='p-md'>Green Arrow</p>
 						</div>
 
 						<div className='col-md-5 msg-assunto'>
@@ -302,7 +302,7 @@ class LastMessages extends Component {
 							<p className='p-sm'>20 Apr<span>, 2017</span></p>
 						</div>
 
-						<div className='col-md-2 msg-buttons'>
+						<div className='col-md-2 msg-buttons buttons-visto'>
 							<div className='col-xs-6'>
 								<a href='#'>
 									<i className="fa fa-trash-o" aria-hidden="true"></i>
@@ -317,8 +317,8 @@ class LastMessages extends Component {
 					</li>
 
 					<li className='row msg-list s-grey'>
-						<div className='col-md-3 msg-nome nome-visto'>
-							<p>Wolverine</p>
+						<div className='col-md-3 msg-nome'>
+							<p className='p-md'>Wolverine</p>
 						</div>
 
 						<div className='col-md-5 msg-assunto'>
@@ -329,7 +329,7 @@ class LastMessages extends Component {
 							<p className='p-sm'>01 Apr<span>, 2017</span></p>
 						</div>
 
-						<div className='col-md-2 msg-buttons'>
+						<div className='col-md-2 msg-buttons buttons-visto'>
 							<div className='col-xs-6'>
 								<a href='#'>
 									<i className="fa fa-trash-o" aria-hidden="true"></i>
@@ -344,8 +344,8 @@ class LastMessages extends Component {
 					</li>
 
 					<li className='row msg-list s-grey'>
-						<div className='col-md-3 msg-nome nome-visto'>
-							<p>Spider Man</p>
+						<div className='col-md-3 msg-nome'>
+							<p className='p-md'>Spider Man</p>
 						</div>
 
 						<div className='col-md-5 msg-assunto'>
@@ -356,7 +356,7 @@ class LastMessages extends Component {
 							<p className='p-sm'>15 Feb<span>, 2017</span></p>
 						</div>
 
-						<div className='col-md-2 msg-buttons'>
+						<div className='col-md-2 msg-buttons buttons-visto'>
 							<div className='col-xs-6'>
 								<a href='#'>
 									<i className="fa fa-trash-o" aria-hidden="true"></i>

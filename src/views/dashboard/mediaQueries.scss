@@ -1,5 +1,9 @@
 @import './variables';
 
+@media (max-width: 1035px) {
+	@import 'landingPage/LastMessages1035';
+}
+
 @media (max-width: 950px) {
 	@import 'landingPage/LastMessages950';
 }
