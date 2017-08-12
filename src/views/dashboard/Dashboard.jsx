@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Redirect } from 'react-router-dom';
 
 import AsideMenu from '../../components/dashboard/asideMenu/AsideMenu';
 import TopMenu from '../../components/dashboard/topMenu/TopMenu';
@@ -13,8 +14,9 @@ class Dashboard extends Component {
 	}
 
     componentWillReceiveProps(nextProps) {
-		console.log(nextProps.location)
-		console.log(this.props.location)
+	}
+
+	componentWillMount() {
 	}
 
 	buildState(nextProps) {
@@ -30,7 +32,10 @@ class Dashboard extends Component {
 	}
 
     render() {
-		/** Escrever html aqui ( ... ) */
+		if(this.props.match.isExact && this.props.route.indexRoute !== undefined) {
+			return <Redirect to={this.props.route.path + this.props.route.routes[this.props.route.indexRoute].path} />
+		};
+		
 		return (
 			<div className='box-container'>
 				<TopMenu 

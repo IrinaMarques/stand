@@ -5,8 +5,9 @@ import Bundle from '../components/Bundle';
 import Router from '../router';
 
 const renderComp = (ComponentClass, props, route) => {
+
 	return (
-		<ComponentClass {...props} routes={route.routes} children={ (() => (
+		<ComponentClass {...props} route={route} children={ (() => (
 			
 			route.routes && route.routes.map((route, i) => {
 				return (

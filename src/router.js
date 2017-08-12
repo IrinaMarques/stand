@@ -1,7 +1,8 @@
 export default [
     {
-        path     : '/dashboard',
-        component: 'dashboard/Dashboard', 
+        path      : '/dashboard',
+        component : 'dashboard/Dashboard', 
+        indexRoute: 0,
         routes   : [
             {
                 path       : '/entry',
