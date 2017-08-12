@@ -36,7 +36,7 @@ class GeneralStatistics extends Component {
 					</div>
 				</div>
 
-                { this.props.children() } 
+                { this.props.children } 
 			</div>
 		);
     }

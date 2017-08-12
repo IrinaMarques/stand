@@ -1,15 +1,14 @@
 import React, {Component} from 'react';
-import { Route, Redirect } from 'react-router-dom';
+import { Route, Redirect, Switch } from 'react-router-dom';
 
 import Bundle from '../components/Bundle';
 import Router from '../router';
 
 const renderComp = (ComponentClass, props, route) => {
 	return (
-		<ComponentClass {...props} routes={route.routes} children={ () => (
+		<ComponentClass {...props} routes={route.routes} children={ (() => (
 			
 			route.routes && route.routes.map((route, i) => {
-				console.log(route)
 				return (
 					route.async || route.async === undefined ?
 						<AsyncRouteWithSubRoutes key={i} {...route} {...props}/>
@@ -17,13 +16,13 @@ const renderComp = (ComponentClass, props, route) => {
 						<SyncRouteWithSubRoutes key={i} {...route} {...props}/>
 				);
 			})
-		)}/>
+		))()}/>
 	);
 };
 
 const SyncRouteWithSubRoutes = (route) => {
 	return (
-		<Route path={ (route.match ? `${ route.match.url + route.path }` : route.path) } render={ props => (
+		<Route path={ (route.match ? `${ route.match.url + route.path }` : route.path) } { ...(route.props||{}) } render={ props => (
 				renderComp(require('./' + route.component + '.jsx').default, props, route)
 			)}
 		/>
@@ -32,8 +31,8 @@ const SyncRouteWithSubRoutes = (route) => {
 
 const AsyncRouteWithSubRoutes = (route) => {
 	return (
-		<Route path={ (route.match ? `${ route.match.url + route.path }` : route.path)} render = { props => {
-			console.log('bundle-loader?lazy!./' + route.component)
+		<Route path={ (route.match ? `${ route.match.url + route.path }` : route.path)} { ...(route.props||{}) } render={ props => {
+
 			return (
 				<Bundle load={ require('bundle-loader?lazy!./' + route.component + '.jsx') }>
 					{ ((ComponentClass) => renderComp(ComponentClass, props, route)) }
@@ -60,14 +59,14 @@ class App extends Component {
         const routes = this.state.routes;
 
 		return (
-			<div>
+			<Switch>
 				{routes.map((route, i) => (
 					route.async || route.async === undefined ?
 						<AsyncRouteWithSubRoutes key={i} {...route}/>
 					:
 						<SyncRouteWithSubRoutes key={i} {...route}/>
 				))}
-			</div>
+			</Switch>
 		);
     }
 };

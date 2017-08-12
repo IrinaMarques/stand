@@ -130,7 +130,7 @@ class UIStyleGuide extends Component {
 					</button>
 				</div>
 
-                { this.props.children() } 
+                { this.props.children } 
 			</div>
 		);
     }

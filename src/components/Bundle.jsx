@@ -34,7 +34,7 @@ class Bundle extends Component {
         props.load((mod) => {
             const es6ModFallback = (mod.default ? mod.default : mod);
             
-            console.log("%c COMPONENT LOADED ", 'background: #5d9836; color: #fff', es6ModFallback.name);
+            //console.log("%c COMPONENT LOADED ", 'background: #5d9836; color: #fff', es6ModFallback.name);
             this.updateState(es6ModFallback);
         });
         return this;

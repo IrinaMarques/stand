@@ -18,7 +18,7 @@ class ArticlesStatistics extends Component {
 			<div>
 				<h1>ArticlesStatistics!</h1>
 
-                { this.props.children() } 
+                { this.props.children } 
 			</div>
 		);
     }

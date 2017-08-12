@@ -11,7 +11,12 @@ class Dashboard extends Component {
 		this.state = this.buildState();
 		return this;
 	}
-    
+
+    componentWillReceiveProps(nextProps) {
+		console.log(nextProps.location)
+		console.log(this.props.location)
+	}
+
 	buildState(nextProps) {
 		return nextProps || {
 			asideMenuIsOpen: false
@@ -36,7 +41,7 @@ class Dashboard extends Component {
 				<div className="content-main-container">
 					<AsideMenu isOpen={ this.state.asideMenuIsOpen } />
 					<main className='main-box'>
-						{ this.props.children() } 
+						{ this.props.children } 
 					</main>
 				</div>
 			</div>
