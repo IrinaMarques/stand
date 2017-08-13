@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Redirect } from 'react-router-dom';
 
 import AsideMenu from '../../components/dashboard/asideMenu/AsideMenu';
 import TopMenu from '../../components/dashboard/topMenu/TopMenu';
@@ -11,7 +12,13 @@ class Dashboard extends Component {
 		this.state = this.buildState();
 		return this;
 	}
-    
+
+    componentWillReceiveProps(nextProps) {
+	}
+
+	componentWillMount() {
+	}
+
 	buildState(nextProps) {
 		return nextProps || {
 			asideMenuIsOpen: false
@@ -25,7 +32,10 @@ class Dashboard extends Component {
 	}
 
     render() {
-		/** Escrever html aqui ( ... ) */
+		if(this.props.match.isExact && this.props.route.indexRoute !== undefined) {
+			return <Redirect to={this.props.route.path + this.props.route.routes[this.props.route.indexRoute].path} />
+		};
+		
 		return (
 			<div className='box-container'>
 				<TopMenu 
@@ -36,7 +46,7 @@ class Dashboard extends Component {
 				<div className="content-main-container">
 					<AsideMenu isOpen={ this.state.asideMenuIsOpen } />
 					<main className='main-box'>
-						{ this.props.children() } 
+						{ this.props.children } 
 					</main>
 				</div>
 			</div>

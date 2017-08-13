@@ -1,8 +1,33 @@
 export default [
     {
-        path       : '/dashboard',
-        component  : 'dashboard/Dashboard', 
-        routes     : [
+        path      : '/dashboard',
+        component : 'dashboard/Dashboard', 
+        indexRoute: 0,
+        routes   : [
+            {
+                path       : '/entry',
+                component  : 'dashboard/landingPage/LandingPage', 
+                routes     : [
+                    {
+                        path     : '/last-messages',
+                        async    : false,
+                        component: 'dashboard/landingPage/LastMessages', 
+                        routes   : []
+                    },
+                    {
+                        path     : '/general-statistics',
+                        async    : false,
+                        component: 'dashboard/landingPage/GeneralStatistics', 
+                        routes   : []
+                    },
+                    {
+                        path     : '/articles-statistics',
+                        async    : false,
+                        component: 'dashboard/landingPage/ArticlesStatistics', 
+                        routes   : []
+                    }
+                ]
+            },
             {
                 path     : '/new-article',
                 component: 'dashboard/newArticle/NewArticle', 
@@ -23,29 +48,6 @@ export default [
                         path     : '/images',
                         async    : false,
                         component: 'dashboard/newArticle/NewArticleImages', 
-                        routes   : []
-                    }
-                ]
-            }, {
-                path       : '/entry',
-                component  : 'dashboard/landingPage/LandingPage', 
-                routes     : [
-                    {
-                        path     : '/last-messages',
-                        async    : false,
-                        component: 'dashboard/landingPage/LastMessages', 
-                        routes   : []
-                    },
-                    {
-                        path     : '/general-statistics',
-                        async    : false,
-                        component: 'dashboard/landingPage/GeneralStatistics', 
-                        routes   : []
-                    },
-                    {
-                        path     : '/articles-statistics',
-                        async    : false,
-                        component: 'dashboard/landingPage/ArticlesStatistics', 
                         routes   : []
                     }
                 ]

@@ -21,7 +21,7 @@ class Landingpage extends Component {
 					<p className='s-font'>Resumo de todas as actividades no website</p>
 				</div>
 				<Tabs>
-					{ this.props.children() } 
+					{ this.props.children } 
 				</Tabs>
 			</div>
 		);

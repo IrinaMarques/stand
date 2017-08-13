@@ -372,7 +372,7 @@ class LastMessages extends Component {
 
 				</ul>
 
-                { this.props.children() } 
+                { this.props.children } 
 			</div>
 		);
     }

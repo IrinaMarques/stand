@@ -18,7 +18,7 @@ class Stand extends Component {
 			<div>
 				<h1>Stand!</h1>
 
-                { this.props.children() } 
+                { this.props.children } 
 			</div>
 		);
     }
