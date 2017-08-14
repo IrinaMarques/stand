@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { RedirectToIndexRoute } from '../../../helpers/UrlUtils';
 import Tabs from '../../../components/dashboard/tabs/Tabs'
 
 class Landingpage extends Component {
@@ -14,6 +15,9 @@ class Landingpage extends Component {
 	}
 
     render() {
+		const redirect = RedirectToIndexRoute(this.props);
+		if(redirect) return redirect;
+
 		return (
 			<div>
 				<div className='main-header'>

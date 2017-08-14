@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Route, Redirect, Switch } from 'react-router-dom';
+import { Route, Redirect, Switch, Link } from 'react-router-dom';
 
 import Bundle from '../components/Bundle';
 import Router from '../router';
@@ -58,16 +58,22 @@ class App extends Component {
 
     render() {
         const routes = this.state.routes;
-
+		const mainMenu = window.location.pathname === '/' && routes.map((route, i) => <Link key={i} to={route.path}> {route.path} </Link>);
+		
 		return (
-			<Switch>
-				{routes.map((route, i) => (
-					route.async || route.async === undefined ?
-						<AsyncRouteWithSubRoutes key={i} {...route}/>
-					:
-						<SyncRouteWithSubRoutes key={i} {...route}/>
-				))}
-			</Switch>
+			<div>
+
+				{ mainMenu }
+				
+				<Switch>
+					{routes.map((route, i) => (
+						route.async || route.async === undefined ?
+							<AsyncRouteWithSubRoutes key={i} {...route}/>
+						:
+							<SyncRouteWithSubRoutes key={i} {...route}/>
+					))}
+				</Switch>
+			</div>
 		);
     }
 };

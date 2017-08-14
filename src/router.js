@@ -3,11 +3,12 @@ export default [
         path      : '/dashboard',
         component : 'dashboard/Dashboard', 
         indexRoute: 0,
-        routes   : [
+        routes    : [
             {
-                path       : '/entry',
-                component  : 'dashboard/landingPage/LandingPage', 
-                routes     : [
+                path      : '/entry',
+                component : 'dashboard/landingPage/LandingPage', 
+                indexRoute: 0,
+                routes    : [
                     {
                         path     : '/last-messages',
                         async    : false,
@@ -29,9 +30,10 @@ export default [
                 ]
             },
             {
-                path     : '/new-article',
-                component: 'dashboard/newArticle/NewArticle', 
-                routes     : [
+                path      : '/new-article',
+                component : 'dashboard/newArticle/NewArticle',
+                indexRoute: 0,
+                routes    : [
                     {
                         path     : '/basic-information',
                         async    : false,

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import { Redirect } from 'react-router-dom';
+
+import { RedirectToIndexRoute } from '../../helpers/UrlUtils';
 
 import AsideMenu from '../../components/dashboard/asideMenu/AsideMenu';
 import TopMenu from '../../components/dashboard/topMenu/TopMenu';
@@ -32,9 +33,8 @@ class Dashboard extends Component {
 	}
 
     render() {
-		if(this.props.match.isExact && this.props.route.indexRoute !== undefined) {
-			return <Redirect to={this.props.route.path + this.props.route.routes[this.props.route.indexRoute].path} />
-		};
+		const redirect = RedirectToIndexRoute(this.props);
+		if(redirect) return redirect;
 		
 		return (
 			<div className='box-container'>
