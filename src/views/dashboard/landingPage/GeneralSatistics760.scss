@@ -1,0 +1,15 @@
+.row-visitas {
+
+	.visitas {
+		margin: 45px 0;
+		padding: 0;
+
+		&:nth-child(even) {
+			border-right: none;
+		}
+
+		p {
+			font-size: 40px;
+		}
+	}
+}

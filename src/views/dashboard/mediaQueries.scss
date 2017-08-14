@@ -14,6 +14,10 @@
 	@import '../../components/dashboard/tabs/Tabs800';
 }
 
+@media (max-width: 760px) {
+	@import 'landingPage/GeneralSatistics760';
+}
+
 @media (max-width: 680px) {
 	@import '../../components/dashboard/topMenu/TopMenu680';
 	@import '../../components/dashboard/asideMenu/AsideMenu680';
