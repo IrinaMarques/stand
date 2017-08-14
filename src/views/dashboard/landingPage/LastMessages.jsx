@@ -7,22 +7,22 @@ const buildListItems = (coll) => {
 		const unreadState = (item.state === 'UNREAD');
 		
 		const label = unreadState && [{
-			mainClassName : 'col-md-1 msg-novo', 
+			mainClassName : 'col-xs-1 msg-novo', 
 			innerClassName: 'bg-red',
 			iconClassName : 'fa fa-exclamation',
 			label         : unreadState && 'Novo' || ''
 		}] || [];
 
 		const cols = [{
-			mainClassName : unreadState && 'col-md-2 msg-nome' || 'col-md-3 msg-nome',
+			mainClassName : unreadState && 'col-xs-2 msg-nome' || 'col-xs-3 msg-nome',
 			innerClassName: 'p-md',
 			text          : item.name
 		}].concat(label, [{
-			mainClassName : unreadState && 'col-md-5 msg-assunto' || 'col-md-5 msg-assunto', 
+			mainClassName : unreadState && 'col-xs-5 msg-assunto' || 'col-xs-5 msg-assunto', 
 			innerClassName: 's-font p-sm',
 			text          : item.message
 		}, {
-			mainClassName : unreadState && 'col-md-2 msg-data' || 'col-md-2 msg-data', 
+			mainClassName : unreadState && 'col-xs-2 msg-data' || 'col-xs-2 msg-data', 
 			innerClassName: 's-font p-sm',
 			text          : item.date
 		}]);
@@ -136,9 +136,7 @@ class LastMessages extends Component {
 		return (
 			<div className='msg-box'>
 				<ul className='rm-space'>
-					
 					{ buildListItems(this.state.collection) }
-				
 				</ul>
 			</div>
 		);

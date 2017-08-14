@@ -21,7 +21,7 @@ const buildCols = (coll) => {
                 </div>
             );
         }
-        
+
         return null;
     });
 };
@@ -58,7 +58,7 @@ class LastMessagesListItem extends Component {
 
                 { buildCols(this.state.cols) }
 
-                <div className='col-md-2 msg-buttons'>
+                <div className='col-xs-2 msg-buttons'>
                    
                     { buildBtns(this.state.btns) }
                 </div>
