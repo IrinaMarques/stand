@@ -1,5 +1,50 @@
 import React, {Component} from 'react';
 
+import LastMessagesListItem from './LastMessagesListItem';
+
+const buildListItems = (coll) => {
+	return coll.map((item, index) => {
+		const unreadState = (item.state === 'UNREAD');
+		
+		const label = unreadState && [{
+			mainClassName : 'col-md-1 msg-novo', 
+			innerClassName: 'bg-red',
+			iconClassName : 'fa fa-exclamation',
+			label         : unreadState && 'Novo' || ''
+		}] || [];
+
+		const cols = [{
+			mainClassName : unreadState && 'col-md-2 msg-nome' || 'col-md-3 msg-nome',
+			innerClassName: 'p-md',
+			text          : item.name
+		}].concat(label, [{
+			mainClassName : unreadState && 'col-md-5 msg-assunto' || 'col-md-5 msg-assunto', 
+			innerClassName: 's-font p-sm',
+			text          : item.message
+		}, {
+			mainClassName : unreadState && 'col-md-2 msg-data' || 'col-md-2 msg-data', 
+			innerClassName: 's-font p-sm',
+			text          : item.date
+		}]);
+		
+		return (
+			<LastMessagesListItem 
+				key = { index }
+				cols = {cols}
+				btns = {[
+					{
+						mainClassName: 'col-xs-6',
+						iconClassName: 'fa fa-trash-o'
+					},
+					{
+						mainClassName: 'col-xs-6',
+						iconClassName: 'fa fa-reply'
+					}
+				]}
+			/>
+		);
+	})
+};
 
 class LastMessages extends Component {
 	constructor(props) {
@@ -10,6 +55,80 @@ class LastMessages extends Component {
     
 	buildState(nextProps) {
 		return nextProps || {
+			collection: [
+				{
+					name   : 'Barry Allan',
+					state  : 'UNREAD',
+					message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada finibus magna, ut accumsan est. Suspendisse potenti.',
+					date   : '05 May, 2017'
+				},
+				{
+					name   : 'Green Arrow',
+					state  : 'UNREAD',
+					message: 'Vivamus id eros vel justo pharetra tempor at a odio. Aliquam id cursus enim. Morbi lacinia nec neque hendrerit pharetra.',
+					date   : '20 Apr, 2017'
+				},
+				{
+					name   : 'Wolverine',
+					state  : 'UNREAD',
+					message: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
+					date   : '01 Apr, 2017'
+				},
+				{
+					name   : 'Spider Man',
+					state  : 'UNREAD',
+					message: 'Aenean nec nunc mi. Pellentesque interdum, lorem in fermentum posuere, arcu leo luctus tortor, a dignissim ligula elit vitae lacus.',
+					date   : '15 Feb, 2017'
+				},
+				{
+					name   : 'Barry Allan',
+					state  : 'READED',
+					message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada finibus magna, ut accumsan est. Suspendisse potenti.',
+					date   : '05 May, 2017'
+				},
+				{
+					name   : 'Green Arrow',
+					state  : 'READED',
+					message: 'Vivamus id eros vel justo pharetra tempor at a odio. Aliquam id cursus enim. Morbi lacinia nec neque hendrerit pharetra.',
+					date   : '20 Apr, 2017'
+				},
+				{
+					name   : 'Wolverine',
+					state  : 'READED',
+					message: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
+					date   : '01 Apr, 2017'
+				},	
+				{
+					name   : 'Spider Man',
+					state  : 'READED',
+					message: 'Aenean nec nunc mi. Pellentesque interdum, lorem in fermentum posuere, arcu leo luctus tortor, a dignissim ligula elit vitae lacus.',
+					date   : '15 Feb, 2017'
+				},		
+				{
+					name   : 'Barry Allan',
+					state  : 'READED',
+					message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada finibus magna, ut accumsan est. Suspendisse potenti.',
+					date   : '05 May'
+				},
+				{
+					name   : 'Green Arrow',
+					state  : 'READED',
+					message: 'Vivamus id eros vel justo pharetra tempor at a odio. Aliquam id cursus enim. Morbi lacinia nec neque hendrerit pharetra.',
+					date   : '20 Apr, 2017'
+				},	
+				{
+					name   : 'Wolverine',
+					state  : 'READED',
+					message: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
+					date   : '01 Apr, 2017'
+				},
+				{
+					name   : 'Spider Man',
+					state  : 'READED',
+					message: 'Aenean nec nunc mi. Pellentesque interdum, lorem in fermentum posuere, arcu leo luctus tortor, a dignissim ligula elit vitae lacus.',
+					date   : '15 Feb, 2017'
+				}
+			]
 		}
 	}
 
@@ -17,362 +136,10 @@ class LastMessages extends Component {
 		return (
 			<div className='msg-box'>
 				<ul className='rm-space'>
-					<li className='row msg-list'>
-
-						<div className='col-md-2 msg-nome'>
-							<p className='p-md'>Barry Allan</p>
-						</div>
-
-						<div className='col-md-1 msg-novo'>
-							<div className='bg-red'>
-								<h6>Novo</h6>
-								<i className="fa fa-exclamation" aria-hidden="true"></i>
-							</div>
-						</div>
-
-						<div className='col-md-5 msg-assunto'>
-							<p className='s-font p-md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada finibus magna, ut accumsan est. Suspendisse potenti.</p>
-						</div>
-
-						<div className='col-md-2 msg-data'>
-							<p className='s-font p-sm'>05 May<span>, 2017</span></p>
-						</div>
-
-						<div className='col-md-2 msg-buttons'>
-							<div className='col-xs-6'>
-								<a href='#'>
-									<i className="fa fa-trash-o" aria-hidden="true"></i>
-								</a>
-							</div>
-							<div className='col-xs-6'>
-								<a href='#'>
-									<i className="fa fa-reply" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-					</li>
-
-					<li className='row msg-list'>
-						<div className='col-md-2 msg-nome'>
-							<p className='p-md'>Green Arrow</p>
-						</div>
-
-						<div className='col-md-1 msg-novo'>
-							<div className='bg-red'>
-								<h6>Novo</h6>
-								<i className="fa fa-exclamation" aria-hidden="true"></i>
-							</div>
-						</div>
-
-						<div className='col-md-5 msg-assunto'>
-							<p className='s-font p-md'>Vivamus id eros vel justo pharetra tempor at a odio. Aliquam id cursus enim. Morbi lacinia nec neque hendrerit pharetra. </p>
-						</div>
-
-						<div className='col-md-2 msg-data'>
-							<p className='s-font p-sm'>20 Apr<span>, 2017</span></p>
-						</div>
-
-						<div className='col-md-2 msg-buttons'>
-							<div className='col-xs-6'>
-								<a href='#'>
-									<i className="fa fa-trash-o" aria-hidden="true"></i>
-								</a>
-							</div>
-							<div className='col-xs-6'>
-								<a href='#'>
-									<i className="fa fa-reply" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-					</li>
-
-					<li className='row msg-list'>
-						<div className='col-md-2 msg-nome'>
-							<p className='p-md'>Wolverine</p>
-						</div>
-
-						<div className='col-md-1 msg-novo'>
-							<div className='bg-red'>
-								<h6>Novo</h6>
-								<i className="fa fa-exclamation" aria-hidden="true"></i>
-							</div>
-						</div>
-
-						<div className='col-md-5 msg-assunto'>
-							<p className='s-font p-md'>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-						</div>
-
-						<div className='col-md-2 msg-data'>
-							<p className='s-font p-sm'>01 Apr<span>, 2017</span></p>
-						</div>
-
-						<div className='col-md-2 msg-buttons'>
-							<div className='col-xs-6'>
-								<a href='#'>
-									<i className="fa fa-trash-o" aria-hidden="true"></i>
-								</a>
-							</div>
-							<div className='col-xs-6'>
-								<a href='#'>
-									<i className="fa fa-reply" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-					</li>
-
-					<li className='row msg-list'>
-						<div className='col-md-2 msg-nome'>
-							<p className='p-md'>Spider Man</p>
-						</div>
-
-						<div className='col-md-1 msg-novo'>
-							<div className='bg-red'>
-								<h6>Novo</h6>
-								<i className="fa fa-exclamation" aria-hidden="true"></i>
-							</div>
-						</div>
-
-						<div className='col-md-5 msg-assunto'>
-							<p className='s-font p-md'>Aenean nec nunc mi. Pellentesque interdum, lorem in fermentum posuere, arcu leo luctus tortor, a dignissim ligula elit vitae lacus.</p>
-						</div>
-
-						<div className='col-md-2 msg-data'>
-							<p className='s-font p-sm'>15 Feb<span>, 2017</span></p>
-						</div>
-
-						<div className='col-md-2 msg-buttons'>
-							<div className='col-xs-6'>
-								<a href='#'>
-									<i className="fa fa-trash-o" aria-hidden="true"></i>
-								</a>
-							</div>
-							<div className='col-xs-6'>
-								<a href='#'>
-									<i className="fa fa-reply" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-					</li>
-
-					<li className='row msg-list s-grey'>
-						<div className='col-md-3 msg-nome'>
-							<p className='p-md'>Barry Allan</p>
-						</div>
-
-						<div className='col-md-5 msg-assunto'>
-							<p className='p-md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada finibus magna, ut accumsan est. Suspendisse potenti.</p>
-						</div>
-
-						<div className='col-md-2 msg-data'>
-							<p className='p-sm'>05 May<span>, 2017</span></p>
-						</div>
-
-						<div className='col-md-2 msg-buttons buttons-visto'>
-							<div className='col-xs-6'>
-								<a href='#'>
-									<i className="fa fa-trash-o" aria-hidden="true"></i>
-								</a>
-							</div>
-							<div className='col-xs-6'>
-								<a href='#'>
-									<i className="fa fa-reply" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-					</li>
-
-					<li className='row msg-list s-grey'>
-						<div className='col-md-3 msg-nome'>
-							<p className='p-md'>Green Arrow</p>
-						</div>
-
-						<div className='col-md-5 msg-assunto'>
-							<p className='s-grey p-md'>Vivamus id eros vel justo pharetra tempor at a odio. Aliquam id cursus enim. Morbi lacinia nec neque hendrerit pharetra. </p>
-						</div>
-
-						<div className='col-md-2 msg-data'>
-							<p className='p-sm'>20 Apr<span>, 2017</span></p>
-						</div>
-
-						<div className='col-md-2 msg-buttons buttons-visto'>
-							<div className='col-xs-6'>
-								<a href='#'>
-									<i className="fa fa-trash-o" aria-hidden="true"></i>
-								</a>
-							</div>
-							<div className='col-xs-6'>
-								<a href='#'>
-									<i className="fa fa-reply" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-					</li>
-
-					<li className='row msg-list s-grey'>
-						<div className='col-md-3 msg-nome'>
-							<p className='p-md'>Wolverine</p>
-						</div>
-
-						<div className='col-md-5 msg-assunto'>
-							<p className='s-grey p-md'>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-						</div>
-
-						<div className='col-md-2 msg-data'>
-							<p className='p-sm'>01 Apr<span>, 2017</span></p>
-						</div>
-
-						<div className='col-md-2 msg-buttons buttons-visto'>
-							<div className='col-xs-6'>
-								<a href='#'>
-									<i className="fa fa-trash-o" aria-hidden="true"></i>
-								</a>
-							</div>
-							<div className='col-xs-6'>
-								<a href='#'>
-									<i className="fa fa-reply" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-					</li>
-
-					<li className='row msg-list s-grey'>
-						<div className='col-md-3 msg-nome'>
-							<p className='p-md'>Spider Man</p>
-						</div>
-
-						<div className='col-md-5 msg-assunto'>
-							<p className='s-grey p-md'>Aenean nec nunc mi. Pellentesque interdum, lorem in fermentum posuere, arcu leo luctus tortor, a dignissim ligula elit vitae lacus.</p>
-						</div>
-
-						<div className='col-md-2 msg-data'>
-							<p className='p-sm'>15 Feb<span>, 2017</span></p>
-						</div>
-
-						<div className='col-md-2 msg-buttons buttons-visto'>
-							<div className='col-xs-6'>
-								<a href='#'>
-									<i className="fa fa-trash-o" aria-hidden="true"></i>
-								</a>
-							</div>
-							<div className='col-xs-6'>
-								<a href='#'>
-									<i className="fa fa-reply" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-					</li>
-
-					<li className='row msg-list s-grey'>
-						<div className='col-md-3 msg-nome'>
-							<p className='p-md'>Barry Allan</p>
-						</div>
-
-						<div className='col-md-5 msg-assunto'>
-							<p className='p-md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada finibus magna, ut accumsan est. Suspendisse potenti.</p>
-						</div>
-
-						<div className='col-md-2 msg-data'>
-							<p className='p-sm'>05 May<span>, 2017</span></p>
-						</div>
-
-						<div className='col-md-2 msg-buttons buttons-visto'>
-							<div className='col-xs-6'>
-								<a href='#'>
-									<i className="fa fa-trash-o" aria-hidden="true"></i>
-								</a>
-							</div>
-							<div className='col-xs-6'>
-								<a href='#'>
-									<i className="fa fa-reply" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-					</li>
-
-					<li className='row msg-list s-grey'>
-						<div className='col-md-3 msg-nome'>
-							<p className='p-md'>Green Arrow</p>
-						</div>
-
-						<div className='col-md-5 msg-assunto'>
-							<p className='s-grey p-md'>Vivamus id eros vel justo pharetra tempor at a odio. Aliquam id cursus enim. Morbi lacinia nec neque hendrerit pharetra. </p>
-						</div>
-
-						<div className='col-md-2 msg-data'>
-							<p className='p-sm'>20 Apr<span>, 2017</span></p>
-						</div>
-
-						<div className='col-md-2 msg-buttons buttons-visto'>
-							<div className='col-xs-6'>
-								<a href='#'>
-									<i className="fa fa-trash-o" aria-hidden="true"></i>
-								</a>
-							</div>
-							<div className='col-xs-6'>
-								<a href='#'>
-									<i className="fa fa-reply" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-					</li>
-
-					<li className='row msg-list s-grey'>
-						<div className='col-md-3 msg-nome'>
-							<p className='p-md'>Wolverine</p>
-						</div>
-
-						<div className='col-md-5 msg-assunto'>
-							<p className='s-grey p-md'>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-						</div>
-
-						<div className='col-md-2 msg-data'>
-							<p className='p-sm'>01 Apr<span>, 2017</span></p>
-						</div>
-
-						<div className='col-md-2 msg-buttons buttons-visto'>
-							<div className='col-xs-6'>
-								<a href='#'>
-									<i className="fa fa-trash-o" aria-hidden="true"></i>
-								</a>
-							</div>
-							<div className='col-xs-6'>
-								<a href='#'>
-									<i className="fa fa-reply" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-					</li>
-
-					<li className='row msg-list s-grey'>
-						<div className='col-md-3 msg-nome'>
-							<p className='p-md'>Spider Man</p>
-						</div>
-
-						<div className='col-md-5 msg-assunto'>
-							<p className='p-md'>Aenean nec nunc mi. Pellentesque interdum, lorem in fermentum posuere, arcu leo luctus tortor, a dignissim ligula elit vitae lacus.</p>
-						</div>
-
-						<div className='col-md-2 msg-data'>
-							<p className='p-sm'>15 Feb<span>, 2017</span></p>
-						</div>
-
-						<div className='col-md-2 msg-buttons buttons-visto'>
-							<div className='col-xs-6'>
-								<a href='#'>
-									<i className="fa fa-trash-o" aria-hidden="true"></i>
-								</a>
-							</div>
-							<div className='col-xs-6'>
-								<a href='#'>
-									<i className="fa fa-reply" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-					</li>
-
+					
+					{ buildListItems(this.state.collection) }
+				
 				</ul>
-
-                { this.props.children } 
 			</div>
 		);
     }
