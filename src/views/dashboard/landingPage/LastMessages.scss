@@ -72,14 +72,15 @@
 						overflow: hidden;
 						text-overflow: ellipsis;
 						font-size: 16px;
+						margin: 19px 0;
 					}
 				}
 
 				&.msg-data {
-					margin: 7px 0;
 					text-align: center;
 
 					p {
+						margin: 20px 0;
 						font-size: 14px;
 					}
 				}

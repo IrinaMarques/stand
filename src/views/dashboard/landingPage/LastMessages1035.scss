@@ -7,12 +7,15 @@
 				&.msg-novo {
 
 					.bg-red {
+						width: 28px;
 
 						h6 {
 							display: none;
 						}
 
 						.fa {
+							padding: 5px;
+							font-size: 18px;
 							color: white;
 							display: block;
 						}
