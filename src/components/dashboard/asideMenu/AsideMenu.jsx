@@ -37,7 +37,6 @@ class AsideMenu extends Component {
 					<li>
 						<NavLink 
 							to="/dashboard/new-article"
-							className='disabled'
 							activeClassName="selected"
 						>
 							<i className="fa fa-pencil-square-o" aria-hidden="true"></i>
