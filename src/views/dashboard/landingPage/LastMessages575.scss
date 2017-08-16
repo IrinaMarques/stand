@@ -1,0 +1,25 @@
+.msg-box {
+
+	.msg-list {
+
+		div {
+
+			&.msg-nome {
+			
+			}
+/*
+			&.msg-novo {
+				padding: 16px 0;
+			}*/
+
+			&.msg-assunto {
+
+				p {
+					display: none;
+					visibility: hidden;
+				}
+			}
+			
+		}
+	}
+}

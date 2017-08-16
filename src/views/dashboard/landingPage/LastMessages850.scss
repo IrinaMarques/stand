@@ -1,0 +1,27 @@
+.msg-box {
+
+	.msg-list {
+
+		div {
+
+			&.msg-novo {
+
+				.bg-red {
+					width: 28px;
+					height: 28px;
+
+					h6 {
+						display: none; 
+					}
+
+					.fa {
+						display: block;
+						font-size: 22px;
+						padding: 3px;
+
+					}
+				}
+			}
+		}
+	}
+}
