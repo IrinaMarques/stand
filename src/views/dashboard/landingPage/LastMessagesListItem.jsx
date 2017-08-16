@@ -1,42 +1,7 @@
 import React, {Component} from 'react';
 import { NavLink } from 'react-router-dom';
 
-const buildCols = (coll) => {
-    return coll.map((item, index) => {
-        if(item.label) {
-            return (
-                <div key={ index } className={ item.mainClassName }>
-                    <div className={ item.innerClassName }>
-                        <h6>{ item.label }</h6>
-                        <i className={ item.iconClassName } aria-hidden="true"></i>
-                    </div>
-                </div>
-            );
-        };
 
-        if(item.text) {
-            return (
-                <div key={ index } className={ item.mainClassName }> 
-                    <p className={ item.innerClassName }>{ item.text }</p>
-                </div>
-            );
-        }
-
-        return null;
-    });
-};
-
-const buildBtns = (coll) => {
-    return coll.map((item, index) => {
-        return (
-            <div key={ index } className={ item.mainClassName }>
-                <a href='#'>
-                    <i className={ item.iconClassName } aria-hidden="true"></i>
-                </a>
-            </div>
-        );
-    });
-};
 
 class LastMessagesListItem extends Component {
 	constructor(props) {
@@ -46,21 +11,62 @@ class LastMessagesListItem extends Component {
 	}
     
 	buildState(nextProps) {
+        const props    = this.props;
+        const state    = props.state;
+        const isUnread = (state === 'UNREAD');
+
 		return {
-            cols: this.props.cols || [],
-            btns: this.props.btns || []
+            name      : props.name || '',
+            message   : props.message || '',
+            state     : state || '',
+            stateClass: isUnread ? '' : 'old',
+            stateTrans: isUnread && 'Novo' || '',
+            date      : props.date || '',
         }
 	}
 
     render() {
+        const item = this.state;
+
 		return (
             <li className='row msg-list'>
 
-                { buildCols(this.state.cols) }
+                <div className='col-sm-3 col-xs-4 msg-nome'>
+                    <p>{ item.name }</p>
+                </div>
 
-                <div className='col-xs-2 msg-buttons'>
-                   
-                    { buildBtns(this.state.btns) }
+                <div className='col-sm-5 col-xs-2'>
+                    <div className='row assunto'>
+                        <div className='col-sm-2 col-xs-12 msg-novo'>
+                            <div className='bg-red'>
+                                <h6>{ item.stateTrans }</h6>
+                                <i className="fa fa-exclamation" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                        <div className='col-sm-10 col-xs-0 msg-assunto'>
+                            <p>{ item.message }</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='col-sm-2 col-xs-3 msg-data'>
+                    <p>{ item.date }</p>
+                </div>
+
+                <div className='col-sm-2 col-xs-3'>
+                    <div className='row msg-buttons'>
+                        <div className='col-xs-6'>
+                            <a href='#'>
+                                <i className="fa fa-trash-o" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div className='col-xs-6'>
+                            <a href='#'>
+                                <i className="fa fa-reply" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </li>
 		);
