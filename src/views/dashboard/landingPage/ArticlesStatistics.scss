@@ -1,0 +1,40 @@
+.msg-box {
+	overflow-y: scroll;
+	margin: 0 auto;
+	height: 570px;
+
+	.v-list {
+		list-style-type: none;
+		background-color: #d6d6d6;
+		
+		p {
+			color: $light-blue;
+		}
+
+		&:nth-child(odd) {
+			background-color: #efefef;
+		}
+
+		&:hover {
+			color: $light-blue;
+		}	
+
+		&.v-none {
+			background-color: $white;
+		
+			h3 {
+				@extend .p-light;
+				font-size: 24px;
+			}
+
+			.fa {
+				font-size: 22px;
+				padding: 19px 0; 
+			}
+		}
+
+		&:hover {
+		border: 1px solid $light-blue;
+		}
+	}
+}

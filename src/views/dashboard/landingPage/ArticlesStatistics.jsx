@@ -16,7 +16,26 @@ class ArticlesStatistics extends Component {
     render() {
 		return (
 			<div>
-				<h1>ArticlesStatistics!</h1>
+				<ul className='container-fluid'>
+					<li className='row v-list v-none'>
+						<div className='col-xs-10 v-name'>
+							<h3>Nome</h3>
+						</div>
+						<div className='col-xs-2 v-number'>
+							<i className="fa fa-eye" aria-hidden="true"></i>
+						</div>
+					</li>
+
+					<li className='row v-list'>
+						<div className='col-xs-10 v-name'>
+							<p>Volkswagen Orange Van</p>
+						</div>
+						<div className='col-xs-2 v-number'>
+							<p>50</p>
+						</div>
+					</li>
+
+				</ul>
 
                 { this.props.children } 
 			</div>
