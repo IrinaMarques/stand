@@ -15,7 +15,7 @@ class ArticlesStatistics extends Component {
 
     render() {
 		return (
-			<div>
+			<div className='msg-box'>
 				<ul className='container-fluid'>
 					<li className='row v-list v-none'>
 						<div className='col-xs-10 v-name'>
