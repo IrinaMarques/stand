@@ -1,0 +1,28 @@
+.msg-box {
+
+	.msg-list {
+
+		div {
+
+			&.msg-nome {
+				padding-right: 5px;
+			}
+
+			.msg-novo {
+				padding: 16px 0px 17px 16px;
+			}
+
+			&.msg-data {
+				display: none;
+			}
+
+			&.float-buttons {
+				float: right;
+
+				.msg-buttons {
+					padding-right: 10px;
+				}
+			}			
+		}
+	}
+}

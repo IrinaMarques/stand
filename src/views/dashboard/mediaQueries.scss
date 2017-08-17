@@ -35,6 +35,10 @@
 	@import 'landingPage/LandingPage480';
 }
 
+@media (max-width: 420px) {
+	@import 'landingPage/LastMessages420';
+}
+
 @media (max-width: 320px) {
 	@import '../../components/dashboard/topMenu/TopMenu320';
 	@import '../../components/dashboard/asideMenu/AsideMenu320';

@@ -31,11 +31,11 @@ class LastMessagesListItem extends Component {
 		return (
             <li className='row msg-list old'>
 
-                <div className='col-sm-3 col-xs-4 msg-nome'>
+                <div className='col-sm-3 col-xs-5 msg-nome'>
                     <p>{ item.name }</p>
                 </div>
 
-                <div className='col-sm-5 col-xs-2'>
+                <div className='col-sm-5 col-xs-1'>
                     <div className='row assunto'>
                         <div className='col-sm-12 col-xs-0 msg-assunto'>
                             <p>{ item.message }</p>
@@ -47,7 +47,7 @@ class LastMessagesListItem extends Component {
                     <p>{ item.date }</p>
                 </div>
 
-                <div className='col-sm-2 col-xs-3'>
+                <div className='col-sm-2 col-xs-3 float-buttons'>
                     <div className='row msg-buttons'>
                         <div className='col-xs-6'>
                             <a href='#'>
