@@ -25,46 +25,46 @@ class NewArticleBasicData extends Component {
 									<div className='row'>
 										<div className='col-xs-12'>
 											<label for='v-nome'>Nome da Viatura</label>
-											<input type='text' name='' id='v-nome' value='v-nome' placeholder='Nome'></input>
+											<input type='text' name='' id='v-nome' value='v-nome' placeholder='Nome'/>
 										</div>
 									</div>
 									<div className='row'>
 										<div className='col-lg-6'>
 											<label for='v-preço'>Preço</label>
-											<input type='number' name='' id='v-preço' value='v-preço' placeholder='00,00'></input>
+											<input type='number' name='' id='v-preço' value='v-preço' placeholder='00,00'/>
 										</div>
 										<div className='col-lg-6'>
 											<label for='v-kms'>Kms</label>
-											<input type='number' name='' id='v-kms' value='v-kms' placeholder='0'></input>
+											<input type='number' name='' id='v-kms' value='v-kms' placeholder='0'/>
 										</div>
 									</div>
 									<div className='row'>	
 										<div className='col-lg-6'>
 											<label for='v-potencia'>Potência</label>
-											<input type='number' name='' id='v-potencia' value='v-potencia' placeholder='0'></input>
+											<input type='number' name='' id='v-potencia' value='v-potencia' placeholder='0'/>
 										</div>
 										<div className='col-lg-6'>
 											<label for='v-cilindrada'>Cilindrada</label>
-											<input type='number' name='' id='v-cilindrada' value='v-cilindrada' placeholder='0'></input>
+											<input type='number' name='' id='v-cilindrada' value='v-cilindrada' placeholder='0'/>
 										</div>
 									</div>
 									<div className='row'>
 										<div className='col-lg-6'>
 											<label for='v-datav'>Data do veiculo</label>
-											<input type='date' name='' id='datav' value='datav' placeholder='DD/MM/AA'></input>
+											<input type='date' name='' id='datav' value='datav' placeholder='DD/MM/AA'/>
 										</div>
 										<div className='col-lg-6'>
 											<label for='v-datav'>Entrada em Stand</label>
-											<input type='date' name='' id='datav' value='datav' placeholder='DD/MM/AA'></input>
+											<input type='date' name='' id='datav' value='datav' placeholder='DD/MM/AA'/>
 										</div>
 									</div>
 								</div>
 
-								<div className='col-md-6 basic-right'>
+								<div className='col-md-7 basic-right'>
 									<div className='row'>
 										<div className='col-lg-4'>
 											<label for='v-categoria'>Categoria</label>
-											<input type='text' name='' id='v-categoria' value='v-categoria' placeholder='Selecione'></input>
+											<input type='text' name='' id='v-categoria' value='v-categoria' placeholder='Selecione'/>
 											<select>
 												<option>Ligeiro</option>
 												<option>Pesado</option>
@@ -73,7 +73,7 @@ class NewArticleBasicData extends Component {
 										</div>
 										<div className='col-lg-4'>
 											<label for='v-sub'>Sub-catgoria</label>
-											<input type='text' name='' id='v-sub' value='v-sub' placeholder='Selecione'></input>
+											<input type='text' name='' id='v-sub' value='v-sub' placeholder='Selecione'/>
 											<select>
 												<option>Passageiros</option>
 												<option>Mercadorias</option>
@@ -84,7 +84,7 @@ class NewArticleBasicData extends Component {
 										</div>	
 										<div className='col-lg-4'>
 											<label for='v-estado'>Estado</label>
-											<input type='text' name='' id='v-estado' value='v-estado' placeholder='Selecione'></input>
+											<input type='text' name='' id='v-estado' value='v-estado' placeholder='Selecione'/>
 											<select>
 												<option>Novo</option>
 												<option>Como Novo</option>
@@ -98,7 +98,7 @@ class NewArticleBasicData extends Component {
 									<div className='row'>	
 										<div className='col-lg-4'>
 											<label for='v-combustivel'>Combustível</label>
-											<input type='text' name='' id='v-combustivel' value='v-combustivel' placeholder='Selecione'></input>
+											<input type='text' name='' id='v-combustivel' value='v-combustivel' placeholder='Selecione'/>
 											<select>
 												<option>Gasolina</option>
 												<option>Gasóleo</option>
@@ -107,7 +107,7 @@ class NewArticleBasicData extends Component {
 										</div>
 										<div className='col-lg-4'>
 											<label for='v-caixa'>Caixa</label>
-											<input type='text' name='' id='v-caixa' value='v-caixa' placeholder='Selecione'></input>
+											<input type='text' name='' id='v-caixa' value='v-caixa' placeholder='Selecione'/>
 											<select>
 												<option>Manual</option>
 												<option>Manual 5 velocidades</option>
@@ -117,7 +117,7 @@ class NewArticleBasicData extends Component {
 										</div>
 										<div className='col-lg-4'>
 											<label for='v-portas'>Portas</label>
-											<input type='text' name='' id='v-portas' value='v-portas' placeholder='Selecione'></input>
+											<input type='text' name='' id='v-portas' value='v-portas' placeholder='Selecione'/>
 											<select>
 												<option>5 portas</option>
 												<option>3 portas</option>
@@ -128,15 +128,15 @@ class NewArticleBasicData extends Component {
 									<div className='row'>
 										<div className='col-lg-4'>
 											<label for='v-marca'>Marca</label>
-											<input type='text' name='' id='v-marca' value='v-marca'></input>
+											<input type='text' name='' id='v-marca' value='v-marca'/>
 										</div>
 										<div className='col-lg-4'>
 											<label for='v-cor'>Cor</label>
-											<input type='text' name='' id='v-cor' value='v-cor'></input>
+											<input type='text' name='' id='v-cor' value='v-cor'/>
 										</div>	
 										<div className='col-lg-4'>
 											<label for='v-lugares'>Lugares</label>
-											<input type='text' name='' id='v-lugares' value='v-lugares'></input>
+											<input type='text' name='' id='v-lugares' value='v-lugares'/>
 										</div>
 									</div>
 								</div>
