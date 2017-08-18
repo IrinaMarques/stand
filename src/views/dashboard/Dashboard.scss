@@ -28,6 +28,9 @@ $fa-font-path: "~font-awesome-sass/assets/fonts/font-awesome/";
 @import './landingPage/ArticlesStatistics';
 
 
+@import './newArticle/NewArticle';
+@import './newArticle/NewArticleBasicData';
+
 @import './mediaQueries';
 
 body{

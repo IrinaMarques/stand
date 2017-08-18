@@ -16,7 +16,8 @@ class NewArticleBasicData extends Component {
     render() {
 		return (
 			<div>
-				<h1>NewArticleBasicData!</h1>
+				<div className='msg-box'>
+				</div>
 			</div>
 		);
     }

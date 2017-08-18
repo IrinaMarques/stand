@@ -16,7 +16,10 @@ class NewArticle extends Component {
     render() {
 		return (
 			<div>
-				<h1>NewArticle!</h1>
+				<div className='main-header'>
+					<h1 className='p-font'>Criar Anúncio</h1>
+					<p className='s-font'>Campos de preenchimento obrigatório.</p>
+				</div>
 
                 { this.props.children } 
 			</div>

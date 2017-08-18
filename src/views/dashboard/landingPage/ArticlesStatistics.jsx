@@ -98,6 +98,14 @@ class ArticlesStatistics extends Component {
 							<p>1</p>
 						</div>
 					</dd>
+					<dd className='row v-list'>
+						<div className='col-xs-10 v-name'>
+							<p>Volkswagen</p>
+						</div>
+						<div className='col-xs-2 v-number'>
+							<p>0</p>
+						</div>
+					</dd>
 
 				</dl>
 
