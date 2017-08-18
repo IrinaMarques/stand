@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { RedirectToIndexRoute } from '../../../helpers/UrlUtils';
-import Tabs from '../../../components/dashboard/tabs/Tabs'
+import TabsWithHeader from '../../../components/dashboard/tabs/TabsWithHeader'
 
 class Landingpage extends Component {
 	constructor(props) {
@@ -10,7 +10,24 @@ class Landingpage extends Component {
 	}
     
 	buildState(nextProps) {
-		return nextProps || {
+		return {
+			tabs: [
+				{
+					name: 'Mensagens',
+					path: '/dashboard/entry/last-messages',
+					iconClassName: 'fa fa-envelope-open-o'
+				},
+				{
+					name: 'Visitas',
+					path: '/dashboard/entry/general-statistics',
+					iconClassName: 'fa fa-pie-chart'
+				},
+				{
+					name: 'Visualizações',
+					path: '/dashboard/entry/articles-statistics',
+					iconClassName: 'fa fa-eye'
+				}
+			]
 		}
 	}
 
@@ -19,15 +36,13 @@ class Landingpage extends Component {
 		if(redirect) return redirect;
 
 		return (
-			<div>
-				<div className='main-header'>
-					<h1 className='p-font'>Dashboard</h1>
-					<p className='s-font'>Resumo de todas as actividades no website</p>
-				</div>
-				<Tabs>
-					{ this.props.children } 
-				</Tabs>
-			</div>
+			<TabsWithHeader 
+				tabs        = { this.state.tabs }
+				title       = 'Dashboard'
+				description = 'Resumo de todas as actividades no website'
+			>
+				{ this.props.children } 
+			</TabsWithHeader>
 		);
     }
 };
