@@ -112,7 +112,7 @@ class NewArticleMoreDetails extends Component {
 							<div className='col-lg-3 col-lg-offset-6'>
 								<button>
 									<p>Proximo</p>
-									<i className="fa fa-caret-square-o-left" aria-hidden="true"></i>
+									<i className="fa fa-caret-square-o-right" aria-hidden="true"></i>
 								</button>
 							</div>
 						</div>
