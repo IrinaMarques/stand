@@ -13,30 +13,30 @@ class NewArticle extends Component {
 		return {
 			tabs: [
 				{
-					name: 'Criar Aritigo',
+					name: 'Dados Básicos',
 					path: '/dashboard/new-article/basic-information',
 					iconClassName: 'fa fa-envelope-open-o',
 					header: {
-						title: 'xxx1',
-						description: 'yyy1'
+						title: 'Criar Anúncio',
+						description: 'Campos de preenchimento obrigatório.'
 					}
 				},
 				{
-					name: 'Mais...',
+					name: 'Observações e Extras',
 					path: '/dashboard/new-article/more-details',
 					iconClassName: 'fa fa-pie-chart',
 					header: {
-						title: 'xxx2',
-						description: 'yyy2'
+						title: 'Criar Anúncio',
+						description: 'Informação relevante sobre o produto.'
 					}
 				},
 				{
-					name: 'Fotos',
+					name: 'Imagens',
 					path: '/dashboard/new-article/images',
 					iconClassName: 'fa fa-eye',
 					header: {
-						title: 'xxx3',
-						description: 'yyy3'
+						title: 'Criar Anúncio',
+						description: 'Uma imagem obrigatória, restantes opcionais.'
 					}
 				}
 			]
