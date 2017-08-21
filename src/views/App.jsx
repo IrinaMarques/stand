@@ -61,7 +61,7 @@ class App extends Component {
 		const mainMenu = window.location.pathname === '/' && routes.map((route, i) => <Link key={i} to={route.path}> {route.path} </Link>);
 		
 		return (
-			<div>
+			<div className='main-container'>
 
 				{ mainMenu }
 				

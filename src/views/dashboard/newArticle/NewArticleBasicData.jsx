@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import Dropdown from '../../../components/dashboard/dropdown/Dropdown'
 
 class NewArticleBasicData extends Component {
 	constructor(props) {
@@ -70,15 +70,14 @@ class NewArticleBasicData extends Component {
 												<p>Categoria</p>
 											</label>
 											<div className='col-drop'>
-												<input type='text' name='' id='v-categoria' placeholder='Selecione'/>
-												<div className='drop'>
-													<select>
-														<option></option>
-														<option>Ligeiro</option>
-														<option>Pesado</option>
-														<option>Motoc&iacute;clo</option>
-													</select>
-												</div>
+												<Dropdown
+													options = {[
+														{value: 'Ligeiro'},
+														{value: 'Pesado'},
+														{value: 'Motoc&iacute;clo'}
+													]}
+													placeholder='Selecione'
+												/>
 											</div>	
 										</div>
 
@@ -87,17 +86,16 @@ class NewArticleBasicData extends Component {
 												<p>Sub-catgoria</p>
 											</label>
 											<div className='col-drop'>
-												<input type='text' name='' id='v-sub' placeholder='Selecione'/>
-												<div className='drop'>
-													<select>
-														<option></option>
-														<option>Passageiros</option>
-														<option>Mercadorias</option>
-														<option>Mistos</option>
-														<option>Tratores</option>
-														<option>Especiais</option>
-													</select>
-												</div>
+												<Dropdown
+													options = {[
+														{value: 'Passageiros'},
+														{value: 'Mercadorias'},
+														{value: 'Mistos'},
+														{value: 'Tratores'},
+														{value: 'Especiais'}
+													]}
+													placeholder='Selecione'
+												/>
 											</div>
 										</div>	
 
@@ -106,18 +104,17 @@ class NewArticleBasicData extends Component {
 												<p>Estado</p>
 											</label>
 											<div className='col-drop'>
-												<input type='text' name='' id='v-estado' placeholder='Selecione'/>
-												<div className='drop'>	
-													<select>
-														<option></option>
-														<option>Novo</option>
-														<option>Como Novo</option>
-														<option>M&iacute;stos</option>
-														<option>Bem Conservado</option>
-														<option>Retorma</option>
-														<option>Outros</option>
-													</select>
-												</div>
+												<Dropdown
+													options = {[
+														{value: 'Novo'},
+														{value: 'Como Novo'},
+														{value: 'M&iacute;stos'},
+														{value: 'Bem Conservado'},
+														{value: 'Retorma'},
+														{value: 'Outros'}
+													]}
+													placeholder='Selecione'
+												/>
 											</div>
 										</div>
 
@@ -128,15 +125,14 @@ class NewArticleBasicData extends Component {
 												<p>Combust&iacute;vel</p>
 											</label>
 											<div className='col-drop'>
-												<input type='text' name='' id='v-combustivel' placeholder='Selecione'/>
-												<div className='drop'>
-													<select>
-														<option></option>
-														<option>Gasolina</option>
-														<option>Gas&oacute;leo</option>
-														<option>H&iacute;brido</option>
-													</select>
-												</div>
+												<Dropdown
+													options = {[
+														{value: 'Gasolina'},
+														{value: 'Gas&oacute;leo'},
+														{value: 'H&iacute;brido'}
+													]}
+													placeholder='Selecione'
+												/>
 											</div>
 										</div>
 
@@ -145,16 +141,15 @@ class NewArticleBasicData extends Component {
 												<p>Caixa</p>
 											</label>
 											<div className='col-drop'>
-												<input type='text' name='' id='v-caixa' placeholder='Selecione'/>
-												<div className='drop'>
-													<select>
-														<option></option>
-														<option>Manual</option>
-														<option>Manual 5 velocidades</option>
-														<option>Manual 6 velocidades</option>
-														<option>Híbrido</option>
-													</select>
-												</div>
+												<Dropdown
+													options = {[
+														{value: 'Manual'},
+														{value: 'Manual 5 velocidades'},
+														{value: 'Manual 6 velocidades'},
+														{value: 'Híbrido'}
+													]}
+													placeholder='Selecione'
+												/>
 											</div>
 										</div>
 
@@ -163,15 +158,14 @@ class NewArticleBasicData extends Component {
 												<p>Portas</p>
 											</label>
 											<div className='col-drop'>
-												<input type='text' name='' id='v-portas' placeholder='Selecione'/>
-												<div className='drop'>
-													<select>
-														<option></option>
-														<option>5 portas</option>
-														<option>3 portas</option>
-														<option>4 portas</option>
-													</select>
-												</div>
+												<Dropdown
+													options = {[
+														{value: '5 portas'},
+														{value: '3 portas'},
+														{value: '4 portas'}
+													]}
+													placeholder='Selecione'
+												/>
 											</div>
 										</div>
 									</div>
