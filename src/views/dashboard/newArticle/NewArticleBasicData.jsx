@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import Dropdown from '../../../components/dashboard/dropdown/Dropdown'
+import TextInput from '../../../components/dashboard/inputs/TextInput'
+import NumberInput from '../../../components/dashboard/inputs/NumberInput'
 
 class NewArticleBasicData extends Component {
 	constructor(props) {
@@ -23,31 +25,61 @@ class NewArticleBasicData extends Component {
 							<form>
 								<div className='col-md-5 basic-left'>
 									<div className='row'>
-										<div className='col-xs-12 dados-nome error done'>
-											<label htmlFor='v-nome'><p>Nome da Viatura</p></label>
-											<input type='text' name='' id='v-nome' placeholder='Nome'/>
+										<div className='col-xs-12 dados-nome'>
+											<TextInput 
+												id='v-nome' 
+												placeholder='Nome' 
+												labelText='Nome da Viatura' 
+												errorClassName='error' 
+												doneClassName='done'
+												classNameState='done'
+											/>
 										</div>
 									</div>
 
 									<div className='row'>
-										<div className='col-md-6 error done'>
-											<label htmlFor='v-preço'><p>Pre&ccedil;o</p></label>
-											<input type='number' name='' id='v-preço' placeholder='00,00'/>
+										<div className='col-md-6'>
+											<NumberInput 
+												id='v-preço' 
+												placeholder='00,00' 
+												labelText='Pre&ccedil;o'
+												errorClassName='error' 
+												doneClassName='done'
+												classNameState='done'
+											/>
 										</div>
-										<div className='col-md-6 error done'>
-											<label htmlFor='v-kms'><p>Kms</p></label>
-											<input type='number' name='' id='v-kms' placeholder='0'/>
+										<div className='col-md-6'>
+											<NumberInput 
+												id='v-kms' 
+												placeholder='0' 
+												labelText='Kms' 
+												errorClassName='error' 
+												doneClassName='done'
+												classNameState='done'
+											/>
 										</div>
 									</div>
 
 									<div className='row'>	
 										<div className='col-md-6 error done'>
-											<label htmlFor='v-potencia'><p>Pot&ecirc;ncia</p></label>
-											<input type='number' name='' id='v-potencia' placeholder='0'/>
+											<NumberInput 
+												id='v-potencia' 
+												placeholder='0' 
+												labelText='Pot&ecirc;ncia' 
+												errorClassName='error' 
+												doneClassName='done'
+												classNameState='done'
+											/>
 										</div>
 										<div className='col-md-6 error done'>
-											<label htmlFor='v-cilindrada'><p>Cilindrada</p></label>
-											<input type='number' name='' id='v-cilindrada' placeholder='0'/>
+											<NumberInput 
+												id='v-cilindrada' 
+												placeholder='0' 
+												labelText='Cilindrada' 
+												errorClassName='error' 
+												doneClassName='done'
+												classNameState='done'
+											/>
 										</div>
 									</div>
 
@@ -171,23 +203,35 @@ class NewArticleBasicData extends Component {
 									</div>
 
 									<div className='row'>
-										<div className='col-md-4 error done'>
-											<label htmlFor='v-marca'>
-												<p>Marca</p>
-											</label>
-											<input type='text' name='' id='v-marca' placeholder='Selecione'/>
+										<div className='col-md-4'>
+											<TextInput 
+												id='v-marca' 
+												placeholder='Selecione' 
+												labelText='Marca' 
+												errorClassName='error' 
+												doneClassName='done'
+												classNameState='done'
+											/>
 										</div>
 										<div className='col-md-4 error done'>
-											<label htmlFor='v-cor'>
-												<p>Cor</p>
-											</label>
-											<input type='text' name='' id='v-cor' placeholder='Selecione'/>
+											<TextInput 
+												id='v-cor' 
+												placeholder='Selecione' 
+												labelText='Cor' 
+												errorClassName='error' 
+												doneClassName='done'
+												classNameState='done'
+											/>
 										</div>	
 										<div className='col-md-4 error done'>
-											<label htmlFor='v-lugares'>
-												<p>Lugares</p>
-											</label>
-											<input type='text' name='' id='v-lugares' placeholder='Selecione'/>
+											<TextInput 
+												id='v-lugares' 
+												placeholder='Selecione' 
+												labelText='Lugares' 
+												errorClassName='error' 
+												doneClassName='done'
+												classNameState='done'
+											/>
 										</div>
 									</div>
 
