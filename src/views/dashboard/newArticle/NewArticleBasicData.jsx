@@ -23,40 +23,40 @@ class NewArticleBasicData extends Component {
 							<form>
 								<div className='col-md-5 basic-left'>
 									<div className='row'>
-										<div className='col-xs-12 dados-nome'>
+										<div className='col-xs-12 dados-nome error done'>
 											<label htmlFor='v-nome'><p>Nome da Viatura</p></label>
 											<input type='text' name='' id='v-nome' placeholder='Nome'/>
 										</div>
 									</div>
 
 									<div className='row'>
-										<div className='col-md-6'>
+										<div className='col-md-6 error done'>
 											<label htmlFor='v-preço'><p>Pre&ccedil;o</p></label>
 											<input type='number' name='' id='v-preço' placeholder='00,00'/>
 										</div>
-										<div className='col-md-6'>
+										<div className='col-md-6 error done'>
 											<label htmlFor='v-kms'><p>Kms</p></label>
 											<input type='number' name='' id='v-kms' placeholder='0'/>
 										</div>
 									</div>
 
 									<div className='row'>	
-										<div className='col-md-6'>
+										<div className='col-md-6 error done'>
 											<label htmlFor='v-potencia'><p>Pot&ecirc;ncia</p></label>
 											<input type='number' name='' id='v-potencia' placeholder='0'/>
 										</div>
-										<div className='col-md-6'>
+										<div className='col-md-6 error done'>
 											<label htmlFor='v-cilindrada'><p>Cilindrada</p></label>
 											<input type='number' name='' id='v-cilindrada' placeholder='0'/>
 										</div>
 									</div>
 
 									<div className='row'>
-										<div className='col-md-6'>
+										<div className='col-md-6 error done'>
 											<label htmlFor='v-datav'><p className='sm-date'>Data do ve&iacute;culo</p></label>
 											<input type='date' name='' id='v-data' placeholder='DD/MM/AA'/>
 										</div>
-										<div className='col-md-6'>
+										<div className='col-md-6 error done'>
 											<label htmlFor='v-datav'><p className='sm-datev'>Entrada no Stand</p></label>
 											<input type='date' name='' id='v-datav' placeholder='DD/MM/AA'/>
 										</div>
@@ -65,7 +65,7 @@ class NewArticleBasicData extends Component {
 
 								<div className='col-md-7 basic-right'>
 									<div className='row'>
-										<div className='col-md-4'>
+										<div className='col-md-4 error done'>
 											<label htmlFor='v-categoria'>
 												<p>Categoria</p>
 											</label>
@@ -81,9 +81,9 @@ class NewArticleBasicData extends Component {
 											</div>	
 										</div>
 
-										<div className='col-md-4 col-drop'>
+										<div className='col-md-4 error done'>
 											<label htmlFor='v-sub'>
-												<p>Sub-catgoria</p>
+												<p>Sub-categoria</p>
 											</label>
 											<div className='col-drop'>
 												<Dropdown
@@ -99,7 +99,7 @@ class NewArticleBasicData extends Component {
 											</div>
 										</div>	
 
-										<div className='col-md-4 col-drop'>
+										<div className='col-md-4 error done'>
 											<label htmlFor='v-estado'>
 												<p>Estado</p>
 											</label>
@@ -120,7 +120,7 @@ class NewArticleBasicData extends Component {
 
 									</div>
 									<div className='row'>	
-										<div className='col-md-4 col-drop'>
+										<div className='col-md-4 error done'>
 											<label htmlFor='v-combustivel'>
 												<p>Combust&iacute;vel</p>
 											</label>
@@ -136,7 +136,7 @@ class NewArticleBasicData extends Component {
 											</div>
 										</div>
 
-										<div className='col-md-4 col-drop'>
+										<div className='col-md-4 error done'>
 											<label htmlFor='v-caixa'>
 												<p>Caixa</p>
 											</label>
@@ -153,7 +153,7 @@ class NewArticleBasicData extends Component {
 											</div>
 										</div>
 
-										<div className='col-md-4 col-drop'>
+										<div className='col-md-4 error done'>
 											<label htmlFor='v-portas'>
 												<p>Portas</p>
 											</label>
@@ -171,19 +171,19 @@ class NewArticleBasicData extends Component {
 									</div>
 
 									<div className='row'>
-										<div className='col-md-4'>
+										<div className='col-md-4 error done'>
 											<label htmlFor='v-marca'>
 												<p>Marca</p>
 											</label>
 											<input type='text' name='' id='v-marca' placeholder='Selecione'/>
 										</div>
-										<div className='col-md-4'>
+										<div className='col-md-4 error done'>
 											<label htmlFor='v-cor'>
 												<p>Cor</p>
 											</label>
 											<input type='text' name='' id='v-cor' placeholder='Selecione'/>
 										</div>	
-										<div className='col-md-4'>
+										<div className='col-md-4 error done'>
 											<label htmlFor='v-lugares'>
 												<p>Lugares</p>
 											</label>

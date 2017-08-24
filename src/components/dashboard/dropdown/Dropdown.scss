@@ -1,7 +1,30 @@
 .drop {
-    .dropdown-menu {
-        position  : absolute;
-        z-index: 999;
-        background: white
-    }
+
+	.dropdown-toggle {
+		width: 100%;
+		background: none;
+		border: 1px solid $blue;
+		border-radius: 3px;
+		padding: 5px;
+		text-align: right;
+
+		span {
+			font-family: $sfont;
+			font-size: $pmd;
+			color: $light-grey;
+			padding: 5px;
+		}
+
+		.fa {
+			font-size: $pmd;
+			color: $light-grey;
+			padding: 0 10px 0 10px;
+		}
+	}
+
+	.dropdown-menu {
+	    position  : absolute;
+	    z-index: 999;
+	    background: white
+	}
 }

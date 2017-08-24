@@ -74,7 +74,7 @@ class Dropdown extends Component {
             <div className = 'drop' >
                 <button 
                     type          = 'button' 
-                    className     = 'dropdown-toggle' 
+                    className     = 'dropdown-toggle error done' 
                     data-toggle   = 'dropdown' 
                     aria-haspopup = 'true' 
                     aria-expanded = 'false'
@@ -82,7 +82,7 @@ class Dropdown extends Component {
                     onBlur        = { evt => this._close(evt) }
                 >
                     <span className='text'>{ state.selection }</span>
-                    <i className='icon'>▼</i>
+                    <i className="fa fa-sort-desc" aria-hidden="true"></i>
                 </button>
                 <ul 
                     className = 'dropdown-menu' 
