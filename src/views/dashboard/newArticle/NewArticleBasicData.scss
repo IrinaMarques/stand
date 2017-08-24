@@ -12,39 +12,43 @@
 			width: 100%;
 			position: relative;
 			cursor: pointer;
-		}
+		
 
-		input[type='date'] {
-			padding: 4px;
-		}
+			&[type='date'] {
+				padding: 4px;
+			}
 
-		input:focus {
-			outline: none;
-		}
+		    &:focus {
+				outline: none;
+			}
 
-		input:active {
-			border: 1px solid $light-blue;
-		}
+			&:active {
+				border: 1px solid $light-blue;
+			}
 
-		input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    		color: $light-grey;
-		}
+			&::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    			color: $light-grey;
+			}
 
-		input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-		   color: $light-grey;
-		   opacity:  1;
-		}
-		input::-moz-placeholder { /* Mozilla Firefox 19+ */
-		   color: $light-grey;
-		   opacity:  1;
-		}
-		input:-ms-input-placeholder { /* Internet Explorer 10-11 */
-		   color: $light-grey;
-		}
-		input::-ms-input-placeholder { /* Microsoft Edge */
-		   color: $light-grey;
-		}
+			&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+			   color: $light-grey;
+			   opacity:  1;
+			}
 
+			&::-moz-placeholder { /* Mozilla Firefox 19+ */
+			   color: $light-grey;
+			   opacity:  1;
+			}
+
+			&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			   color: $light-grey;
+			}
+
+			&::-ms-input-placeholder { /* Microsoft Edge */
+			   color: $light-grey;
+			}
+		}
+		
 		label {
 
 			p {
