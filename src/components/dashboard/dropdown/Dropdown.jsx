@@ -26,14 +26,18 @@ class Dropdown extends Component {
         const options = props.options;
         const value   = props.value;
 		return {
-            options    : options || [],
-            value      : value || '',
-            placeholder: props.placeholder || '',
-            selection  : this.findValue(),
-            menuIsOpen : props.menuIsOpen || false
+            options       : options || [],
+            value         : value || '',
+            id            : props.id || '',
+            labelClassName: props.labelClassName || '',
+            labelText     : props.labelText || '',
+            placeholder   : props.placeholder || '',
+            selection     : this.findValue(),
+            menuIsOpen    : props.menuIsOpen || false
 		}
     }
-
+    
+    
     findValue(val) {
         const props   = this.props || {};
         const state   = this.state || {};
@@ -72,7 +76,11 @@ class Dropdown extends Component {
 
 		return (
             <div className = 'drop' >
+                <label htmlFor={ state.id }>
+                    <p className={state.labelClassName}>{ state.labelText }</p>
+                </label>
                 <button 
+                    htmlFor       = { state.id }
                     type          = 'button' 
                     className     = 'dropdown-toggle error done' 
                     data-toggle   = 'dropdown' 

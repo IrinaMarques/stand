@@ -11,12 +11,13 @@ class TextInput extends Component {
 	buildState(nextProps) {
         const props = this.props;
 		return {
-            id         : props.id,
-            placeholder: props.placeholder,
-            labelText  : props.labelText,
-            errorClassName: props.errorClassName,
-            doneClassName: props.doneClassName,
-            classNameState: props.classNameState
+            id            : props.id || '',
+            placeholder   : props.placeholder || '',
+            labelText     : props.labelText || '',
+            labelClassName: props.labelClassName || '',
+            errorClassName: props.errorClassName || '',
+            doneClassName : props.doneClassName || '',
+            classNameState: props.classNameState || ''
 		}
     }
 
@@ -24,9 +25,9 @@ class TextInput extends Component {
         const state = this.state;
 
 		return (
-            <div className={`text-input-wrapper ${state.classNameState === state.errorClassName ? state.errorClassName : state.doneClassName}`} >
+            <div className={`input-wrapper text-input ${state.classNameState === state.errorClassName ? state.errorClassName : state.doneClassName}`} >
                 <label htmlFor={ state.id }>
-                    <p>{ state.labelText }</p>
+                    <p className={state.labelClassName}>{ state.labelText }</p>
                 </label>
                 <input type='text' name='' id={ state.id } placeholder={ state.placeholder }/>
             </div>

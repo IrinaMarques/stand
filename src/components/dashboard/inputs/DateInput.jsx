@@ -11,12 +11,13 @@ class DateInput extends Component {
 	buildState(nextProps) {
         const props = this.props;
 		return {
-            id         : props.id,
-            placeholder: props.placeholder,
-            labelText  : props.labelText,
-            errorClassName: props.errorClassName,
-            doneClassName: props.doneClassName,
-            classNameState: props.classNameState
+            id            : props.id || '',
+            placeholder   : props.placeholder || '',
+            labelText     : props.labelText || '',
+            labelClassName: props.labelClassName || '',
+            errorClassName: props.errorClassName || '',
+            doneClassName : props.doneClassName || '',
+            classNameState: props.classNameState || ''
 		}
     }
 
@@ -24,11 +25,11 @@ class DateInput extends Component {
         const state = this.state;
 
 		return (
-            <div className={`text-input-wrapper ${state.classNameState === state.errorClassName ? state.errorClassName : state.doneClassName}`} >
+            <div className={`input-wrapper date-input ${state.classNameState === state.errorClassName ? state.errorClassName : state.doneClassName}`} >
                 <label htmlFor={ state.id }>
-                    <p>{ state.labelText }</p>
+                    <p className={state.labelClassName}>{ state.labelText }</p>
                 </label>
-                <input type='number' name='' id={ state.id } placeholder={ state.placeholder } />
+                <input type='date' name='' id={ state.id } placeholder={ state.placeholder } />
             </div>
 		);
     }

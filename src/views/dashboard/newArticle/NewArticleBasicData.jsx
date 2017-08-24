@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Dropdown from '../../../components/dashboard/dropdown/Dropdown'
 import TextInput from '../../../components/dashboard/inputs/TextInput'
 import NumberInput from '../../../components/dashboard/inputs/NumberInput'
+import DateInput from '../../../components/dashboard/inputs/DateInput'
 
 class NewArticleBasicData extends Component {
 	constructor(props) {
@@ -32,7 +33,7 @@ class NewArticleBasicData extends Component {
 												labelText='Nome da Viatura' 
 												errorClassName='error' 
 												doneClassName='done'
-												classNameState='done'
+												classNameState='error'
 											/>
 										</div>
 									</div>
@@ -61,7 +62,7 @@ class NewArticleBasicData extends Component {
 									</div>
 
 									<div className='row'>	
-										<div className='col-md-6 error done'>
+										<div className='col-md-6'>
 											<NumberInput 
 												id='v-potencia' 
 												placeholder='0' 
@@ -71,7 +72,7 @@ class NewArticleBasicData extends Component {
 												classNameState='done'
 											/>
 										</div>
-										<div className='col-md-6 error done'>
+										<div className='col-md-6'>
 											<NumberInput 
 												id='v-cilindrada' 
 												placeholder='0' 
@@ -84,23 +85,34 @@ class NewArticleBasicData extends Component {
 									</div>
 
 									<div className='row'>
-										<div className='col-md-6 error done'>
-											<label htmlFor='v-datav'><p className='sm-date'>Data do ve&iacute;culo</p></label>
-											<input type='date' name='' id='v-data' placeholder='DD/MM/AA'/>
+										<div className='col-md-6'>
+											<DateInput 
+												id='v-datav' 
+												placeholder='DD/MM/AA' 
+												labelText='Data do ve&iacute;culo' 
+												labelClassName='sm-date' 
+												errorClassName='error' 
+												doneClassName='done'
+												classNameState='done'
+											/>
 										</div>
-										<div className='col-md-6 error done'>
-											<label htmlFor='v-datav'><p className='sm-datev'>Entrada no Stand</p></label>
-											<input type='date' name='' id='v-datav' placeholder='DD/MM/AA'/>
+										<div className='col-md-6'>
+											<DateInput 
+												id='v-data-e' 
+												placeholder='DD/MM/AA' 
+												labelText='Entrada no Stand' 
+												labelClassName='sm-datev' 
+												errorClassName='error' 
+												doneClassName='done'
+												classNameState='done'
+											/>
 										</div>
 									</div>
 								</div>
 
 								<div className='col-md-7 basic-right'>
 									<div className='row'>
-										<div className='col-md-4 error done'>
-											<label htmlFor='v-categoria'>
-												<p>Categoria</p>
-											</label>
+										<div className='col-md-4'>
 											<div className='col-drop'>
 												<Dropdown
 													options = {[
@@ -109,14 +121,13 @@ class NewArticleBasicData extends Component {
 														{value: 'Motoc&iacute;clo'}
 													]}
 													placeholder='Selecione'
+													id='v-categoria'
+													labelText='Categoria' 
 												/>
 											</div>	
 										</div>
 
-										<div className='col-md-4 error done'>
-											<label htmlFor='v-sub'>
-												<p>Sub-categoria</p>
-											</label>
+										<div className='col-md-4'>
 											<div className='col-drop'>
 												<Dropdown
 													options = {[
@@ -127,14 +138,13 @@ class NewArticleBasicData extends Component {
 														{value: 'Especiais'}
 													]}
 													placeholder='Selecione'
+													id='v-sub'
+													labelText='Sub-categoria' 
 												/>
 											</div>
 										</div>	
 
-										<div className='col-md-4 error done'>
-											<label htmlFor='v-estado'>
-												<p>Estado</p>
-											</label>
+										<div className='col-md-4'>
 											<div className='col-drop'>
 												<Dropdown
 													options = {[
@@ -146,16 +156,15 @@ class NewArticleBasicData extends Component {
 														{value: 'Outros'}
 													]}
 													placeholder='Selecione'
+													id='v-estado'
+													labelText='Estado' 
 												/>
 											</div>
 										</div>
 
 									</div>
 									<div className='row'>	
-										<div className='col-md-4 error done'>
-											<label htmlFor='v-combustivel'>
-												<p>Combust&iacute;vel</p>
-											</label>
+										<div className='col-md-4'>
 											<div className='col-drop'>
 												<Dropdown
 													options = {[
@@ -164,14 +173,13 @@ class NewArticleBasicData extends Component {
 														{value: 'H&iacute;brido'}
 													]}
 													placeholder='Selecione'
+													id='v-combustivel'
+													labelText='Combust&iacute;vel' 
 												/>
 											</div>
 										</div>
 
-										<div className='col-md-4 error done'>
-											<label htmlFor='v-caixa'>
-												<p>Caixa</p>
-											</label>
+										<div className='col-md-4'>
 											<div className='col-drop'>
 												<Dropdown
 													options = {[
@@ -181,14 +189,13 @@ class NewArticleBasicData extends Component {
 														{value: 'Híbrido'}
 													]}
 													placeholder='Selecione'
+													id='v-caixa'
+													labelText='Caixa' 
 												/>
 											</div>
 										</div>
 
-										<div className='col-md-4 error done'>
-											<label htmlFor='v-portas'>
-												<p>Portas</p>
-											</label>
+										<div className='col-md-4'>
 											<div className='col-drop'>
 												<Dropdown
 													options = {[
@@ -197,6 +204,8 @@ class NewArticleBasicData extends Component {
 														{value: '4 portas'}
 													]}
 													placeholder='Selecione'
+													id='v-portas'
+													labelText='Portas' 
 												/>
 											</div>
 										</div>
@@ -213,7 +222,7 @@ class NewArticleBasicData extends Component {
 												classNameState='done'
 											/>
 										</div>
-										<div className='col-md-4 error done'>
+										<div className='col-md-4'>
 											<TextInput 
 												id='v-cor' 
 												placeholder='Selecione' 
@@ -223,7 +232,7 @@ class NewArticleBasicData extends Component {
 												classNameState='done'
 											/>
 										</div>	
-										<div className='col-md-4 error done'>
+										<div className='col-md-4'>
 											<TextInput 
 												id='v-lugares' 
 												placeholder='Selecione' 
