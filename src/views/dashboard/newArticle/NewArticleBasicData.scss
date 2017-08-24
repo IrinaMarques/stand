@@ -1,7 +1,4 @@
 .msg-box {
-	overflow-y: hidden; /*scroll*/
-	margin: 0 auto;
-	height: 570px;
 
 	.basic-container {
 
@@ -19,6 +16,10 @@
 
 		input[type='date'] {
 			padding: 4px;
+		}
+
+		input:focus {
+			outline: none;
 		}
 
 		input:active {
