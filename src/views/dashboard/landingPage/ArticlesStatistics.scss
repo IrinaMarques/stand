@@ -11,6 +11,7 @@
 			p {
 				color: $blue;
 				font-size: $pmd;
+				font-family: $sfont;
 			}
 
 			.v-number {
@@ -24,10 +25,7 @@
 			&.v-none {
 				background-color: $white;
 				border: none;
-/*
-				&.v-number {
-					text-align: center;	
-				}*/
+
 			
 				h5 {
 					@extend .p-light;

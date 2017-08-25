@@ -151,7 +151,7 @@ class NewArticleBasicData extends Component {
 														{value: 'Novo'},
 														{value: 'Como Novo'},
 														{value: 'M&iacute;stos'},
-														{value: 'Bem Conservado'},
+														{value: 'Conservado'},
 														{value: 'Retorma'},
 														{value: 'Outros'}
 													]}

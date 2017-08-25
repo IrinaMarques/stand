@@ -1,9 +1,17 @@
 .drop {
 
+	label {
+
+		p {
+			font-weight: bold;
+			font-family: $sfont;
+		}
+	}
+
 	.dropdown-toggle {
 		width: 100%;
 		background: none;
-		border: 1px solid $blue;
+		border: 1px solid $grey;
 		border-radius: 3px;
 		padding: 5px;
 		text-align: right;
@@ -18,13 +26,42 @@
 		.fa {
 			font-size: $pmd;
 			color: $light-grey;
-			padding: 0 10px 0 10px;
+			padding: 0 10px;
 		}
 	}
 
 	.dropdown-menu {
 	    position: absolute;
 	    z-index: 999;
-	    background: white
+	    background: white;
+	    list-style-type: none;
+	    padding-right: 30px;
+	    width: 100%;
+
+	    li {
+	    	border: 1px solid $grey;
+	    	border-top-color: transparent;
+	    	padding: 5px;
+	    	font-family: $sfont;
+			font-size: $pmd;
+
+			&:hover {
+				border: 1px solid $light-blue;
+			}
+
+			&:last-child {
+				border-bottom-left-radius: 3px;
+				border-bottom-right-radius: 3px;
+			}
+	    	
+			a {
+				color: $grey;
+				text-decoration: none;
+
+				&:hover {
+					color: $light-blue;
+				}
+			}
+	    }
 	}
 }
