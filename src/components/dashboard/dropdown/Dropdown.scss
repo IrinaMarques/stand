@@ -16,6 +16,18 @@
 		padding: 5px;
 		text-align: right;
 
+		&:hover {
+	    	border: 1px solid $light-blue;
+	    }
+
+	    &:active {
+	    	border: 1px solid $blue;
+	    }
+
+	    &:focus {
+	    	outline: none;
+	    }
+
 		span {
 			font-family: $sfont;
 			font-size: $pmd;
