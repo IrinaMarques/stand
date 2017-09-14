@@ -1,10 +1,13 @@
 import React, {Component} from 'react';
+import moment from 'moment';
+import DatePicker from 'react-datepicker';
 
 
 class DateInput extends Component {
 	constructor(props) {
-		super(props);
-		this.state = this.buildState();
+        super(props);
+        moment.locale('pt');
+        this.state = this.buildState();
 		return this;
 	}
     
@@ -17,8 +20,16 @@ class DateInput extends Component {
             labelClassName: props.labelClassName || '',
             errorClassName: props.errorClassName || '',
             doneClassName : props.doneClassName || '',
-            classNameState: props.classNameState || ''
+            classNameState: props.classNameState || '',
+            startDate     : moment()
 		}
+    }
+
+    _handleChange(date) {
+        console.log(date)
+        this.setState({
+            startDate: date
+        });
     }
 
     render() {
@@ -29,7 +40,13 @@ class DateInput extends Component {
                 <label htmlFor={ state.id }>
                     <p className={state.labelClassName}>{ state.labelText }</p>
                 </label>
-                <input type='date' name='' id={ state.id } placeholder={ state.placeholder } />
+                <DatePicker
+                    id={ state.id }
+                    placeholder={ state.placeholder }
+                    selected={this.state.startDate}
+                    dateFormat="DD/MM/YYYY"
+                    onChange={ date => this._handleChange(date) }
+                />
             </div>
 		);
     }

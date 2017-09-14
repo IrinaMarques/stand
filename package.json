@@ -84,7 +84,9 @@
     "bootstrap-sass": "^3.3.7",
     "bundle-loader": "^0.5.5",
     "font-awesome-sass": "^4.7.0",
+    "moment": "^2.18.1",
     "react": "^15.6.1",
+    "react-datepicker": "^0.54.0",
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.1.2"
   }
