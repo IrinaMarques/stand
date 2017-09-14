@@ -36,7 +36,7 @@ class DateInput extends Component {
         const state = this.state;
 
 		return (
-            <div className={`input-wrapper date-input ${state.classNameState === state.errorClassName ? state.errorClassName : state.doneClassName}`} >
+            <div className={`input-wrapper date-input ${state.classNameState}`} >
                 <label htmlFor={ state.id }>
                     <p className={state.labelClassName}>{ state.labelText }</p>
                 </label>

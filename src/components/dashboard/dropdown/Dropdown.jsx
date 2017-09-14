@@ -30,6 +30,7 @@ class Dropdown extends Component {
             value         : value || '',
             id            : props.id || '',
             labelClassName: props.labelClassName || '',
+            classNameState: props.classNameState || '',
             labelText     : props.labelText || '',
             placeholder   : props.placeholder || '',
             selection     : this.findValue(),
@@ -75,7 +76,7 @@ class Dropdown extends Component {
         const state = this.state;
 
 		return (
-            <div className = 'drop' >
+            <div className={`drop ${state.classNameState}`} >
                 <label htmlFor={ state.id }>
                     <p className={state.labelClassName}>{ state.labelText }</p>
                 </label>

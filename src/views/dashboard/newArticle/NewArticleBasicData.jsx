@@ -23,7 +23,7 @@ class NewArticleBasicData extends Component {
 
 					<div className='container-fluid'> 
 						<div className='row basic-container'>
-							<form>
+							<form action='javascript:void(0);'>
 								<div className='col-md-5 basic-left'>
 									<div className='row'>
 										<div className='col-xs-12 dados-nome'>
@@ -42,7 +42,8 @@ class NewArticleBasicData extends Component {
 										<div className='col-md-6'>
 											<NumberInput 
 												id='v-preço' 
-												placeholder='00,00' 
+												placeholder='00,00'
+												toFixed='2'
 												labelText='Pre&ccedil;o'
 												errorClassName='error' 
 												doneClassName='done'

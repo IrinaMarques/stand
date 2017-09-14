@@ -16,7 +16,7 @@ class NewArticleMoreDetails extends Component {
     render() {
 		return (
 			<div>
-				<div className='msg-box'>
+				<div className='msg-box new-article-more-details'>
 					<form>
 						<div className='container-fluid'> 
 							<div className='row basic-container'>

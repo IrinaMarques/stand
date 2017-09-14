@@ -9,4 +9,34 @@
     input[type=number] {
         -moz-appearance:textfield;
     }
+
+    .input-inner-wrapper{
+        position: relative;
+
+        .number-input-btn{
+            position: absolute;
+            right   : 0;
+            height  : 50%;
+            margin: 1px;
+            padding: 0;
+            border: 0;
+            min-width: 20px;
+
+            &:focus{
+                outline: none;
+            }
+
+            &.input-btn-asc{
+                top: 0;
+            }
+            &.input-btn-desc{
+                bottom: 0;
+            }
+
+            .fa {
+                vertical-align: middle;
+                height: 100%;
+            }
+        }
+    }
 }

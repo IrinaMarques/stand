@@ -25,7 +25,7 @@ class TextInput extends Component {
         const state = this.state;
 
 		return (
-            <div className={`input-wrapper text-input ${state.classNameState === state.errorClassName ? state.errorClassName : state.doneClassName}`} >
+            <div className={`input-wrapper text-input ${state.classNameState}`} >
                 <label htmlFor={ state.id }>
                     <p className={state.labelClassName}>{ state.labelText }</p>
                 </label>
