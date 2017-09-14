@@ -55,7 +55,7 @@ class Dropdown extends Component {
 
     _selectOption(evt) {
         const value = evt.currentTarget.id;
-
+        console.log(value)
         return this.setState({
             menuIsOpen: !this.state.menuIsOpen,
             value: value,

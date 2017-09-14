@@ -53,7 +53,6 @@
 	    li {
 	    	border: 1px solid $grey;
 	    	border-top-color: transparent;
-	    	padding: 5px;
 	    	font-family: $sfont;
 			font-size: $pmd;
 
@@ -69,6 +68,9 @@
 			a {
 				color: $grey;
 				text-decoration: none;
+				padding: 5px;
+				width: 100%;
+				display: block;
 
 				&:hover {
 					color: $light-blue;

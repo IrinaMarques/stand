@@ -33,7 +33,7 @@ class NewArticleBasicData extends Component {
 												labelText='Nome da Viatura' 
 												errorClassName='error' 
 												doneClassName='done'
-												classNameState='error'
+												classNameState='done'
 											/>
 										</div>
 									</div>
@@ -151,7 +151,7 @@ class NewArticleBasicData extends Component {
 														{value: 'Novo'},
 														{value: 'Como Novo'},
 														{value: 'M&iacute;stos'},
-														{value: 'Conservado'},
+														{value: 'Bem Conservado'},
 														{value: 'Retorma'},
 														{value: 'Outros'}
 													]}
