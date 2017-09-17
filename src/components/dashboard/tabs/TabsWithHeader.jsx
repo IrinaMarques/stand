@@ -26,13 +26,13 @@ class TabsWithHeader extends Component {
 
     findHeaderData(location) {
         const {pathname} = location;
-        
+
         if(!this.state.title && this._lastPathname === pathname) return;
 
         this._lastPathname = pathname;
 
         const selectedTab = this.state.tabs.filter(tab => tab.path === pathname)[0];
-        const tabHeader = selectedTab.header;
+        const tabHeader = selectedTab && selectedTab.header;
 
         tabHeader && this.setState({
             title: tabHeader.title,

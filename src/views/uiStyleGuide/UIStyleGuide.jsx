@@ -1,8 +1,39 @@
 import React, {Component} from 'react';
 
 import Typography from '../../components/dashboard/typography/Typography';
+import TabsWithHeader from '../../components/dashboard/tabs/TabsWithHeader'
 
 require('./UIStyleGuide.scss');
+
+const tabsData = [
+	{
+		name: 'Dados Básicos',
+		path: '#',
+		iconClassName: 'fa fa-envelope-open-o',
+		header: {
+			title: 'Criar Anúncio',
+			description: 'Campos de preenchimento obrigatório.'
+		}
+	},
+	{
+		name: 'Observações e Extras',
+		path: '#',
+		iconClassName: 'fa fa-pie-chart',
+		header: {
+			title: 'Criar Anúncio',
+			description: 'Informação relevante sobre o produto.'
+		}
+	},
+	{
+		name: 'Imagens',
+		path: '#',
+		iconClassName: 'fa fa-eye',
+		header: {
+			title: 'Criar Anúncio',
+			description: 'Uma imagem obrigatória, restantes opcionais.'
+		}
+	}
+];
 
 class UIStyleGuide extends Component {
 	constructor(props) {
@@ -73,7 +104,12 @@ class UIStyleGuide extends Component {
 
 				<Typography />
 
-				
+				<h3>Tabs</h3>
+				<hr/>
+
+				<TabsWithHeader tabs = { tabsData }>
+					conteudo do tab
+				</TabsWithHeader>
 
 				<h3>Forms</h3>
 				<hr/>
