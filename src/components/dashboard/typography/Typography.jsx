@@ -16,7 +16,7 @@ class Typography extends Component {
     render() {
 		return (
 			<div>
-                <h3>Strong Headings</h3>
+                <h2>*Strong Headings*</h2>
                 <div>
                     <h1 className='p-font'>Verdana h1 - 32px blue</h1>
                     <h2 className='p-font'>Verdana h2 - 26px blue</h2>
@@ -25,8 +25,7 @@ class Typography extends Component {
                     <h5 className='p-font'>Verdana h5 - 20px blue</h5>
                     <h6 className='p-font'>Verdana h6 - 18px blue</h6>
                 </div>
-                <br/>
-                <h3>Light Headings</h3>
+                <h2>*Soft Headings*</h2>
                 <div>
                     <h1 className='p-light'>Verdana h1 - 32px grey</h1>
                     <h2 className='p-light'>Verdana h2 - 26px grey</h2>
@@ -36,47 +35,26 @@ class Typography extends Component {
                     <h6 className='p-light'>Verdana h6 - 18px grey</h6>
                 </div>
 
-                <br/>
-
-                <h3>Text - Strong</h3>
-                <h3 className='s-font'>Lucida Sans 18px blue</h3>
-                <p className='s-font'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada. Vestibulum pellentesque, orci in laoreet molestie, quam tortor facilisis neque, a elementum sapien risus nec ante. </p>
+                <h3 className='ui'>Paragraphs</h3>
+                <h2>Normal Text</h2>
+                <p className='s-font'><span className='ui_strong'>Lucida Sans 18px blue</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada.</p>               
+                <p className='s-font p-md'><span className='ui_strong'>Lucida Sans 16px blue medium</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada.</p>                
+                <p className='s-font p-sm'><span className='ui_strong'>Lucida Sans 14px blue small</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada.</p>    
                 
-                <h3 className='s-font p-md'>Lucida Sans 16px blue medium</h3>
-                <p className='s-font p-md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada. Vestibulum pellentesque, orci in laoreet molestie, quam tortor facilisis neque, a elementum sapien risus nec ante. </p>
+                <h2>Nomal Text</h2>
+                <p className='s-dgrey'><span className='ui_strong'>Lucida Sans 18px grey</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada. </p>                    
+                <p className='s-dgrey p-md'><span className='ui_strong'>Lucida Sans 16px grey medium</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada. </p>                
+                <p className='s-dgrey p-sm'><span className='ui_strong'>Lucida Sans 14px grey small</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada. </p>    
                 
-                <h3 className='s-font p-sm'>Lucida Sans 14px blue small</h3>
-                <p className='s-font p-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada. Vestibulum pellentesque, orci in laoreet molestie, quam tortor facilisis neque, a elementum sapien risus nec ante. </p>    
+                <h2>Helper Text</h2>
+                <p className='s-grey'><span className='ui_strong'>Lucida Sans 18px grey</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada. </p>    
+                <p className='s-grey p-md'><span className='ui_strong'>Lucida Sans 16px grey medium</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada. </p>    
+                <p className='s-grey p-sm'><span className='ui_strong'>Lucida Sans 14px grey small</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada. </p>    
                 
-                <h3>Text - Dark Grey</h3>
-                <h3 className='s-dgrey'>Lucida Sans 18px grey</h3>
-                <p className='s-dgrey'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada. Vestibulum pellentesque, orci in laoreet molestie, quam tortor facilisis neque, a elementum sapien risus nec ante. </p>    
-                
-                <h3 className='s-dgrey p-md'>Lucida Sans 16px grey medium</h3>
-                <p className='s-dgrey p-md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada. Vestibulum pellentesque, orci in laoreet molestie, quam tortor facilisis neque, a elementum sapien risus nec ante. </p>    
-            
-                <h3 className='s-dgrey p-sm'>Lucida Sans 14px grey small</h3>
-                <p className='s-dgrey p-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada. Vestibulum pellentesque, orci in laoreet molestie, quam tortor facilisis neque, a elementum sapien risus nec ante. </p>    
-                
-                <h3>Text - Grey</h3>
-                <h3 className='s-grey'>Lucida Sans 18px grey</h3>
-                <p className='s-grey'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada. Vestibulum pellentesque, orci in laoreet molestie, quam tortor facilisis neque, a elementum sapien risus nec ante. </p>    
-                
-                <h3 className='s-grey p-md'>Lucida Sans 16px grey medium</h3>
-                <p className='s-grey p-md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada. Vestibulum pellentesque, orci in laoreet molestie, quam tortor facilisis neque, a elementum sapien risus nec ante. </p>    
-            
-                <h3 className='s-grey p-sm'>Lucida Sans 14px grey small</h3>
-                <p className='s-grey p-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada. Vestibulum pellentesque, orci in laoreet molestie, quam tortor facilisis neque, a elementum sapien risus nec ante. </p>    
-                
-                <h3>Text - Light Grey</h3>
-                <h3 className='s-light'>Lucida Sans 18px light grey</h3>
-                <p className='s-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada. Vestibulum pellentesque, orci in laoreet molestie, quam tortor facilisis neque, a elementum sapien risus nec ante. </p>    
-                
-                <h3 className='s-light p-md'>Lucida Sans 16px light grey medium</h3>
-                <p className='s-light p-md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada. Vestibulum pellentesque, orci in laoreet molestie, quam tortor facilisis neque, a elementum sapien risus nec ante. </p>    
-            
-                <h3 className='s-light p-sm'>Lucida Sans 14px light grey small</h3>
-                <p className='s-light p-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada. Vestibulum pellentesque, orci in laoreet molestie, quam tortor facilisis neque, a elementum sapien risus nec ante. </p>    
+                <h2>*Light Grey*</h2>
+                <p className='s-light'><span className='ui_strong'>Lucida Sans 18px light grey</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada. </p>    
+                <p className='s-light p-md'><span className='ui_strong'>Lucida Sans 16px light grey medium</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada. </p>    
+                <p className='s-light p-sm'><span className='ui_strong'>Lucida Sans 14px light grey small</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat a magna eu malesuada. </p>    
 
                 <br/>
 			</div>

@@ -70,6 +70,10 @@ h6 {
 p {
 	font-size: 18px;
 
+	.ui_strong {
+		font-weight: bold;
+	}
+
 	&.s-font {
 		@extend .s-font;
 	}

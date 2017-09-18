@@ -7,7 +7,7 @@ require('./UIStyleGuide.scss');
 
 const tabsData = [
 	{
-		name: 'Dados Básicos',
+		name: 'Tab 1',
 		path: '#',
 		iconClassName: 'fa fa-envelope-open-o',
 		header: {
@@ -16,7 +16,7 @@ const tabsData = [
 		}
 	},
 	{
-		name: 'Observações e Extras',
+		name: 'Tab 2',
 		path: '#',
 		iconClassName: 'fa fa-pie-chart',
 		header: {
@@ -25,7 +25,7 @@ const tabsData = [
 		}
 	},
 	{
-		name: 'Imagens',
+		name: 'Tab 3',
 		path: '#',
 		iconClassName: 'fa fa-eye',
 		header: {
@@ -56,71 +56,62 @@ class UIStyleGuide extends Component {
 						<li>Backgrounds</li>
 						<li>Colors</li>
 						<li>Typography</li>
+						<li>Paragraphs</li>
+						<li>Tabs</li>
 						<li>Forms</li>
 						<li>Iconography</li>
 						<li>Buttons</li>
 					</ul>
 				</div>	
 
-				<h3>Backgrounds</h3>
-				<hr/>
+				<h3 className='ui'>Backgrounds</h3>
 				<div className='square-containers '>
 					<div className='white square-none'></div>
 				</div>
 
-				<h3>Colors</h3>
-				<hr/>
+				<h3 className='ui'>Colors</h3>
+				<div className='square-containers'>
+					<div className='white square-none'></div>
+				</div>
+				<div className='square-containers'>
+					<div className='brown square'></div>
+					<div className='light-brown sm-square'></div>
+					<div className='dark-brown sm-square'></div>
+				</div>
+				<div className='square-containers'>
+					<div className='blue square'></div>
+					<div className='light-blue sm-square'></div>
+					<div className='dark-blue sm-square'></div>
+				</div>
+				<div className='square-containers'>
+					<div className='grey square'></div>
+					<div className='light-grey sm-square'></div>
+					<div className='dark-grey sm-square'></div>
+				</div>
+				<div className='square-containers'>
+					<div className='red square'></div>
+					<div className='light-red sm-square'></div>
+					<div className='dark-red sm-square'></div>
+				</div>
 
-					<div className='square-containers'>
-						<div className='white square-none'></div>
-					</div>
-
-					<div className='square-containers'>
-						<div className='brown square'></div>
-						<div className='light-brown sm-square'></div>
-						<div className='dark-brown sm-square'></div>
-					</div>
-					
-					<div className='square-containers'>
-						<div className='blue square'></div>
-						<div className='light-blue sm-square'></div>
-						<div className='dark-blue sm-square'></div>
-					</div>
-
-					<div className='square-containers'>
-						<div className='grey square'></div>
-						<div className='light-grey sm-square'></div>
-						<div className='dark-grey sm-square'></div>
-					</div>
-
-					<div className='square-containers'>
-						<div className='red square'></div>
-						<div className='light-red sm-square'></div>
-						<div className='dark-red sm-square'></div>
-					</div>
-
-				<h3>Typography</h3>
-				<hr/>
-
+				<h3 className='ui'>Typography</h3>
 				<Typography />
 
-				<h3>Tabs</h3>
-				<hr/>
-
+				<h3 className='ui'>Tabs</h3>
 				<TabsWithHeader tabs = { tabsData }>
 					conteudo do tab
 				</TabsWithHeader>
 
-				<h3>Forms</h3>
+				<h3 className='ui'>Forms</h3>
 				<hr/>
 				<input type='text' value='default'/>
 				<input type="" name=""/>
 
 
-				<h3>Iconography</h3>
+				<h3 className='ui'>Iconography</h3>
 				<hr/>
 
-				<h3>Buttons</h3>
+				<h3 className='ui'>Buttons</h3>
 				<hr/>
 
 				<div className='btt'>
