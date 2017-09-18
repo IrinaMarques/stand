@@ -1,11 +1,12 @@
 @import './variables';
 
 @media (max-width: 1120px) {
-	@import 'newArticle/NewArticleBasicData1120'
+	@import 'newArticle/NewArticleBasicData1120';
 }
 
 @media (max-width: 1045px) {
-	@import 'newArticle/NewArticleBasicData1045'
+	@import 'newArticle/NewArticleBasicData1045';
+	@import 'newArticle/NewArticleMoreDetails1045';
 }
 
 @media (max-width: 800px) {

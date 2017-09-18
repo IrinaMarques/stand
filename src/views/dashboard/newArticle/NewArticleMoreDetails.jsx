@@ -19,13 +19,13 @@ class NewArticleMoreDetails extends Component {
 				<form action='javascript:void(0);'>
 					<div className='container-fluid'> 
 						<div className='row basic-container'>
-							<div className='col-lg-7 more-left'>
+							<div className='col-md-7 col-sm-12 more-left'>
 								<div className='row'>
-									<div className='col-lg-6'>
+									<div className='col-md-6 col-sm-6'>
 									<h3>Extras</h3>
 										<div className='col-xs-12 item'>
 											<input type='checkbox' name='' id='1'/>
-											<label htmlFor='1'>Ar condicionado manual</label>
+											<label htmlFor='1'>Ar condicionado</label>
 										</div>
 										<div className='col-xs-12 item'>
 											<input type='checkbox' name='' id='2'/>
@@ -41,7 +41,7 @@ class NewArticleMoreDetails extends Component {
 										</div>
 										<div className='col-xs-12 item'>
 											<input type='checkbox' name='' id='5'/>
-											<label htmlFor='5'>Fecho central de portas</label>
+											<label htmlFor='5'>Fecho central</label>
 										</div>
 										<div className='col-xs-12 item'>
 											<input type='checkbox' name='' id='6'/>
@@ -57,7 +57,7 @@ class NewArticleMoreDetails extends Component {
 										</div>
 									</div>
 
-									<div className='col-lg-6 right-items'>
+									<div className='col-lg-6 col-sm-6 right-items'>
 										<div className='col-xs-12 item'>
 											<input type='checkbox' name='' id='9'/>
 											<label htmlFor='9'>Computador de bordo</label>
@@ -80,7 +80,7 @@ class NewArticleMoreDetails extends Component {
 										</div>
 										<div className='col-xs-12 item'>
 											<input type='checkbox' name='' id='14'/>
-											<label htmlFor='14'>Espelhos Retrovisores El&eacute;tricos</label>
+											<label htmlFor='14'>Retrovisores El&eacute;tricos</label>
 										</div>
 										<div className='col-xs-12 item'>
 											<input type='checkbox' name='' id='15'/>
@@ -90,12 +90,12 @@ class NewArticleMoreDetails extends Component {
 											<input type='checkbox' name='' id='16'/>
 											<label htmlFor='16'>CD</label>
 										</div>
-									</div>
+									</div>									
 								</div>
 							</div>
-							<div className='col-lg-5 more-left'>
+							<div className='col-md-5 col-sm-12 more-right'>
 								<h3>Observa&ccedil;&otilde;es</h3>
-								<textarea rows="9"></textarea>
+								<textarea rows="8"></textarea>
 
 								<p>Este ve&iacute;culo pertence &agrave;s novidades?</p>
 								<input type='radio' name='' id='sim-nov'/>
@@ -109,21 +109,20 @@ class NewArticleMoreDetails extends Component {
 								<input type='radio' name='' id='nao-soc'/>
 								<label htmlFor='nao-soc'>N&atilde;o</label>
 							</div>
+							<div className='col-xs-12 more-end'>
+								<label htmlFor='outros'></label>
+								<input type='text' name='' placeholder='outros'/>
+							</div>
 						</div>
 
 						<div className='row'>
-							<label htmlFor='outros'></label>
-							<input type='text' name='' placeholder='outros'/>
-						</div>
-
-						<div className='row'>
-							<div className='col-lg-3'>
+							<div className='col-md-3'>
 								<Link to='/dashboard/new-article/basic-information'>
 									<p>Anterior</p>
 									<i className="fa fa-caret-square-o-left" aria-hidden="true"></i>
 								</Link>
 							</div>
-							<div className='col-lg-3 col-lg-offset-6'>
+							<div className='col-md-3 col-md-offset-6'>
 								<Link to='/dashboard/new-article/images'>
 									<p>Pr&oacute;ximo</p>
 									<i className="fa fa-caret-square-o-right" aria-hidden="true"></i>

@@ -7,7 +7,7 @@
 
 	label {
 		font-family: $sfont;
-		font-size: $plg;
+		font-size: $pmd;
 		color: $blue;
 		padding-left: 7px;
 	}
@@ -17,14 +17,31 @@
 	}
 
 	.right-items {
-		margin: 80px 0; 
+		margin-top: 80px; 
 	}
 
-	textarea {
-		max-width:100%;
-    	min-width:100%;
-    	resize:vertical;
-    	box-sizing:border-box;
-    	margin:auto;
+	.more-end {
+		
+	}
+
+	.more-right {
+
+		textarea {
+			max-width:100%;
+    		min-width:100%;
+    		resize:vertical;
+    		box-sizing:border-box;
+    		margin:auto;
+		}
+
+		p {	
+			font-family: $sfont;
+			font-size: $pmd;
+			margin-bottom: 5px;
+		}
+
+		label {
+			padding: 0 25px 0 7px;
+		}
 	}
 }

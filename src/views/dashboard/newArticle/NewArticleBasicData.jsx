@@ -32,7 +32,7 @@ class NewArticleBasicData extends Component {
 											labelText='Nome da Viatura'
 											errorClassName='error'
 											doneClassName='done'
-											classNameState='done'
+											classNameState=''
 										/>
 									</div>
 								</div>
@@ -46,7 +46,7 @@ class NewArticleBasicData extends Component {
 											labelText='Pre&ccedil;o'
 											errorClassName='error'
 											doneClassName='done'
-											classNameState='done'
+											classNameState=''
 										/>
 									</div>
 									<div className='col-md-6'>
@@ -56,7 +56,7 @@ class NewArticleBasicData extends Component {
 											labelText='Kms'
 											errorClassName='error'
 											doneClassName='done'
-											classNameState='done'
+											classNameState=''
 										/>
 									</div>
 								</div>
@@ -69,7 +69,7 @@ class NewArticleBasicData extends Component {
 											labelText='Pot&ecirc;ncia'
 											errorClassName='error'
 											doneClassName='done'
-											classNameState='done'
+											classNameState=''
 										/>
 									</div>
 									<div className='col-md-6'>
@@ -79,7 +79,7 @@ class NewArticleBasicData extends Component {
 											labelText='Cilindrada'
 											errorClassName='error'
 											doneClassName='done'
-											classNameState='done'
+											classNameState=''
 										/>
 									</div>
 								</div>
@@ -93,7 +93,7 @@ class NewArticleBasicData extends Component {
 											labelClassName='sm-date'
 											errorClassName='error'
 											doneClassName='done'
-											classNameState='done'
+											classNameState=''
 										/>
 									</div>
 									<div className='col-md-6'>
@@ -104,7 +104,7 @@ class NewArticleBasicData extends Component {
 											labelClassName='sm-datev'
 											errorClassName='error'
 											doneClassName='done'
-											classNameState='done'
+											classNameState=''
 										/>
 									</div>
 								</div>
@@ -219,7 +219,7 @@ class NewArticleBasicData extends Component {
 											labelText='Marca'
 											errorClassName='error'
 											doneClassName='done'
-											classNameState='done'
+											classNameState=''
 										/>
 									</div>
 									<div className='col-md-4'>
@@ -229,7 +229,7 @@ class NewArticleBasicData extends Component {
 											labelText='Cor'
 											errorClassName='error'
 											doneClassName='done'
-											classNameState='done'
+											classNameState=''
 										/>
 									</div>
 									<div className='col-md-4'>
@@ -239,7 +239,7 @@ class NewArticleBasicData extends Component {
 											labelText='Lugares'
 											errorClassName='error'
 											doneClassName='done'
-											classNameState='done'
+											classNameState='active'
 										/>
 									</div>
 								</div>
