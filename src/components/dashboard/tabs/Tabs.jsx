@@ -4,13 +4,16 @@ import { NavLink } from 'react-router-dom';
 const buildTab = (coll) => {
     return coll.map((item, index) => (
         <li className="tabs-item" key={ index }>
-            <NavLink 
+            <NavLink
                 to              = { item.path }
                 activeClassName = "selected"
                 className       = "tabs-link"
             >
-                <span>{ item.name }</span>
-                <i className={ item.iconClassName } aria-hidden="true"></i>
+                <div className="tab-content">
+                    <span>{ item.name }</span>
+                    <i className={ item.iconClassName } aria-hidden="true"></i>
+                </div>
+                <div className="tab-background"></div>
             </NavLink>
         </li>
     ))

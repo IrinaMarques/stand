@@ -239,7 +239,7 @@ class NewArticleBasicData extends Component {
 											labelText='Lugares'
 											errorClassName='error'
 											doneClassName='done'
-											classNameState='active'
+											classNameState=''
 										/>
 									</div>
 								</div>
