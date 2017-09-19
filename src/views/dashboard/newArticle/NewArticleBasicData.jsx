@@ -22,10 +22,8 @@ class NewArticleBasicData extends Component {
 				<form action='javascript:void(0);'>
 					<div className='container-fluid'>
 						<div className='row basic-container'>
-
-							<div className='col-md-5 basic-left'>
-								<div className='row'>
-									<div className='col-xs-12 dados-nome'>
+							<div className='col-lg-5 basic-left'>
+								<div className='col-xs-12 dados-nome'>
 										<TextInput
 											id='v-nome'
 											placeholder='Nome'
@@ -34,11 +32,9 @@ class NewArticleBasicData extends Component {
 											doneClassName='done'
 											classNameState=''
 										/>
-									</div>
 								</div>
-
-								<div className='row'>
-									<div className='col-md-6'>
+								
+								<div className='col-sm-6'>
 										<NumberInput
 											id='v-preço'
 											placeholder='00,00'
@@ -48,8 +44,9 @@ class NewArticleBasicData extends Component {
 											doneClassName='done'
 											classNameState=''
 										/>
-									</div>
-									<div className='col-md-6'>
+								</div>
+
+								<div className='col-sm-6'>
 										<NumberInput
 											id='v-kms'
 											placeholder='0'
@@ -58,11 +55,9 @@ class NewArticleBasicData extends Component {
 											doneClassName='done'
 											classNameState=''
 										/>
-									</div>
 								</div>
-
-								<div className='row'>
-									<div className='col-md-6'>
+								
+								<div className='col-sm-6'>
 										<NumberInput
 											id='v-potencia'
 											placeholder='0'
@@ -71,8 +66,9 @@ class NewArticleBasicData extends Component {
 											doneClassName='done'
 											classNameState=''
 										/>
-									</div>
-									<div className='col-md-6'>
+								</div>
+
+								<div className='col-sm-6'>
 										<NumberInput
 											id='v-cilindrada'
 											placeholder='0'
@@ -81,11 +77,9 @@ class NewArticleBasicData extends Component {
 											doneClassName='done'
 											classNameState=''
 										/>
-									</div>
 								</div>
-
-								<div className='row'>
-									<div className='col-md-6'>
+								
+								<div className='col-sm-6'>
 										<DateInput
 											id='v-datav'
 											placeholder='DD/MM/AA'
@@ -95,24 +89,23 @@ class NewArticleBasicData extends Component {
 											doneClassName='done'
 											classNameState=''
 										/>
-									</div>
-									<div className='col-md-6'>
+								</div>
+
+								<div className='col-sm-6'>
 										<DateInput
 											id='v-data-e'
 											placeholder='DD/MM/AA'
-											labelText='Entrada no Stand'
+											labelText='Data em Stand'
 											labelClassName='sm-datev'
 											errorClassName='error'
 											doneClassName='done'
 											classNameState=''
 										/>
-									</div>
 								</div>
 							</div>
 
-							<div className='col-md-7 basic-right'>
-								<div className='row'>
-									<div className='col-md-4'>
+							<div className='col-lg-7 basic-right'>
+								<div className='col-lg-4 col-sm-6'>
 										<div className='col-drop'>
 											<Dropdown
 												options={[
@@ -125,9 +118,9 @@ class NewArticleBasicData extends Component {
 												labelText='Categoria'
 											/>
 										</div>
-									</div>
+								</div>
 
-									<div className='col-md-4'>
+								<div className='col-lg-4 col-sm-6'>
 										<div className='col-drop'>
 											<Dropdown
 												options={[
@@ -142,9 +135,9 @@ class NewArticleBasicData extends Component {
 												labelText='Sub-categoria'
 											/>
 										</div>
-									</div>
+								</div>
 
-									<div className='col-md-4'>
+								<div className='col-lg-4 col-sm-6'>
 										<div className='col-drop'>
 											<Dropdown
 												options={[
@@ -160,11 +153,9 @@ class NewArticleBasicData extends Component {
 												labelText='Estado'
 											/>
 										</div>
-									</div>
-
-								</div>
-								<div className='row'>
-									<div className='col-md-4'>
+								</div>								
+								
+								<div className='col-lg-4 col-sm-6'>
 										<div className='col-drop'>
 											<Dropdown
 												options={[
@@ -177,9 +168,9 @@ class NewArticleBasicData extends Component {
 												labelText='Combust&iacute;vel'
 											/>
 										</div>
-									</div>
+								</div>
 
-									<div className='col-md-4'>
+								<div className='col-lg-4 col-sm-6'>
 										<div className='col-drop'>
 											<Dropdown
 												options={[
@@ -193,9 +184,9 @@ class NewArticleBasicData extends Component {
 												labelText='Caixa'
 											/>
 										</div>
-									</div>
+								</div>
 
-									<div className='col-md-4'>
+								<div className='col-lg-4 col-sm-6'>
 										<div className='col-drop'>
 											<Dropdown
 												options={[
@@ -208,11 +199,9 @@ class NewArticleBasicData extends Component {
 												labelText='Portas'
 											/>
 										</div>
-									</div>
 								</div>
-
-								<div className='row'>
-									<div className='col-md-4'>
+								
+								<div className='col-lg-4 col-sm-6'>
 										<TextInput
 											id='v-marca'
 											placeholder='Selecione'
@@ -221,8 +210,9 @@ class NewArticleBasicData extends Component {
 											doneClassName='done'
 											classNameState=''
 										/>
-									</div>
-									<div className='col-md-4'>
+								</div>
+
+								<div className='col-lg-4 col-sm-6'>
 										<TextInput
 											id='v-cor'
 											placeholder='Selecione'
@@ -231,8 +221,9 @@ class NewArticleBasicData extends Component {
 											doneClassName='done'
 											classNameState=''
 										/>
-									</div>
-									<div className='col-md-4'>
+								</div>
+
+								<div className='col-lg-4 col-sm-6'>
 										<TextInput
 											id='v-lugares'
 											placeholder='Selecione'
@@ -241,11 +232,24 @@ class NewArticleBasicData extends Component {
 											doneClassName='done'
 											classNameState=''
 										/>
-									</div>
 								</div>
-
 							</div>
 
+							<div className='row end-btn'>
+								<div className='col-md-3 btn-hidden'>
+									<Link to='/dashboard/new-article/basic-information'>
+										<p>Anterior</p>
+										<i className="fa fa-caret-square-o-left" aria-hidden="true"></i>
+									</Link>
+								</div>
+								<div className='col-md-3 col-md-offset-6'>
+									<Link to='/dashboard/new-article/more-details'>
+										<p>Pr&oacute;ximo</p>
+										<i className="fa fa-caret-square-o-right" aria-hidden="true"></i>
+									</Link>
+								</div>
+							</div>
+							
 						</div>
 					</div>
 				</form>

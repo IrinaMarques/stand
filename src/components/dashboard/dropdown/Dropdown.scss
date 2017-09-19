@@ -3,8 +3,11 @@
 	label {
 
 		p {
-			font-weight: bold;
 			font-family: $sfont;
+			font-size: $plg;
+			font-weight: bold;
+            color: $blue;
+            margin: 30px 0 10px 0;
 		}
 	}
 
@@ -42,7 +45,7 @@
 		.fa {
 			font-size: $pmd;
 			color: $light-grey;
-			padding: 0 10px;
+			padding: 0 5px;
 		}
 	}
 
