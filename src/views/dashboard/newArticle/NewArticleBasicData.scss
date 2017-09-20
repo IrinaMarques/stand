@@ -21,4 +21,29 @@
 			margin: 145px 0 15px 0;
 		}
 	}
+
+	.end-btn {
+
+		.footer-btn{
+			text-align: center; 
+			border: 1px solid $blue;
+			
+			padding: 0;
+
+			a {
+
+				.btn-icon {
+					font-size: 24px;
+					padding: 5px 10px;
+				
+				}
+
+				.btn-text {
+					font-family: $pfont;
+					margin: 3px 0;
+					padding: 0;
+				}
+			}
+		}
+	}
 }

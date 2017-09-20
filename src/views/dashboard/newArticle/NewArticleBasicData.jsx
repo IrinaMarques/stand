@@ -235,24 +235,24 @@ class NewArticleBasicData extends Component {
 											classNameState=''
 										/>
 								</div>
-							</div>
-
-							<div className='row end-btn'>
-								<div className='col-md-3 btn-hidden'>
-									<Link to='/dashboard/new-article/basic-information'>
-										<p>Anterior</p>
-										<i className="fa fa-caret-square-o-left" aria-hidden="true"></i>
-									</Link>
-								</div>
-								<div className='col-md-3 col-md-offset-6'>
-									<Link to='/dashboard/new-article/more-details'>
-										<p>Pr&oacute;ximo</p>
-										<i className="fa fa-caret-square-o-right" aria-hidden="true"></i>
-									</Link>
-								</div>
-							</div>
-							
+							</div>	
 						</div>
+
+						<div className='row end-btn'>
+							<div className='footer-btn col-md-2 btn-hidden'>
+								<Link to='/dashboard/new-article/basic-information'>
+									<i className="btn-icon col-md-3 p-hidden fa fa-chevron-left" aria-hidden="true"></i>
+									<p className='btn-text col-md-9'>Anterior</p>
+								</Link>
+							</div>
+							<div className='footer-btn col-md-2 col-md-offset-8'>
+								<Link to='/dashboard/new-article/more-details'>
+									<p className='btn-text col-md-9'>Pr&oacute;ximo</p>
+									<i className="btn-icon col-md-3 fa fa-chevron-right" aria-hidden="true"></i>
+								</Link>
+							</div>
+						</div>
+
 					</div>
 				</form>
 			</div>
