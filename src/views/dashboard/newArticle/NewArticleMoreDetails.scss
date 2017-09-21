@@ -41,7 +41,49 @@
 		}
 	}
 
-	.more-end {
-		
+	.end-btn {
+		padding: 0 30px;
+		position: relative;
+		bottom: -40px;
+
+		.footer-btn{
+			text-align: center; 
+			border: 2px solid $grey;
+			border-radius: 5px;
+			padding: 0;
+			background: $brown;
+			text-align: center;
+
+			a {
+				color: $grey;
+				text-align: center; 
+			
+
+				.btn-icon {
+					font-size: 24px;
+					margin: 7px 0;
+					border-left: 1px solid $grey;
+
+					&:first-child {
+						border-left: none;
+						border-right: 1px solid $grey;
+					}
+				}
+
+				.btn-text {
+					font-family: $pfont;
+					margin: 4px 0;
+					padding: 0;
+				}
+
+				&:hover {
+					color: $light-blue;
+				}
+
+				&:active {
+					color: $blue;
+				}
+			}
+		}
 	}
 }

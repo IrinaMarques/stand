@@ -110,25 +110,26 @@ class NewArticleMoreDetails extends Component {
 								<label htmlFor='nao-soc'>N&atilde;o</label>
 							</div>
 							<div className='col-xs-12 more-end'>
+								<p className='col-lg-1 col-md-2'>Outros</p>
 								<label htmlFor='outros'></label>
-								<input type='text' name='' placeholder='outros'/>
-							</div>
-
-							<div className='row end-btn'>
-								<div className='col-md-3 btn-hidden'>
-									<Link to='/dashboard/new-article/basic-information'>
-										<p>Anterior</p>
-										<i className="fa fa-caret-square-o-left" aria-hidden="true"></i>
-									</Link>
-								</div>
-								<div className='col-md-3 col-md-offset-6'>
-									<Link to='/dashboard/new-article/more-details'>
-										<p>Pr&oacute;ximo</p>
-										<i className="fa fa-caret-square-o-right" aria-hidden="true"></i>
-									</Link>
-								</div>
+								<input className='col-lg-11 col-md-10' type='text' name='' placeholder='outros'/>
 							</div>
 						</div>	
+
+						<div className='row end-btn'>
+							<div className='footer-btn col-xs-2 btn-hidden'>
+								<Link to='/dashboard/new-article/basic-information'>
+									<i className="btn-icon col-xs-3 p-hidden fa-lg fa fa-chevron-left text-center" aria-hidden="true"></i>
+									<p className='btn-text col-xs-9'>Anterior</p>
+								</Link>
+							</div>
+							<div className='footer-btn col-xs-2 col-xs-offset-8'>
+								<Link to='/dashboard/new-article/more-details'>
+									<p className='btn-text col-xs-9'>Pr&oacute;ximo</p>
+									<i className="btn-icon col-xs-3 fa-lg fa fa-chevron-right" aria-hidden="true"></i>
+								</Link>
+							</div>
+						</div>
 						
 					</div>
 				</form>

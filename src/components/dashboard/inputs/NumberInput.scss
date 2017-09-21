@@ -36,6 +36,15 @@
             .fa {
                 vertical-align: middle;
                 height: 100%;
+
+                &.fa-sort-asc {
+                    padding: 3px 7px;
+                }
+
+                &.fa-sort-desc{
+                    padding: 3px 7px;
+
+                }
             }
         }
     }
