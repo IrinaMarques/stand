@@ -65,6 +65,9 @@ class NumberInput extends Component {
 
     render() {
         const state = this.state;
+        const inputComp = state.value !== null && 
+            ( <input type='number' name='' id={ state.id } value={ state.value }/>) ||
+            ( <input type='number' name='' id={ state.id } placeholder={ state.placeholder }/>) 
 
 		return (
             <div className={`input-wrapper number-input ${state.classNameState}`} >
@@ -72,7 +75,7 @@ class NumberInput extends Component {
                     <p className={state.labelClassName}>{ state.labelText }</p>
                 </label>
                 <div className="input-inner-wrapper">
-                    <input type='number' name='' id={ state.id } placeholder={ state.placeholder } value={ state.value }/>
+                    { inputComp }
                     <button className='number-input-btn input-btn-asc' onClick={ evt => this._add(evt) }>
                         <i className="fa fa-sort-asc" aria-hidden="true"></i>
                     </button>

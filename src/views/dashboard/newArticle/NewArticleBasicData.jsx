@@ -5,6 +5,7 @@ import Dropdown from '../../../components/dashboard/dropdown/Dropdown'
 import TextInput from '../../../components/dashboard/inputs/TextInput'
 import NumberInput from '../../../components/dashboard/inputs/NumberInput'
 import DateInput from '../../../components/dashboard/inputs/DateInput'
+import TabsNavButton from '../../../components/dashboard/buttons/TabsNavButton'
 
 class NewArticleBasicData extends Component {
 	constructor(props) {
@@ -239,6 +240,9 @@ class NewArticleBasicData extends Component {
 						</div>
 
 						<div className='row end-btn'>
+							<TabsNavButton>
+								test
+							</TabsNavButton>
 							<div className='footer-btn col-xs-2 btn-hidden'>
 								<Link to='/dashboard/new-article/basic-information'>
 									<i className="btn-icon col-xs-3 p-hidden fa-lg fa fa-chevron-left text-center" aria-hidden="true"></i>
