@@ -240,21 +240,20 @@ class NewArticleBasicData extends Component {
 						</div>
 
 						<div className='row end-btn'>
-							<TabsNavButton>
-								test
+							<TabsNavButton
+								src='/dashboard/new-article/more-details'
+								iconSide='left'
+								iconClassName='fa fa-chevron-right'
+							>
+								Anterior
 							</TabsNavButton>
-							<div className='footer-btn col-xs-2 btn-hidden'>
-								<Link to='/dashboard/new-article/basic-information'>
-									<i className="btn-icon col-xs-3 p-hidden fa-lg fa fa-chevron-left text-center" aria-hidden="true"></i>
-									<p className='btn-text col-xs-9'>Anterior</p>
-								</Link>
-							</div>
-							<div className='footer-btn col-xs-2 col-xs-offset-8'>
-								<Link to='/dashboard/new-article/more-details'>
-									<p className='btn-text col-xs-9'>Pr&oacute;ximo</p>
-									<i className="btn-icon col-xs-3 fa-lg fa fa-chevron-right" aria-hidden="true"></i>
-								</Link>
-							</div>
+							<TabsNavButton
+								src='/dashboard/new-article/more-details'
+								iconSide='right'
+								iconClassName='fa fa-chevron-left'
+							>
+								Proximo
+							</TabsNavButton>
 						</div>
 
 					</div>

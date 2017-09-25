@@ -1,0 +1,50 @@
+.tabs-nav-btn{
+    text-align: center; 
+    border: 2px solid $grey;
+    border-radius: 5px;
+    padding: 0;
+    background: $brown;
+    text-align: center;
+    color: $grey;
+    margin: 0;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 40px;
+    
+
+    .tabs-nav-btn-inner-wrapper {
+        display: table;
+        table-layout: fixed;
+        height: 100%;
+        
+        .tabs-nav-btn-coll{
+            vertical-align: middle;
+            display: table-cell;
+            padding: 0 10px;
+        }
+    }
+
+    .btn-icon {
+        font-size: 24px;
+        border-left: 1px solid $grey;
+
+        &:first-child {
+            border-left: none;
+            border-right: 1px solid $grey;
+        }
+    }
+
+    .btn-text {
+        font-family: $pfont;
+        padding: 0;
+    }
+
+    &:hover {
+        color: $light-blue;
+        text-decoration: none;
+    }
+
+    &:active {
+        color: $blue;
+    }
+}

@@ -1,6 +1,17 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 
+const iconSideHandler = (side, state, props) => (side === 'left' && (
+	<div className="tabs-nav-btn-inner-wrapper">
+		<span className='btn-text tabs-nav-btn-coll'>{props.children}</span>
+		<i className={`btn-icon tabs-nav-btn-coll ${state.iconClassName}`} aria-hidden="true"></i>
+	</div> ) || (
+	<div className="tabs-nav-btn-inner-wrapper">
+		<i className={`btn-icon tabs-nav-btn-coll ${state.iconClassName}`} aria-hidden="true"></i>
+		<span className='btn-text tabs-nav-btn-coll'>{props.children}</span>
+	</div>
+))
+
 class TabsNavButton extends Component {
 	constructor(props) {
 		super(props);
@@ -11,17 +22,17 @@ class TabsNavButton extends Component {
 	buildState(nextProps) {
 		const props = this.props;
 		return nextProps || {
-			title: props.title | ''
+			src: props.src || '#',
+			iconSide: props.iconSide || '',
+			iconClassName: props.iconClassName || ''
 		}
 	}
 
     render() {
 		const state = this.state;
-
 		return (
-			<Link className='footer-btn' to='/dashboard/new-article/more-details'>
-				<p className='btn-text col-xs-9'>{this.props.children}</p>
-				<i className="btn-icon col-xs-3 fa-lg fa fa-chevron-right" aria-hidden="true"></i>
+			<Link className='tabs-nav-btn' to={state.src}>
+				{ iconSideHandler(state.iconSide, state, this.props) }
 			</Link>
 		);
     }
