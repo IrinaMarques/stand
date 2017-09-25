@@ -242,15 +242,15 @@ class NewArticleBasicData extends Component {
 						<div className='row end-btn'>
 							<TabsNavButton
 								src='/dashboard/new-article/more-details'
-								iconSide='left'
-								iconClassName='fa fa-chevron-right'
+								iconSide='right'
+								iconClassName='fa fa-chevron-left'
 							>
 								Anterior
 							</TabsNavButton>
 							<TabsNavButton
 								src='/dashboard/new-article/more-details'
-								iconSide='right'
-								iconClassName='fa fa-chevron-left'
+								iconSide='left'
+								iconClassName='fa fa-chevron-right'
 							>
 								Proximo
 							</TabsNavButton>

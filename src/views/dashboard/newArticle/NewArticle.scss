@@ -13,3 +13,15 @@
 		padding: 7px 0 12px 0;
 	}
 }
+
+.msg-box {
+	.end-btn {
+		padding: 0 30px;
+		position: relative;
+		bottom: -40px;
+
+		&> :last-child{
+			float: right;
+		}
+	}
+}
