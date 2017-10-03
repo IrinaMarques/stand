@@ -1,5 +1,9 @@
 @import './variables';
 
+@media (max-width: 1199px) {
+	@import '../../components/dashboard/buttons/TabsNavButton1199';
+}
+
 @media (max-width: 1045px) {
 	@import 'newArticle/NewArticleMoreDetails1045';
 }
@@ -16,6 +20,10 @@
 
 @media (max-width: 768px) {
 	@import 'newArticle/NewArticleBasicData768';
+}
+
+@media (max-width: 767px) {
+	@import '../../components/dashboard/buttons/TabsNavButton767';
 }
 
 @media (max-width: 760px) {

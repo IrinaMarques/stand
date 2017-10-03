@@ -16,7 +16,8 @@ class NewArticleImages extends Component {
     render() {
 		return (
 			<div>
-				<h1>NewArticleImages!</h1>
+				<p>Carregue uma ou mais imagens</p>
+					<img></img>
 			</div>
 		);
     }

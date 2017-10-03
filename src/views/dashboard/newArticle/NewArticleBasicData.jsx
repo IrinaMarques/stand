@@ -252,7 +252,7 @@ class NewArticleBasicData extends Component {
 								iconSide='left'
 								iconClassName='fa fa-chevron-right'
 							>
-								Proximo
+								Próximo
 							</TabsNavButton>
 						</div>
 

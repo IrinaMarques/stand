@@ -4,7 +4,6 @@
     border-radius: 5px;
     padding: 0;
     background: $brown;
-    text-align: center;
     color: $grey;
     margin: 0;
     box-sizing: border-box;
@@ -21,6 +20,7 @@
             vertical-align: middle;
             display: table-cell;
             padding: 0 10px;
+            font-weight: 600;
         }
     }
 

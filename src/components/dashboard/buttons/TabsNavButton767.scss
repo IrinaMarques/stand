@@ -1,0 +1,20 @@
+.tabs-nav-btn {
+    width: 45px;
+    height: 45px; 
+
+    .tabs-nav-btn-inner-wrapper {
+        margin: 0 auto;
+        
+        .tabs-nav-btn-coll{ 
+
+            &.btn-icon {
+                border: none;  
+            }
+
+            &.btn-text {
+                display: none; 
+                visibility: hidden;
+            }
+        }
+    }
+}
