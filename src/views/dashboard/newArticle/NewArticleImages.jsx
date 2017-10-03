@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+import TabsNavButton from '../../../components/dashboard/buttons/TabsNavButton';
 
 class NewArticleImages extends Component {
 	constructor(props) {
@@ -15,9 +16,25 @@ class NewArticleImages extends Component {
 
     render() {
 		return (
-			<div>
-				<p>Carregue uma ou mais imagens</p>
-					<img></img>
+			<div>	
+				<div className='container-fluid'>
+					<div className='row end-btn'>
+						<TabsNavButton
+							src='/dashboard/new-article/more-details'
+							iconSide='right'
+							iconClassName='fa fa-chevron-left'
+						>
+							Anterior
+						</TabsNavButton>
+						<TabsNavButton
+							src='/dashboard/new-article/more-details'
+							iconSide='left'
+							iconClassName='fa fa-chevron-right'
+						>
+							Próximo
+						</TabsNavButton>
+					</div>
+				</div>
 			</div>
 		);
     }

@@ -23,6 +23,10 @@
         &[type='date'] {
             padding: 4px;
         }
+
+        &:hover {
+            border: 1px solid $light-blue;
+        }
     
         &:focus {
             border: 1px solid $light-blue;
