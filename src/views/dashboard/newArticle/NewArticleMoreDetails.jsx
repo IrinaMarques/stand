@@ -101,21 +101,25 @@ class NewArticleMoreDetails extends Component {
 								<textarea rows="8"></textarea>
 
 								<p>Este ve&iacute;culo pertence &agrave;s novidades?</p>
-								<input type='radio' name='' id='sim-nov'/>
+								<input type='radio' name='yes' id='sim-nov'/>
 								<label htmlFor='sim-nov'>Sim</label>
-								<input type='radio' name='' id='nao-nov'/>
+								<input type='radio' name='yes' id='nao-nov'/>
 								<label htmlFor='nao-nov'>N&atilde;o</label>
 
 								<p>Partilhar nas redes sociais?</p>
-								<input type='radio' name='' id='sim-soc'/>
+								<input type='radio' name='no' id='sim-soc'/>
 								<label htmlFor='sim-soc'>Sim</label>
-								<input type='radio' name='' id='nao-soc'/>
+								<input type='radio' name='no' id='nao-soc'/>
 								<label htmlFor='nao-soc'>N&atilde;o</label>
 							</div>
 							<div className='col-xs-12 more-end'>
-								<p className='col-lg-1 col-md-2'>Outros</p>
-								<label htmlFor='outros'></label>
-								<input className='col-lg-11 col-md-10' type='text' name='' placeholder='outros'/>
+									<TextInput 
+										className=''
+										labelText='Outros' 
+										type='text' 
+										name='' 
+										placeholder='outros'
+									/>
 							</div>
 						</div>	
 
