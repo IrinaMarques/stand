@@ -21,38 +21,77 @@ class NewArticleImages extends Component {
 					<div className='row basic-container'>
 
 						<div className='col-md-4'>
-							<p>Carregue uma ou mais imagens</p>
-							<div className='solo-img'>
-								<img src={require("dashboardImages/placeholder-img-200px.png")} alt="Placeholder"/>
+							<p>Imagem principal</p>
+							<div className='row'>
+								<div className='solo-img-container'>
+									<div className='solo-img'>
+										<picture>
+											<source srcSet={require("dashboardImages/placeholder-img-300px.png")} media='(min-width: 1200px)'/>
+											
+											<source srcSet={require("dashboardImages/placeholder-img-250px.png")} media='(min-width: 400px)'/>
+											<img src={require("dashboardImages/placeholder-img-300px.png")} alt="Placeholder"/>
+											<input type='file' name='' value='' id=''/>
+										</picture>
+									</div>
+								</div>
 							</div>
-							<form>
-								<input type='file' name='' value='' id='file-upload'/>
-								<label for='file-upload'></label>
-							</form>
-
 						</div>
 						<div className='col-md-8'>
-							<p>Imagens carregadas</p>
-							<div className='row up-row'>
-								<div className='col-sm-4'>
-									<img src={require("dashboardImages/placeholder-img-150px.png")} alt="Placeholder"/>
-								</div>
-								<div className='col-sm-4'>
-									<img src={require("dashboardImages/placeholder-img-150px.png")} alt="Placeholder"/>
-								</div>
-								<div className='col-sm-4'>
-									<img src={require("dashboardImages/placeholder-img-150px.png")} alt="Placeholder"/>
-								</div>
-							</div>
+							<p>Imagens complementares</p>
 							<div className='row'>
-								<div className='col-sm-4'>
-									<img src={require("dashboardImages/placeholder-img-150px.png")} alt="Placeholder"/>
+								<div className='col-md-4 col-sm-6 col-xs-12 sm-img'>
+									<picture>
+										<source srcSet={require("dashboardImages/placeholder-img-200px.png")} media='(min-width: 1200px)'/>
+										<source srcSet={require("dashboardImages/placeholder-img-150px.png")} media='(min-width: 991px)'/>
+										<source srcSet={require("dashboardImages/placeholder-img-200px.png")} media='(min-width: 400px)'/>
+										<img src={require("dashboardImages/placeholder-img-150px.png")} alt="Placeholder"/>
+										<input type='file' name='' value='' id=''/>
+									</picture>
 								</div>
-								<div className='col-sm-4'>
-									<img src={require("dashboardImages/placeholder-img-150px.png")} alt="Placeholder"/>
+								<div className='col-md-4 col-sm-6 col-xs-12 sm-img'>
+									<picture>
+										<source srcSet={require("dashboardImages/placeholder-img-200px.png")} media='(min-width: 1200px)'/>
+										<source srcSet={require("dashboardImages/placeholder-img-150px.png")} media='(min-width: 991px)'/>
+										<source srcSet={require("dashboardImages/placeholder-img-200px.png")} media='(min-width: 400px)'/>
+										<img src={require("dashboardImages/placeholder-img-150px.png")} alt="Placeholder"/>
+										<input type='file' name='' value='' id=''/>
+									</picture>
 								</div>
-								<div className='col-sm-4'>
-									<img src={require("dashboardImages/placeholder-img-150px.png")} alt="Placeholder"/>
+								<div className='col-md-4 col-sm-6 col-xs-12 sm-img'>
+									<picture>
+										<source srcSet={require("dashboardImages/placeholder-img-200px.png")} media='(min-width: 1200px)'/>
+										<source srcSet={require("dashboardImages/placeholder-img-150px.png")} media='(min-width: 991px)'/>
+										<source srcSet={require("dashboardImages/placeholder-img-200px.png")} media='(min-width: 400px)'/>
+										<img src={require("dashboardImages/placeholder-img-150px.png")} alt="Placeholder"/>
+										<input type='file' name='' value='' id=''/>
+									</picture>
+								</div>
+								<div className='col-md-4 col-sm-6 col-xs-12 sm-img down-img'>
+									<picture>
+										<source srcSet={require("dashboardImages/placeholder-img-200px.png")} media='(min-width: 1200px)'/>
+										<source srcSet={require("dashboardImages/placeholder-img-150px.png")} media='(min-width: 991px)'/>
+										<source srcSet={require("dashboardImages/placeholder-img-200px.png")} media='(min-width: 400px)'/>
+										<img src={require("dashboardImages/placeholder-img-150px.png")} alt="Placeholder"/>
+										<input type='file' name='' value='' id=''/>
+									</picture>
+								</div>
+								<div className='col-md-4 col-sm-6 col-xs-12 sm-img down-img'>
+									<picture>
+										<source srcSet={require("dashboardImages/placeholder-img-200px.png")} media='(min-width: 1200px)'/>
+										<source srcSet={require("dashboardImages/placeholder-img-150px.png")} media='(min-width: 991px)'/>
+										<source srcSet={require("dashboardImages/placeholder-img-200px.png")} media='(min-width: 400px)'/>
+										<img src={require("dashboardImages/placeholder-img-150px.png")} alt="Placeholder"/>
+										<input type='file' name='' value='' id=''/>
+									</picture>
+								</div>
+								<div className='col-md-4 col-sm-6 col-xs-12 sm-img down-img'>
+									<picture>
+										<source srcSet={require("dashboardImages/placeholder-img-200px.png")} media='(min-width: 1200px)'/>
+										<source srcSet={require("dashboardImages/placeholder-img-150px.png")} media='(min-width: 991px)'/>
+										<source srcSet={require("dashboardImages/placeholder-img-200px.png")} media='(min-width: 400px)'/>
+										<img src={require("dashboardImages/placeholder-img-150px.png")} alt="Placeholder"/>
+										<input type='file' name='' value='' id=''/>
+									</picture>
 								</div>
 							</div>	
 						</div>
