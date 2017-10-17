@@ -115,6 +115,7 @@ class NewArticleMoreDetails extends Component {
 							<div className='col-xs-12 more-end'>
 									<TextInput 
 										className=''
+										labelText='Outros'
 										type='text' 
 										name='' 
 										placeholder='Outros extras'

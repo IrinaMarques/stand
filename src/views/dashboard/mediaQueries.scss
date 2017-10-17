@@ -1,5 +1,9 @@
 @import './variables';
 
+@media (max-width: 1200px) {
+	@import 'newArticle/NewArticleBasicData1200';
+}
+
 @media (max-width: 1199px) {
 	@import '../../components/dashboard/buttons/TabsNavButton1199';
 	@import '../../components/dashboard/inputs/Input1199';

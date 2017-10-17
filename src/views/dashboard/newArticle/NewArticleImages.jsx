@@ -26,8 +26,7 @@ class NewArticleImages extends Component {
 								<div className='solo-img-container'>
 									<div className='solo-img'>
 										<picture>
-											<source srcSet={require("dashboardImages/placeholder-img-300px.png")} media='(min-width: 1200px)'/>
-											
+											<source srcSet={require("dashboardImages/placeholder-img-300px.png")} media='(min-width: 1200px)'/>											
 											<source srcSet={require("dashboardImages/placeholder-img-250px.png")} media='(min-width: 400px)'/>
 											<img src={require("dashboardImages/placeholder-img-300px.png")} alt="Placeholder"/>
 											<input type='file' name='' value='' id=''/>
