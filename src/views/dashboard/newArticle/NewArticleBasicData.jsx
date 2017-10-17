@@ -238,26 +238,24 @@ class NewArticleBasicData extends Component {
 								</div>
 							</div>	
 						</div>
-
-						<div className='row end-btn'>
-							<TabsNavButton
-								src='/dashboard/new-article/more-details'
-								iconSide='right'
-								iconClassName='fa fa-chevron-left'
-							>
-								Anterior
-							</TabsNavButton>
-							<TabsNavButton
-								src='/dashboard/new-article/more-details'
-								iconSide='left'
-								iconClassName='fa fa-chevron-right'
-							>
-								Próximo
-							</TabsNavButton>
-						</div>
-
 					</div>
 				</form>
+				<div className='row end-btn'>
+					<TabsNavButton
+						src='/dashboard/new-article/more-details'
+						iconSide='right'
+						iconClassName='fa fa-chevron-left'
+					>
+						Anterior
+					</TabsNavButton>
+					<TabsNavButton
+						src='/dashboard/new-article/more-details'
+						iconSide='left'
+						iconClassName='fa fa-chevron-right'
+					>
+						Próximo
+					</TabsNavButton>
+				</div>
 			</div>
 		);
     }

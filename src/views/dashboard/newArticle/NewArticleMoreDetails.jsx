@@ -25,7 +25,7 @@ class NewArticleMoreDetails extends Component {
 							<div className='col-md-7 col-sm-12 more-left'>
 								<div className='row'>
 									<div className='col-md-6 col-sm-6'>
-									<h3>Extras</h3>
+									<h4>Extras</h4>
 										<div className='col-xs-12 item'>
 											<input type='checkbox' name='' id='1'/>
 											<label htmlFor='1'>Ar condicionado</label>
@@ -97,7 +97,7 @@ class NewArticleMoreDetails extends Component {
 								</div>
 							</div>
 							<div className='col-md-5 col-sm-12 more-right'>
-								<h3>Observa&ccedil;&otilde;es</h3>
+								<h4>Observa&ccedil;&otilde;es</h4>
 								<textarea rows="8"></textarea>
 
 								<p>Este ve&iacute;culo pertence &agrave;s novidades?</p>
@@ -115,33 +115,30 @@ class NewArticleMoreDetails extends Component {
 							<div className='col-xs-12 more-end'>
 									<TextInput 
 										className=''
-										labelText='Outros' 
 										type='text' 
 										name='' 
-										placeholder='outros'
+										placeholder='Outros extras'
 									/>
 							</div>
-						</div>	
-
-						<div className='row end-btn'>
-							<TabsNavButton
-								src='/dashboard/new-article/basic-information'
-								iconSide='right'
-								iconClassName='fa fa-chevron-left'
-							>
-								Anterior
-							</TabsNavButton>
-							<TabsNavButton
-								src='/dashboard/new-article/images'
-								iconSide='left'
-								iconClassName='fa fa-chevron-right'
-							>
-								Próximo
-							</TabsNavButton>
 						</div>
-						
 					</div>
 				</form>
+				<div className='row end-btn'>
+					<TabsNavButton
+						src='/dashboard/new-article/basic-information'
+						iconSide='right'
+						iconClassName='fa fa-chevron-left'
+					>
+						Anterior
+					</TabsNavButton>
+					<TabsNavButton
+						src='/dashboard/new-article/images'
+						iconSide='left'
+						iconClassName='fa fa-chevron-right'
+					>
+						Próximo
+					</TabsNavButton>
+				</div>
 			</div>
 		);
     }

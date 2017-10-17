@@ -95,10 +95,9 @@ class NewArticleImages extends Component {
 								</div>
 							</div>	
 						</div>
-
 					</div>
-
-					<div className='row end-btn'>
+				</div>
+				<div className='row end-btn'>
 						<TabsNavButton
 							src='/dashboard/new-article/more-details'
 							iconSide='right'
@@ -114,8 +113,6 @@ class NewArticleImages extends Component {
 							Próximo
 						</TabsNavButton>
 					</div>
-				
-				</div>
 			</div>
 		);
     }

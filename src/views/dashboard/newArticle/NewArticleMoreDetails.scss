@@ -1,8 +1,9 @@
 .msg-box.new-article-more-details {
 
-	h3 {
+	h4 {
 		font-family: $pfont;
 		color: $grey;
+		margin-bottom: 13px;
 	}
 
 	label {
@@ -13,7 +14,7 @@
 	}
 
 	.item {
-		padding: 10px 0;
+		padding: 9px 0;
 	}
 
 	.right-items {
@@ -38,6 +39,14 @@
 
 		label {
 			padding: 0 25px 0 7px;
+		}
+	}
+
+	.more-end {
+
+		label {
+			margin: 0;
+			padding: 9px 0;
 		}
 	}
 }

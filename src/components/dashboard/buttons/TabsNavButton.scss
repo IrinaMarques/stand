@@ -1,4 +1,4 @@
-.tabs-nav-btn{
+.tabs-nav-btn {
     text-align: center; 
     border: 2px solid $grey;
     border-radius: 5px;
@@ -9,13 +9,12 @@
     box-sizing: border-box;
     display: inline-block;
     height: 40px;
-    
 
     .tabs-nav-btn-inner-wrapper {
         display: table;
         table-layout: fixed;
         height: 100%;
-        
+    
         .tabs-nav-btn-coll{
             vertical-align: middle;
             display: table-cell;
@@ -38,14 +37,14 @@
         font-family: $pfont;
         font-size: $pmd;
         padding: 0;
-    }
+    
+        &:hover {
+            color: $light-blue;
+            text-decoration: none;
+        }
 
-    &:hover {
-        color: $light-blue;
-        text-decoration: none;
-    }
-
-    &:active {
-        color: $blue;
+        &:active {
+            color: $blue;
+        }
     }
 }
