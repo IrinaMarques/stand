@@ -2,8 +2,30 @@
 
 	.basic-container {
 
+		.msg {
+			text-align: center;
+
+			h6 {
+				margin-bottom: 0;
+			}
+
+			&.msg-done {
+				visibility: hidden;
+			}
+
+			&.msg-error {
+				color: $red;
+
+				.fa {
+					
+					font-size: 18px;
+					padding: 0 15px;
+				}
+			}
+		}
+
 		.basic-left {
-			margin: 47px 0 15px 0;
+			margin: 0;
 
 			.dados-nome {
 
@@ -18,7 +40,29 @@
 		}
 
 		.basic-right {
-			margin: 145px 0 15px 0;
+			margin: 100px 0 15px 0;
+/*
+			p {
+
+				&.msg-done {
+					margin: 0;
+					display: none;
+				}
+			}
+
+			&.col-error {
+				margin: 84px 0 15px 0;
+
+				&.msg-error {
+					margin: 0;
+					display: none;
+				}
+
+				span {
+					color: $red;
+
+				}
+			}*/
 		}
 	}
 }
