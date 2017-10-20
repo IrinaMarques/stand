@@ -20,15 +20,20 @@ class NewArticleImages extends Component {
 				<div className='container-fluid'>
 					<div className='row basic-container'>
 
+						<h6 className='msg-error'>
+							<i className="fa fa-exclamation-triangle" aria-hidden="true"></i>
+							Uma imagem obrigatória
+						</h6>	
+
 						<div className='col-md-4'>
-							<p>Imagem principal</p>
+							<h6 className='img-title'>Imagem principal</h6>
 							<div className='row'>
 								<div className='solo-img-container'>
 									<div className='solo-img'>
 										<picture>
 											<source srcSet={require("dashboardImages/placeholder-img-300px.png")} media='(min-width: 1200px)'/>											
 											<source srcSet={require("dashboardImages/placeholder-img-250px.png")} media='(min-width: 400px)'/>
-											<img src={require("dashboardImages/placeholder-img-300px.png")} alt="Placeholder"/>
+											<img className='img-error' src={require("dashboardImages/placeholder-img-300px.png")} alt="Placeholder"/>
 											<input type='file' name='' value='' id=''/>
 										</picture>
 									</div>
@@ -36,7 +41,7 @@ class NewArticleImages extends Component {
 							</div>
 						</div>
 						<div className='col-md-8'>
-							<p>Imagens complementares</p>
+							<h6 className='img-title'>Imagens complementares</h6>
 							<div className='row'>
 								<div className='col-md-4 col-sm-6 col-xs-12 sm-img'>
 									<picture>

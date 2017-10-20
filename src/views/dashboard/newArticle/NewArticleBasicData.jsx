@@ -25,7 +25,7 @@ class NewArticleBasicData extends Component {
 				<form action='javascript:void(0);'>
 					<div className='container-fluid'>
 						<div className='row basic-container'>
-							<div className='msg msg-error'>
+							<div className='msg msg-done msg-error'>
 								<h6>
 									<i className="fa fa-exclamation-triangle" aria-hidden="true"></i>
 									Existem campos por preencher
