@@ -5,24 +5,36 @@ import { RedirectToIndexRoute } from '../../helpers/UrlUtils';
 import AsideMenu from '../../components/dashboard/asideMenu/AsideMenu';
 import TopMenu from '../../components/dashboard/topMenu/TopMenu';
 
-require('./Dashboard.scss');
+
 
 class Dashboard extends Component {
 	constructor(props) {
 		super(props);
 		this.state = this.buildState();
+
 		return this;
 	}
-
+	
     componentWillReceiveProps(nextProps) {
 	}
 
 	componentWillMount() {
+		 
+		return import('./Dashboard.scss').then(() => {
+			return new Promise((resolve, reject) => {
+				return setTimeout(() => {
+					resolve()
+				}, 50);
+			})
+		}).then(() => this.setState({
+			stylesLoaded: true
+		}));
 	}
 
 	buildState(nextProps) {
 		return nextProps || {
-			asideMenuIsOpen: false
+			asideMenuIsOpen: false,
+			stylesLoaded: false
 		}
 	}
 
@@ -34,21 +46,29 @@ class Dashboard extends Component {
 
     render() {
 		const redirect = RedirectToIndexRoute(this.props);
-		if(redirect) return redirect;
+		const { stylesLoaded } = this.state;
+		if (stylesLoaded && redirect) return redirect;
 		
-		return (
-			<div className='box-container'>
-				<TopMenu 
-					onAsideMenuToggle={ state => this._onAsideMenuToggle(state) }
-					isOpen={ this.state.asideMenuIsOpen }
-				/>
-				
-				<div className="content-main-container">
-					<AsideMenu isOpen={ this.state.asideMenuIsOpen } />
-					<main className='main-box'>
-						{ this.props.children } 
-					</main>
+		return stylesLoaded && (
+			<div className='dashboard'>
+
+				<div className='box-container'>
+					<TopMenu 
+						onAsideMenuToggle={ state => this._onAsideMenuToggle(state) }
+						isOpen={ this.state.asideMenuIsOpen }
+					/>
+					
+					<div className="content-main-container">
+						<AsideMenu isOpen={ this.state.asideMenuIsOpen } />
+						<main className='main-box'>
+							{ this.props.children } 
+						</main>
+					</div>
 				</div>
+			</div>
+		) || (
+			<div> 
+				Loading...
 			</div>
 		);
     }

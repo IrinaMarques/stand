@@ -1,0 +1,16 @@
+@import '../../components/common/vendor';
+@import '../../components/common/main';
+
+body {
+    background: red
+}
+
+.dashboard {
+    
+    @import './variables';
+    @import './mixins';
+    
+    //@import '../../components/stand/inputs/TextInput';
+
+    @import './mediaQueries';
+}

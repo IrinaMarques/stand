@@ -57,6 +57,28 @@ export default [
         ]
     },
     {
+        path       : '/stand',
+        component: 'stand/Stand', 
+        indexRoute: 0,
+        routes     : [
+            {
+                path: '/entry',
+                component: 'stand/home/Home', 
+                routes:[]
+            },
+            {
+                path: '/new-products',
+                component: 'stand/newProducts/NewProducts', 
+                routes:[]
+            },
+            {
+                path: '/opportunities',
+                component: 'stand/opportunities/Opportunities', 
+                routes:[]
+            }
+        ]
+    },
+    {
         path       : '/ui-style-guide',
         component  : 'uiStyleGuide/UIStyleGuide', 
         routes     : []

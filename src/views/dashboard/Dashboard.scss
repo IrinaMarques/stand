@@ -1,55 +1,36 @@
+@import '../../components/common/vendor';
+@import '../../components/common/main';
 
-/** FONT-AWESOME **/
-$fa-font-path: "~font-awesome-sass/assets/fonts/font-awesome/";
-@import '~font-awesome-sass/assets/stylesheets/font-awesome';
-
-/** BOOTSTRAP GRID **/
-@import '~bootstrap-sass/assets/stylesheets/bootstrap/normalize';
-@import '~bootstrap-sass/assets/stylesheets/bootstrap/variables';
-
-//@import './bootstrap-custom/variables';
-@import '~bootstrap-sass/assets/stylesheets/bootstrap/mixins';
-@import '~bootstrap-sass/assets/stylesheets/bootstrap/scaffolding';
-//@import '~bootstrap-sass/assets/stylesheets/bootstrap/type';
-@import '~bootstrap-sass/assets/stylesheets/bootstrap/grid';
 
 /** DASHBOARD **/
-@import './variables';
-@import './mixins';
 
-@import '../../components/dashboard/typography/Typography';
-@import '../../components/dashboard/topMenu/TopMenu';
-@import '../../components/dashboard/asideMenu/AsideMenu';
-@import '../../components/dashboard/tabs/Tabs';
-@import '../../components/dashboard/dropdown/Dropdown';
-@import '../../components/dashboard/buttons/Button';
-@import '../../components/dashboard/buttons/TabsNavButton';
-@import '../../components/dashboard/inputs/Input';
-@import '../../components/dashboard/inputs/DateInput';
-@import '../../components/dashboard/inputs/NumberInput';
-@import '../../components/dashboard/inputs/TextInput';
-
-@import './landingPage/LandingPage';
-@import './landingPage/LastMessages';
-@import './landingPage/GeneralSatistics';
-@import './landingPage/ArticlesStatistics';
-
-
-@import './newArticle/NewArticle';
-@import './newArticle/NewArticleBasicData';
-@import './newArticle/NewArticleMoreDetails';
-@import './newArticle/NewArticleImages';
-
-@import './mediaQueries';
-
-body{
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    min-width: 320px;
-}
-
-ul {
-	margin: 0;
-	padding: 0;
+.dashboard {
+    
+    @import './variables';
+    @import './mixins';
+    
+    @import '../../components/dashboard/typography/Typography';
+    @import '../../components/dashboard/topMenu/TopMenu';
+    @import '../../components/dashboard/asideMenu/AsideMenu';
+    @import '../../components/dashboard/tabs/Tabs';
+    @import '../../components/dashboard/dropdown/Dropdown';
+    @import '../../components/dashboard/buttons/Button';
+    @import '../../components/dashboard/buttons/TabsNavButton';
+    @import '../../components/dashboard/inputs/Input';
+    @import '../../components/dashboard/inputs/DateInput';
+    @import '../../components/dashboard/inputs/NumberInput';
+    @import '../../components/dashboard/inputs/TextInput';
+    
+    @import './landingPage/LandingPage';
+    @import './landingPage/LastMessages';
+    @import './landingPage/GeneralSatistics';
+    @import './landingPage/ArticlesStatistics';
+    
+    
+    @import './newArticle/NewArticle';
+    @import './newArticle/NewArticleBasicData';
+    @import './newArticle/NewArticleMoreDetails';
+    @import './newArticle/NewArticleImages';
+    
+    @import './mediaQueries';
 }

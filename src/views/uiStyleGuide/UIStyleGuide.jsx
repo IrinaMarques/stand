@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import Typography from '../../components/dashboard/typography/Typography';
 import TabsWithHeader from '../../components/dashboard/tabs/TabsWithHeader'
 
-require('./UIStyleGuide.scss');
+import('./UIStyleGuide.scss');
 
 const tabsData = [
 	{
