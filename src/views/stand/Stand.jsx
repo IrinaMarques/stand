@@ -4,6 +4,11 @@ import { RedirectToIndexRoute } from '../../helpers/UrlUtils';
 import Header from '../../components/stand/header/Header';
 import Footer from '../../components/stand/footer/Footer';
 
+const getRootClassName = routes => {
+	const route = routes.filter(route => location.pathname.indexOf(route.path) > -1)[0];
+	return route && route.props.rootClassName;
+};
+
 class Stand extends Component {
 	constructor(props) {
 		super(props);
@@ -31,12 +36,14 @@ class Stand extends Component {
 	}
 
 	render() {
-		const redirect = RedirectToIndexRoute(this.props);
+		const {props} = this
+		const redirect = RedirectToIndexRoute(props);
 		const { stylesLoaded } = this.state;
 		if (stylesLoaded && redirect) return redirect;
 
+		
 		return stylesLoaded && (
-			<div className='stand'>
+			<div className={`stand ${getRootClassName(props.route.routes)}`}>
 				<div className='box-container container'>
 					<Header />
 

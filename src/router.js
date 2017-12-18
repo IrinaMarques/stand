@@ -1,5 +1,45 @@
 export default [
     {
+        path: '/stand',
+        component: 'stand/Stand',
+        indexRoute: 0,
+        routes: [
+            {
+                path: '/entry',
+                component: 'stand/home/Home',
+                props: {
+
+                    rootClassName: 'lp',
+                },
+                routes: []
+            },
+            {
+                path: '/new-products',
+                component: 'stand/newProducts/NewProducts',
+                props: {
+                    rootClassName: 'new',
+                },
+                routes: []
+            },
+            {
+                path: '/opportunities',
+                props: {
+                    rootClassName: 'op',
+                },
+                component: 'stand/opportunities/Opportunities',
+                routes: []
+            },
+            {
+                path: '/catalog',
+                props: {
+                    rootClassName: 'cat',
+                },
+                component: 'stand/catalog/Catalog',
+                routes: []
+            }
+        ]
+    },
+    {
         path      : '/dashboard',
         component : 'dashboard/Dashboard', 
         indexRoute: 0,
@@ -56,28 +96,7 @@ export default [
             }
         ]
     },
-    {
-        path       : '/stand',
-        component: 'stand/Stand', 
-        indexRoute: 0,
-        routes     : [
-            {
-                path: '/entry',
-                component: 'stand/home/Home', 
-                routes:[]
-            },
-            {
-                path: '/new-products',
-                component: 'stand/newProducts/NewProducts', 
-                routes:[]
-            },
-            {
-                path: '/opportunities',
-                component: 'stand/opportunities/Opportunities', 
-                routes:[]
-            }
-        ]
-    },
+
     {
         path       : '/ui-style-guide',
         component  : 'uiStyleGuide/UIStyleGuide', 

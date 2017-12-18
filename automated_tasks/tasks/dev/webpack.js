@@ -60,8 +60,9 @@ exports.webpackInit = function(error, next){
 exports.webpackWatch = function(compiler, reload){
     return compiler.watch({ 
         aggregateTimeout : 300, // wait so long for more changes
-        poll             : true // use polling instead of native watchers
-        // pass a number to set the polling interval
+        poll             : true, // use polling instead of native watchers
+		// pass a number to set the polling interval
+		ignored: /node_modules/
     }, function(err, stats) {
         errorHandler(err, stats, reload);
     });
