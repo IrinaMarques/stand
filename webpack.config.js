@@ -36,7 +36,8 @@ module.exports = (function(){
 			extensions: ['.js', '.jsx'],
 
 			alias: {
-				dashboardImages: join(context, 'assets/dashboard/images/')
+				dashboardImages: join(context, 'assets/dashboard/images/'),
+				standImages: join(context, 'assets/stand/images/')
 			}
 		},
 

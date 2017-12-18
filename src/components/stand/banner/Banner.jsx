@@ -15,8 +15,8 @@ class Banner extends Component {
 
     render() {
         return (
-            <div>
-                <img src={require("dashboardImages/brand-50px.png")} alt="Logo" />
+            <div className='banner_img'>
+                <img src={require("standImages/road_banner_1200.jpg")} alt="Banner" />
             </div>
         );
     }
