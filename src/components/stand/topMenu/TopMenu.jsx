@@ -18,7 +18,7 @@ class TopMenu extends Component {
         return (
   
             <nav role='navigation'>
-                <div className='row lp'>
+                <div className='row area-color'>
                     
                     <ul className='col-md-8 col-md-offset-4 col-sm-12'>
                         <li className='nav-menu'>

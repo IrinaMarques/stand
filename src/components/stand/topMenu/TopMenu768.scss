@@ -1,20 +1,21 @@
 nav {
-	height:100vh;
 
 	ul {
+		height:100vh;
 		font-size: 20px;
+		padding: 0;
 
 		li {
+			 
 
 			&:first-child {
 				display: block;
 	    		text-align: left;
-	    		padding: 7px 28px;
+	    		padding-left: 35px;
 
 	    		.fa {
 					color: white;
-					font-size: 30px;
-				
+					font-size: 20px;	
 				}
 	    	}
 	    }

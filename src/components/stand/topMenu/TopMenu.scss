@@ -1,20 +1,28 @@
-nav {
-
-	.lp {
+&.lp {
+	nav .area-color {
 		background: $lp;
 	}
+}
 
-	.new {
+&.new {
+	nav .area-color {
 		background: $new;
 	}
+}
 
-	.op {
+&.op {
+	nav .area-color {
 		background: $op;
 	}
+}
 
-	.cat {
+&.cat {
+	nav .area-color {
 		background: $cat;
 	}
+}
+
+nav {
 
 	.nav-menu {
 		display: none;
