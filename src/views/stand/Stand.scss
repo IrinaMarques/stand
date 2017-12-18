@@ -2,13 +2,35 @@
 @import '../../components/common/main';
 
 body {
-    background: red
+    background: white;
+
+    .container {
+    	width: 80%;
+    	margin: 0 auto;
+    	background: #e6b8b8;
+    	padding: 0;
+    } 
 }
 
-.dashboard {
+@media (max-width: 1200px) {
+	
+	body {
+    background: white;
+
+    .container {
+    	width: 100%;
+    	background: #e6b8b8;
+    	padding: 0;
+    } 
+}
+}
+
+.stand {
     
     @import './variables';
     @import './mixins';
+
+    @import '../../components/stand/topMenu/TopMenu';
     
     //@import '../../components/stand/inputs/TextInput';
 

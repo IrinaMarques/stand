@@ -1,0 +1,9 @@
+@import './variables';
+
+@media (max-width: 750px) {
+	@import '../../components/stand/topMenu/TopMenu750';
+}
+
+@media (max-width: 520px) {
+	@import '../../components/stand/topMenu/TopMenu520';
+}

@@ -1,0 +1,44 @@
+nav {
+
+	.lp {
+		background: $lp;
+	}
+
+	.new {
+		background: $new;
+	}
+
+	.op {
+		background: $op;
+	}
+
+	.cat {
+		background: $cat;
+	}
+
+	.nav-menu {
+		display: none;
+	}
+		
+	ul {
+		list-style-type: none;
+		text-align: center;
+		font-family: $pfont;
+		font-size: 22px;
+		font-weight: 600;
+
+		li {
+			padding: 20px 0;
+
+			a {
+			color: white;
+			text-decoration: none;
+
+				&:active {
+					color: $light-blue;
+				}
+			}
+		}
+	}
+	
+}

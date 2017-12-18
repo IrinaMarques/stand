@@ -36,16 +36,18 @@ class Stand extends Component {
 		if (stylesLoaded && redirect) return redirect;
 
 		return stylesLoaded && (
-			<div className='box-container'>
-				<Header />
+			<div className='stand'>
+				<div className='box-container container'>
+					<Header />
 
-				<div className="content-main-container">
+					<div className="content-main-container">
 
-					<main className='main-box'>
-						{this.props.children}
-					</main>
+						<main className='main-box'>
+							{this.props.children}
+						</main>
 
-					<Footer />
+						<Footer />
+					</div>
 				</div>
 			</div>
 		) || (
