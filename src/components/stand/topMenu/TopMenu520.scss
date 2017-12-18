@@ -1,16 +1,6 @@
 nav {
 	height:100vh;
 
-	.nav-menu  {
-		display: block;
-
-		.fa {
-			color: white;
-			font-size: 30px;
-			
-		}
-	}
-
 	ul {
 		padding: 0;
 
@@ -18,10 +8,6 @@ nav {
 			margin: 0 auto;
     		padding: 35px 0;
 
-    		&:first-child {
-    			text-align: left;
-    			    padding: 7px 28px;
-    		}
-		}
+    	}
 	}
 }

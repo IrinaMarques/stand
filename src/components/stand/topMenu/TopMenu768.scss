@@ -1,0 +1,22 @@
+nav {
+	height:100vh;
+
+	ul {
+		font-size: 20px;
+
+		li {
+
+			&:first-child {
+				display: block;
+	    		text-align: left;
+	    		padding: 7px 28px;
+
+	    		.fa {
+					color: white;
+					font-size: 30px;
+				
+				}
+	    	}
+	    }
+	}	
+}

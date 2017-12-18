@@ -38,6 +38,10 @@ nav {
 					color: $light-blue;
 				}
 			}
+
+			&:first-child {
+				display: none;
+			}
 		}
 	}
 	
