@@ -1,6 +1,6 @@
 nav {
-	
 	.area-color {
+		padding-bottom: 77px;
 		 
 		ul {
 
@@ -20,20 +20,18 @@ nav {
 		    }
 		}    
 	}
+}
 
-	&.nav-menu-open {
+.nav-menu-open {
+	.area-color {
+		display: block;
+		max-width: 100%;
 
-		.area-color {
-			display: block;
-			height: 521px;
-			max-width: 100%;
+		ul {
 
-			ul {
-
-				li {
-					display: block;
-				}
-			}	
+			li {
+				display: block;
+			}
 		}	
 	}	
 }
