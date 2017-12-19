@@ -1,22 +1,39 @@
 nav {
+	
+	.area-color {
+		 
+		ul {
 
-	ul {
-		height:100vh;
-		font-size: 20px;
-		padding: 0;
+			li { 
+				display: none;
 
-		li { 
+				&.nav-menu {
+					display: block;
+		    		text-align: left;
+		    		padding-left: 10px;
 
-			&:first-child {
-				display: block;
-	    		text-align: left;
-	    		padding-left: 35px;
+		    		.fa {
+						color: white;
+						font-size: 22px;	
+					}
+		    	}
+		    }
+		}    
+	}
 
-	    		i {
-					color: white;
-					font-size: 20px;	
+	&.nav-menu-open {
+
+		.area-color {
+			display: block;
+			height: 521px;
+			max-width: 100%;
+
+			ul {
+
+				li {
+					display: block;
 				}
-	    	}
-	    }
+			}	
+		}	
 	}	
 }

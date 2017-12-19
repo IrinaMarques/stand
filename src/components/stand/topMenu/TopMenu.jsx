@@ -17,11 +17,11 @@ class TopMenu extends Component {
     render() {
         return (
   
-            <nav role='navigation'>
+            <nav role='navigation' className='nav-menu-open'>
                 <div className='row area-color'>
                     
                     <ul className='col-md-8 col-md-offset-4 col-sm-12'>
-                        <li className='nav-menu'>
+                        <li className='nav-menu col-xs-12'>
                             <i className="fa fa-bars" aria-hidden="true"></i>
                         </li>
                         <li className=' col-sm-3 col-xxs-12'>

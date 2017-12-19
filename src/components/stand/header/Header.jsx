@@ -19,7 +19,7 @@ class Header extends Component {
 
     render() {
         return (
-            <header>
+            <header role='banner'>
                 <TopMenu />
                 <Banner />
                 <Search />

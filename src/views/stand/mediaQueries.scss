@@ -2,8 +2,5 @@
 
 @media (max-width: 768px) {
 	@import '../../components/stand/topMenu/TopMenu768';
-}
-
-@media (max-width: 520px) {
-	@import '../../components/stand/topMenu/TopMenu520';
+	@import '../../components/stand/banner/Banner768';
 }
