@@ -16,7 +16,13 @@ class Banner extends Component {
     render() {
         return (
             <div className='banner_img'>
-                <img src={require("standImages/road_banner_1200.jpg")} alt="Banner" />
+                <picture>
+                    <source srcSet={require("standImages/road_banner_1200.jpg")} media='(min-width: 1200px)'/>
+                    <source srcSet={require("standImages/road_banner_1200.jpg")} media='(min-width: 800px)'/>
+                    <source srcSet={require("standImages/road_banner_800.jpg")} media='(min-width: 480px)'/>
+                     <source srcSet={require("standImages/road_banner_480.jpg")} media='(min-width: 320px)'/>
+                    <img src={require("standImages/road_banner_1200.jpg")} alt="Banner" />
+                </picture>
             </div>
         );
     }

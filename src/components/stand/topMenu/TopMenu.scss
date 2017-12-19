@@ -24,33 +24,32 @@
 
 nav {
 
-	.nav-menu {
-		display: none;
-	}
-		
-	ul {
-		list-style-type: none;
-		text-align: center;
-		font-family: $pfont;
-		font-size: 22px;
-		font-weight: 600;
+	.area-color {
+		margin: 0;
 
-		li {
-			padding: 20px 0;
+		ul {
+			list-style-type: none;
+			text-align: center;
+			font-family: $pfont;
+			font-size: 22px;
+			font-weight: 600;
 
-			a {
-			color: white;
-			text-decoration: none;
+			li {
+				padding: 20px 0;
 
-				&:active {
-					color: $light-blue;
+				a {
+				color: white;
+				text-decoration: none;
+
+					&:active {
+						color: $light-blue;
+					}
 				}
-			}
 
-			&:first-child {
-				display: none;
+				&:first-child {
+					display: none;
+				}
 			}
 		}
 	}
-	
 }

@@ -5,15 +5,14 @@ nav {
 		font-size: 20px;
 		padding: 0;
 
-		li {
-			 
+		li { 
 
 			&:first-child {
 				display: block;
 	    		text-align: left;
 	    		padding-left: 35px;
 
-	    		.fa {
+	    		i {
 					color: white;
 					font-size: 20px;	
 				}
