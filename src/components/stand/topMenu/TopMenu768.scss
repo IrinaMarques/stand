@@ -1,4 +1,5 @@
 nav {
+	
 	.area-color {
 		padding-bottom: 77px;
 		 
@@ -12,9 +13,14 @@ nav {
 		    		text-align: left;
 		    		padding-left: 10px;
 
-		    		.fa {
-						color: white;
-						font-size: 22px;	
+					button {
+						background: none;
+						border: none;
+
+		    			.fa {
+							color: white;
+							font-size: 22px;	
+						}
 					}
 		    	}
 		    }
@@ -31,6 +37,7 @@ nav {
 
 			li {
 				display: block;
+
 			}
 		}	
 	}	

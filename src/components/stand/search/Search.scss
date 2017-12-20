@@ -1,0 +1,96 @@
+&.lp {
+	div .search-container {
+		background: $lp;
+	}
+}
+
+&.new {
+	div .search-container {
+		background: $new;
+	}
+}
+
+&.op {
+	div .search-container {
+		background: $op;
+	}
+}
+
+&.cat {
+	div .search-container {
+		background: $cat;
+	}
+}
+
+
+.search-container {
+
+	.search-text{
+		color: $white;
+		text-align: center;
+		padding: 20px;
+
+		h2 {
+			font-family: $pfont;
+		}
+
+		hr {
+			width: 10%;
+			height: 2px;
+    		background: $white;
+    		margin: 5px auto;
+		}
+
+		p {
+			display: none;
+		}
+	}
+
+	.search-form {
+		text-align: center;
+		padding-bottom: 10px;
+
+		.inp-btt-warper {
+			border: 1px solid $lp;
+			position: relative;
+			width: 60%;
+			margin: 0 auto;
+			font-size: 18px;
+			color: $dark-grey;
+
+			input[type='text'] {
+				width: 100%;
+				border: 1px solid $lp;
+				border-radius: 7px;
+				box-sizing: border-box;
+				padding: 12px 20px;
+			}
+
+			button {
+				position: absolute;
+				top: 1px;
+				right: 0;
+				z-index: 2;
+				border: 0px solid $lp;
+				border-radius: 7px;
+				padding: 12px 20px;
+				background: $white;
+
+				&.filtro {
+					display: none; 
+				} 
+				
+			} 	
+		}
+	}
+
+	&.active {
+
+		p {
+			display: block;
+			font-family: $sfont;
+			font-size: $plg;
+		}
+
+	}
+}
