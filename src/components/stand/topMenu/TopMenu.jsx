@@ -23,7 +23,6 @@ class TopMenu extends Component {
 
     render() {
         const { open } = this.state;
-        const ImageContainer = open && (<div className='top-menu-image-container'></div>) || null;
 
         return (
   
@@ -50,8 +49,8 @@ class TopMenu extends Component {
                         </li>
                     </ul>
 
-                    { ImageContainer }
-
+                    <div className='top-menu-image-container'>
+                    </div>
                 </div>
             </nav>
         );

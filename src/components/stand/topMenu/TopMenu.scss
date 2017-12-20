@@ -26,6 +26,7 @@ nav {
 
 	.area-color {
 		margin: 0;
+		position: relative;
 
 		ul {
 			list-style-type: none;
@@ -33,6 +34,8 @@ nav {
 			font-family: $pfont;
 			font-size: 22px;
 			font-weight: 600;
+			position: relative;
+			z-index: 2;
 
 			li {
 				padding: 20px 0;
@@ -48,8 +51,14 @@ nav {
 
 				&:first-child {
 					display: none;
+					padding: 18px 0;
+					min-height: 70px;
 				}
 			}
+		}
+
+		.top-menu-image-container {
+			display: none;
 		}
 	}
 }

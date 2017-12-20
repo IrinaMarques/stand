@@ -1,23 +1,23 @@
 &.lp {
-	div .search-container {
+	.search-container {
 		background: $lp;
 	}
 }
 
 &.new {
-	div .search-container {
+	.search-container {
 		background: $new;
 	}
 }
 
 &.op {
-	div .search-container {
+	.search-container {
 		background: $op;
 	}
 }
 
 &.cat {
-	div .search-container {
+	.search-container {
 		background: $cat;
 	}
 }
@@ -66,7 +66,7 @@
 				padding: 12px 20px;
 			}
 
-			button {
+			.pesquisa {
 				position: absolute;
 				top: 1px;
 				right: 0;
@@ -84,13 +84,17 @@
 		}
 	}
 
-	&.active {
+	&.focus {
 
 		p {
 			display: block;
 			font-family: $sfont;
 			font-size: $plg;
 		}
+
+	}
+
+	&.filter-open {
 
 	}
 }
