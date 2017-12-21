@@ -66,20 +66,27 @@
 				padding: 12px 20px;
 			}
 
-			.pesquisa {
-				position: absolute;
-				top: 1px;
-				right: 0;
-				z-index: 2;
+			button {
+
 				border: 0px solid $lp;
-				border-radius: 7px;
-				padding: 12px 20px;
-				background: $white;
+					border-radius: 7px;
+					padding: 12px 20px;
+					background: $white;
+
+				&.pesquisa {
+					position: absolute;
+					top: 1px;
+					right: 0;
+					z-index: 2;
+					border: 0px solid $lp;
+
+				}
 
 				&.filtro {
-					display: none; 
+						display: none; 
 				} 
-			} 	
+				 
+			}		
 		}
 	}
 
@@ -97,8 +104,29 @@
 
 		.search-form {
 
-		}
+			.inp-btt-warper {
+				/*position relative none*/
 
+				input[type='text'] {
+						position: relative;
+						right: 30px;
+					}
+
+					.pesquisa {
+						position: absolute;
+    					right: 31px;
+    					top: 1px;
+					}
+
+					.filtro {
+						display: block;
+						position: absolute;
+    					top: 1px;
+    					right: -28px;
+					}
+				
+			}
+		}
 	}
 
 	&.filter-open {

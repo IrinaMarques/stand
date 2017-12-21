@@ -58,11 +58,9 @@ class Search extends Component {
                             <button className='pesquisa'>
                                 <i className="fa fa-search" aria-hidden="true"></i>
                             </button>
-
                             <button className='filtro' onClick={(evt) => this.toggleFiler(evt)}>
                                 <i className="fa fa-sliders" aria-hidden="true"></i>
                             </button>
-
                         </div>
                     </form>
                 </div>
