@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Filter from '../filter/Filter';
 
 
 const focusClassName = 'focus';
@@ -25,7 +26,7 @@ class Search extends Component {
         return this;
     }
 
-    onBlursSearchInput() {
+    onBlurSearchInput() {
         this.setState({
             focusClassName: ''
         });
@@ -54,15 +55,19 @@ class Search extends Component {
                 <div className='search-form'>
                     <form action='javascript:void(0)'>
                         <div className='inp-btt-warper'>
-                            <input type="text" placeholder='Pesquisa' onFocus={(evt) => this.onFocusSearchInput(evt)} onBlur={(evt) => this.onBlursSearchInput(evt)}/>
-                            <button className='pesquisa'>
-                                <i className="fa fa-search" aria-hidden="true"></i>
-                            </button>
+                            <div className='search-input-wrapper'>   
+                                <input type="text" placeholder='Pesquisa' onFocus={(evt) => this.onFocusSearchInput(evt)} onBlur={(evt) => this.onBlurSearchInput(evt)}/>
+                                <button className='pesquisa'>
+                                    <i className="fa fa-search" aria-hidden="true"></i>
+                                </button>
+                            </div>
                             <button className='filtro' onClick={(evt) => this.toggleFiler(evt)}>
                                 <i className="fa fa-sliders" aria-hidden="true"></i>
                             </button>
                         </div>
                     </form>
+
+                    <Filter/>
                 </div>
             </div>
         );
