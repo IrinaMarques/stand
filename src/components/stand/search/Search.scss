@@ -28,7 +28,7 @@
 	.search-text{
 		color: $white;
 		text-align: center;
-		padding: 20px;
+		padding: 20px 5px 0;
 
 		h2 {
 			font-family: $pfont;
@@ -38,13 +38,13 @@
 			width: 10%;
 			height: 2px;
     		background: $white;
-    		margin: 5px auto;
+    		margin: 10px auto 20px;
 		}
 
 		p {
 			display: none;
 		}
-	}
+	}	
 
 	.search-form {
 		text-align: center;
@@ -79,17 +79,24 @@
 				&.filtro {
 					display: none; 
 				} 
-				
 			} 	
 		}
 	}
 
 	&.focus {
 
-		p {
-			display: block;
-			font-family: $sfont;
-			font-size: $plg;
+		.search-text{
+
+			p {
+				display: block;
+				font-family: $sfont;
+				font-size: $plg;
+				padding: 0 5px;
+			}
+		}
+
+		.search-form {
+
 		}
 
 	}
