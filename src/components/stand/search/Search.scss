@@ -57,8 +57,6 @@
 			margin: 0 auto;
 			font-size: 18px;
 			color: $dark-grey;
-			display: table;
-			table-layout: fixed;
 
 			input[type='text'] {
 				width: 100%;
@@ -66,25 +64,45 @@
 				border-radius: 7px;
 				box-sizing: border-box;
 				padding: 12px 20px;
+				position: relative;
+				right: 30px;
 			}
 
 			button {
-
 				border: 0px solid $lp;
-					border-radius: 7px;
-					padding: 12px 20px;
-					background: $white;
+				border-radius: 7px;
+				padding: 12px 20px;
+				background: $white;
 
 				&.pesquisa {
 					position: absolute;
+					right: 31px;
 					top: 1px;
-					right: 0;
 					z-index: 2;
 					border: 0px solid $lp;
-
 				}
 
-			}		
+				&.filtro {
+					position: absolute;
+					top: 1px;
+					right: -88px;
+					display: inline-block;
+					 
+					
+
+					span {
+						display: inline-block;
+
+						p {
+							margin: 0;
+						}
+					}		
+					
+					.fa {
+						padding-left: 10px;	
+					}
+				}		
+			}
 		}
 	}
 
@@ -97,31 +115,6 @@
 				font-family: $sfont;
 				font-size: $plg;
 				padding: 0 5px;
-			}
-		}
-
-		.search-form {
-
-			.inp-btt-warper {
-				/*position relative none*/
-
-				input[type='text'] {
-						position: relative;
-						right: 30px;
-					}
-
-					.pesquisa {
-						position: absolute;
-    					right: 31px;
-    					top: 1px;
-					}
-
-					.filtro {
-						position: absolute;
-    					top: 1px;
-    					right: -28px;
-					}
-				
 			}
 		}
 	}
