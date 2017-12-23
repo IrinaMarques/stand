@@ -7,15 +7,15 @@
             width: 95%;
             margin: 15px auto;
             border-radius: 7px;
-            padding: 15px;
+            padding: 10px;
 
         .filter-header {
             color: $lp;
             font-size: $plg;
-            display: inline;
+            display: inline-block;
+            width: 100%;
              
             .left-header {
-                display: inline-block;
                 float: left;
                 box-sizing: border-box;
 
@@ -24,13 +24,12 @@
                     float: left;
                     width: 70px;
                     height: 45px; 
-                    /*border: 3px solid #73AD21; */
                     padding: 5px;
+                    /*border: 3px solid #73AD21; */
                 }
             }
 
             .right-header {
-                display: inline-block;
                 float: right;
                 box-sizing: border-box;
 
@@ -38,9 +37,9 @@
                     float: right;
                     width: 45px;
                     height: 45px;
-                    /*border: 3px solid #73AD21; */
                     padding: 10px;
                     font-size: 22px;
+                    /*border: 3px solid #73AD21; */
                    
                 }
             }
