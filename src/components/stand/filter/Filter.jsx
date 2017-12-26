@@ -27,23 +27,53 @@ class Filter extends Component {
                         </div>
                     </div>
 
-                    <form>
-                        <div className='filter-main'>
+                    <form className='container-fluid' action="javascript:void(0)">
+                        <div className='filter-main row'>
 
-                            <div className='radio-group'>
-                                <input type='radio' id='new' name='btt'/>
-                                <label for='new'> Novos </label>
+                            <div className='radio-group col-md-6'>
+                                <input type='radio' id='new' name='btt' value='new'/>
+                                <label htmlFor='new'> Novos </label>
 
-                                <input type='radio' id='used' name='btt' />
-                                <label for='used'> Usado </label>
+                                <input type='radio' id='used' name='btt' value='used'/>
+                                <label htmlFor='used'> Usado </label>
 
-                                <input type='radio' id='all' name='btt' />
-                                <label for='all'> Todos </label>
-                                
+                                <input type='radio' id='all' name='btt' value='all'/>
+                                <label htmlFor='all'> Todos </label> 
                             </div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
+
+                            <div className='select-group col-md-6'>
+                                <div className='text-group'>
+                                    <button className='text-control'>Selecione</button>
+                                    <div className='text-line'></div>
+                                    
+                                    <ul className='dropdown'>
+                                        <li>hhh</li>
+                                    </ul>
+                                </div>
+                                <div className='text-group'>
+                                    <input type='text' className='text-control' placeholder='Selecione'/>
+                                    <div className='text-line'></div>
+                                    <div className='dropdown'></div>
+                                </div>
+                            </div>
+
+                            <div className='range-price'>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                                
+                            <div className='range-kms'>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>    
+
+                            <div className='range-year'>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
                         </div>
                     </form>
 

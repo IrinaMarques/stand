@@ -49,7 +49,65 @@
             clear: both;
                         
             .radio-group {
+                display: inline-block;
+                vertical-align: middle;
+                overflow: hidden;
+
+                input[type=radio] {
+                    position: absolute;
+                    visibility: hidden; 
+                }
                 
+                label {
+                    color: $blue;
+                    display: inline-block;
+                    cursor: pointer;
+                    font-family: $sfont;
+                    font-weight: bold;
+                    padding: 10px 20px;
+                    margin: 10px;
+                }
+
+                input[type=radio]:checked + label{
+                    color: $white;
+                    background: $blue;
+                }
+
+                input[type=radio] + label {
+                    border: solid 2px $blue;
+                    border-radius: 7px;
+                }
+            }
+
+            .select-group {
+                display: inline-block;
+                vertical-align: middle;
+                
+                .text-group {
+                    display: inline-block;
+                    margin: 0 10px;
+                   
+                    .text-line {
+                        height: 2px;
+                        background: $grey;
+                        width: 90%;
+                        position: relative;
+                        top: -7px;
+                        margin: 0 auto;
+                    }
+
+                    .text-control {
+                        padding: 7px 14px;
+                        box-shadow: none;
+                        border: 1; /*0*/
+                        /*background-image: linear-gradient(#c8e8ff, #c8e8ff), linear-gradient(#D2D2D2, #D2D2D2);*/
+                    
+                        /*&:focus{
+                            outline: none;
+                            background-image: linear-gradient($blue), linear-gradient(#D2D2D2, #D2D2D2); 
+                        }*/
+                    }
+                }
             }
         }
     }
