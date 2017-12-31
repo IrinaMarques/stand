@@ -43,18 +43,26 @@ class Filter extends Component {
 
                             <div className='select-group col-md-6'>
                                 <div className='text-group'>
-                                    <button className='text-control'>Selecione</button>
-                                    <div className='text-line'></div>
-                                    
-                                    <ul className='dropdown'>
-                                        <li>hhh</li>
-                                    </ul>
+                                    <div className='btt-text'>
+                                        <button className='text-control'>Selecione</button>
+                                        <div className='text-line'></div>
+                                        <ul className='dropdown'>
+                                            <li>hhh</li>
+                                        </ul>
+                                    </div>
                                 </div>
+
                                 <div className='text-group'>
-                                    <input type='text' className='text-control' placeholder='Selecione'/>
-                                    <div className='text-line'></div>
-                                    <div className='dropdown'></div>
+                                    <div className='btt-text'>
+                                        <button className='text-control'>Selecione</button>
+                                        <div className='text-line'></div>
+                                        <ul className='dropdown'>
+                                            <li>hhh</li>
+                                        </ul>
+                                    </div>
                                 </div>
+
+
                             </div>
 
                             <div className='range-price'>
