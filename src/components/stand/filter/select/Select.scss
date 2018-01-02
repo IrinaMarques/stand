@@ -1,0 +1,30 @@
+.select-group {
+    display: inline-block;
+    vertical-align: middle;
+    
+    .text-group {
+        display: inline-block;
+        margin: 10px;
+        
+        .text-line {
+            height: 2px;
+            background: $grey;
+            width: 90%;
+            position: relative;
+            top: -7px;
+            margin: 0 auto;
+        }
+
+        .text-control {
+            padding: 7px 14px;
+            box-shadow: none;
+            border: 1; /*0*/
+            
+        
+            /*&:focus{
+                outline: none;
+                background-image: linear-gradient($blue), linear-gradient(#D2D2D2, #D2D2D2); 
+            }*/
+        }
+    }
+}

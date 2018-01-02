@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Radio from './radio/Radio';
+import Select from './select/Select';
+import Range from './range/Range';
 
 class Filter extends Component {
     constructor(props) {
@@ -30,58 +33,25 @@ class Filter extends Component {
                     <form className='container-fluid' action="javascript:void(0)">
                         <div className='filter-main row'>
 
-                            <div className='radio-group col-md-6'>
-                                <input type='radio' id='new' name='btt' value='new'/>
-                                <label htmlFor='new'> Novos </label>
-
-                                <input type='radio' id='used' name='btt' value='used'/>
-                                <label htmlFor='used'> Usado </label>
-
-                                <input type='radio' id='all' name='btt' value='all'/>
-                                <label htmlFor='all'> Todos </label> 
+                            <div className='col-md-6'>
+                               <Radio/> 
                             </div>
 
-                            <div className='select-group col-md-6'>
-                                <div className='text-group'>
-                                    <div className='btt-text'>
-                                        <button className='text-control'>Selecione</button>
-                                        <div className='text-line'></div>
-                                        <ul className='dropdown'>
-                                            <li>hhh</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div className='text-group'>
-                                    <div className='btt-text'>
-                                        <button className='text-control'>Selecione</button>
-                                        <div className='text-line'></div>
-                                        <ul className='dropdown'>
-                                            <li>hhh</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-
+                            <div className='col-md-6'>
+                                <Select/>
+                                <Select/>
                             </div>
 
-                            <div className='range-price'>
-                                <div></div>
-                                <div></div>
-                                <div></div>
+                            <div>
+                                <Range className='price'/>
+                            </div>
+                            <div>
+                                <Range className='kms'/>
+                            </div>
+                            <div>
+                                <Range className='year'/>
                             </div>
                                 
-                            <div className='range-kms'>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>    
-
-                            <div className='range-year'>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
                         </div>
                     </form>
 
