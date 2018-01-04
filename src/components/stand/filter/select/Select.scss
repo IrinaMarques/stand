@@ -4,27 +4,71 @@
     
     .text-group {
         display: inline-block;
-        margin: 10px;
-        
+        margin: 10px 30px;
+
+        .drop-options {
+            display: none;
+        }
+
         .text-line {
             height: 2px;
             background: $grey;
             width: 90%;
             position: relative;
-            top: -7px;
+            top: -8px;
             margin: 0 auto;
+
+            &:hover {
+                background: $blue; 
+            }
         }
 
         .text-control {
-            padding: 7px 14px;
+            padding: 4px;
+            width: 185px;
             box-shadow: none;
-            border: 1; /*0*/
+            background: none;
+            border: none;
+            display: inline-block;
             
-        
-            /*&:focus{
-                outline: none;
-                background-image: linear-gradient($blue), linear-gradient(#D2D2D2, #D2D2D2); 
-            }*/
+            .text {
+                padding: 10px 7px 5px 10px;
+                font-family: $sfont;
+                float: left;
+                color: $dark-grey;
+                font-size: $plg;
+            }
+
+            .dropdown {
+                float: right;
+                vertical-align: middle;
+                color: $dark-grey;
+                padding: 10px 10px 5px 7px;;
+            }
         }
+
+        &.open {
+
+            .drop-options {
+                display: block;
+                list-style-position: inside;
+                list-style-type: none;
+                text-align: left;
+                width: 90%;
+                margin: 0 auto;
+                color: $dark-grey;
+                font-size: $pmd;
+                border: 1px solid #b9b6b6;
+                border-radius: 3px;
+
+                li {
+                    margin: 3px 5px;
+
+                    &:hover {
+                        color: $blue; 
+                    }
+                }   
+            }
+        }     
     }
 }

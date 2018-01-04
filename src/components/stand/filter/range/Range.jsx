@@ -14,11 +14,14 @@ class Range extends Component {
 
     render() {
         const {props} = this;
+
         return (
             <div className={`range ${props.className}`}>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div className='label'></div>
+                <div className='line'></div>
+                <div className='ball'></div>
+                <div className='ball'></div>
+                <div className='value'></div>
             </div>
         );
     }

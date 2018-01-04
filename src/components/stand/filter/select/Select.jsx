@@ -15,14 +15,25 @@ class Select extends Component {
     render() {
         return (
             <div className='select-group'>
-                <div className='text-group'>
-                    <div className='btt-text'>
-                        <button className='text-control'>Selecione</button>
-                        <div className='text-line'></div>
-                        <ul className='dropdown'>
-                            <li>hhh</li>
-                        </ul>
-                    </div>
+                <div className='text-group open'>
+
+                    <button className='text-control'>
+                        <span className='text'>
+                            Marca
+                        </span>
+                        <span className='dropdown'>
+                            <i className="fa fa-chevron-down" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                    <div className='text-line'></div>
+                    <ul className='drop-options'>
+                        <li>opção 1</li>
+                        <li>opção 2</li>
+                        <li>opção 3</li>
+                        <li>opção 4</li>
+                        <li>opção 5</li>
+                    </ul>
+                    
                 </div>
             </div>
         );
