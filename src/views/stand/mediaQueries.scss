@@ -19,6 +19,7 @@
 
 @media (max-width: 767px) {
 	@import '../../components/stand/filter/Filter767';
+	@import '../../components/stand/filter/select/Select767';
 }
 
 @media (max-width: 600px) {
@@ -27,6 +28,7 @@
 
 @media (max-width: 429px) {
 	@import '../../components/stand/filter/radio/Radio429';
+	@import '../../components/stand/filter/select/Select429';
 }
 
 
