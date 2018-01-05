@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 
 import { RedirectToIndexRoute } from '../../helpers/UrlUtils';
 
+import styles from './Dashboard.scss';
+
 import AsideMenu from '../../components/dashboard/asideMenu/AsideMenu';
 import TopMenu from '../../components/dashboard/topMenu/TopMenu';
 
@@ -19,16 +21,9 @@ class Dashboard extends Component {
 	}
 
 	componentWillMount() {
-		 
-		return import('./Dashboard.scss').then(() => {
-			return new Promise((resolve, reject) => {
-				return setTimeout(() => {
-					resolve()
-				}, 50);
-			})
-		}).then(() => this.setState({
+		return this.setState({
 			stylesLoaded: true
-		}));
+		});
 	}
 
 	buildState(nextProps) {

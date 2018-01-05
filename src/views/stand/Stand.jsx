@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { RedirectToIndexRoute } from '../../helpers/UrlUtils';
 
+import styles from './Stand.scss';
+
 import Header from '../../components/stand/header/Header';
 import Footer from '../../components/stand/footer/Footer';
 
@@ -17,16 +19,9 @@ class Stand extends Component {
 	}
 
 	componentWillMount() {
-
-		return import('./Stand.scss').then(() => {
-			return new Promise((resolve, reject) => {
-				return setTimeout(() => {
-					resolve()
-				}, 50);
-			})
-		}).then(() => this.setState({
+		return this.setState({
 			stylesLoaded: true
-		}));
+		});
 	}
 
 	buildState(nextProps) {

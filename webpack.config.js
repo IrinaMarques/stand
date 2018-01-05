@@ -95,6 +95,7 @@ const webpackConfig = (basePath, context, output, env, pkg, configs, definitions
 					}),
 				}, {
 					test: /\.(svg|ttf|woff|woff2|eot)(\?v=\d+\.\d+\.\d+)?$/,
+					exclude: [join(context, 'assets/dashboard/images/'), join(context, 'assets/stand/images/')],
 					loader: ['url-loader?name=assets/fonts/[name].[ext]&limit=10000'],
 				}, {
 					test: /\.mp3$/,

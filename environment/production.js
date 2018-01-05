@@ -19,7 +19,8 @@ module.exports = (env, basePath) => {
 		module: {
 			rules: [
 				{
-					test: /\.(gif|png|jpeg|svg)$/i,
+					test: /\.(gif|png|jpeg|jpg|svg)$/i,
+					exclude: [/node_modules/],
 					use: [
 						'file-loader', 
 						{
