@@ -44,6 +44,7 @@ class Stand extends Component {
 		
 		return stylesLoaded && (
 			<div className={`stand ${getRootClassName(props.route.routes)}`}>
+				<div className='background'></div>
 				<div className='box-container container'>
 					<Header />
 

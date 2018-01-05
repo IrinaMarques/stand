@@ -1,0 +1,33 @@
+.search-container {
+
+    .search-form {
+
+        .inp-btt-warper {
+            width: 100%;
+            margin: 0 30px;
+            
+            input[type='text'] {
+                right: 15px;
+            }
+
+            button {
+
+                &.pesquisa {
+                    right: 65px;
+                }
+
+                &.filtro {
+                    right: 12px;
+
+                    span {
+						display: none;
+					}		
+					
+					.fa {
+						padding-left: 0;	
+					}
+                }
+            }
+        }
+    }
+}

@@ -28,7 +28,7 @@
 	.search-text{
 		color: $white;
 		text-align: center;
-		padding: 20px;
+		padding: 20px 5px 0;
 
 		h2 {
 			font-family: $pfont;
@@ -38,14 +38,14 @@
 			width: 10%;
 			height: 2px;
     		background: $white;
-    		margin: 5px auto;
+    		margin: 10px auto 20px;
 		}
 
 		p {
 			display: none;
 		}
-	}
-
+	}	
+	
 	.search-form {
 		text-align: center;
 		padding-bottom: 10px;
@@ -64,37 +64,67 @@
 				border-radius: 7px;
 				box-sizing: border-box;
 				padding: 12px 20px;
+				position: relative;
+				right: 30px;
 			}
 
-			.pesquisa {
-				position: absolute;
-				top: 1px;
-				right: 0;
-				z-index: 2;
+			button {
 				border: 0px solid $lp;
 				border-radius: 7px;
 				padding: 12px 20px;
 				background: $white;
 
+				&.pesquisa {
+					position: absolute;
+					right: 31px;
+					top: 1px;
+					z-index: 2;
+					border: 0px solid $lp;
+				}
+
 				&.filtro {
-					display: none; 
-				} 
-				
-			} 	
+					position: absolute;
+					top: 1px;
+					right: -88px;
+					display: inline-block;
+
+					span {
+						display: inline-block;
+
+						p {
+							margin: 0;
+						}
+					}		
+					
+					.fa {
+						padding-left: 10px;	
+					}
+				}		
+			}
 		}
 	}
 
 	&.focus {
 
-		p {
-			display: block;
-			font-family: $sfont;
-			font-size: $plg;
-		}
+		.search-text{
 
+			p {
+				display: block;
+				font-family: $sfont;
+				font-size: $plg;
+				padding: 0 5px;
+			}
+		}
+	}
+
+	.filtro-test {
+		display: none;
 	}
 
 	&.filter-open {
-
+		
+		.filtro-test {
+			display: block;
+		}
 	}
 }

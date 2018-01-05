@@ -1,0 +1,58 @@
+.filter-warpper {
+    width: 100%;
+
+    .filter-container {
+            background: $white;
+            width: 95%;
+            margin: 15px auto;
+            border-radius: 7px;
+            padding: 10px;
+
+        .filter-header {
+            color: $lp;
+            font-size: $plg;
+            display: inline-block;
+            width: 100%;
+             
+            .left-header {
+                float: left;
+                box-sizing: border-box;
+
+                h3 {
+                    margin: 0;
+                    float: left;
+                    width: 70px;
+                    height: 45px; 
+                    padding: 5px;
+                    /*border: 3px solid #73AD21; */
+                }
+            }
+
+            .right-header {
+                float: right;
+                box-sizing: border-box;
+
+                .fa {
+                    float: right;
+                    width: 45px;
+                    height: 45px;
+                    padding: 10px;
+                    font-size: 22px;
+                    /*border: 3px solid #73AD21; */
+                   
+                }
+            }
+        }
+
+        .container-fluid {
+            padding: 0;
+            
+            .filter-main {
+                clear: both;
+                margin: 10px 0;
+                padding: 0;
+                            
+            }
+        }
+    }
+}

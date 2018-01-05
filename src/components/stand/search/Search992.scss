@@ -1,0 +1,23 @@
+.search-container {
+
+    .search-form {
+
+        .inp-btt-warper {
+            
+            input[type='text'] {
+                right: 62px;
+            }
+
+            button {
+
+                &.pesquisa {
+                    right: 63px;
+                }
+
+                &.filtro {
+                    right: -50px;
+                }
+            }
+        }
+    }
+}
