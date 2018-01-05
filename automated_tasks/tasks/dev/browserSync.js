@@ -5,9 +5,10 @@ const fs          = require("fs");
 const netutil     = require('netutil');
 
 
-
 const root       = path.resolve(__dirname, '../../../');
 const publicDir  = process.env.npm_package_config_public_dir;
+
+
 const middleware = function(req, res, next) {
     let fileName   = url.parse(req.url);
     let fileExists = false;
@@ -18,23 +19,23 @@ const middleware = function(req, res, next) {
     if (!fileExists && fileName.indexOf("browser-sync-client") < 0) req.url = "/index.html" ;
     return next();
 };
+
 const startBS = function(bs, port){
     bs.init({
         server: {
             baseDir    : publicDir, 
             middleware : middleware
         }, 
-
+        open: false,
         port: port
-    });
+    }, (err, bs) => require('opn')(bs.options.getIn(['urls', 'local']), { app: ['chrome', '--remote-debugging-port=9222'] }));
 
     return bs;
 };
 
 
 
-exports.browserSync = browserSync.create();
-
+exports.browserSync       = browserSync.create();
 exports.browserSyncReload = function(bs){
     bs.reload();
     return bs;
@@ -51,4 +52,3 @@ exports.browserSyncInit = function(bs){
 
     return bs;
 };
-

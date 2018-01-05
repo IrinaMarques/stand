@@ -5,7 +5,7 @@
  * @returns {String}
  */
 const createIndexJS = (compilation, pkg) => {
-    let path = './'.concat(pkg.config.dist_dir, '/js/', pkg.name)
+    let path = './'.concat(pkg.config.src_dir, '/main')
     
     return (`'use strict';\n /** THIS FILE IS DYNAMICALLY GENERATED **/\n module.exports = require('`+ path +`');`);
 };

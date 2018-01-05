@@ -24,6 +24,10 @@ const colors = (log, color) => {
     };
 };
 
+const devLog = (log) => {
+    return ('\x1b[45m ' + log + ' \x1b[0m');
+};
+
 /**
  * Throws the error to the terminal and system push notification.
  * The error object must have a title and message.
@@ -45,6 +49,16 @@ const logError = (error, color) => {
 };
 
 /**
+ * Throws the warning to the terminal
+ * @param {String} error, text to output
+ * @param {String} color, whose the output text should be <optional>
+ */
+const logWarning = (error, color) => {
+    const msg = error.message ? 'Warning: '.concat(error.message) : error;
+	console.warn( colors(msg, (color || 'yellow')) );
+};
+
+/**
  * Throws a message to the terminal
  * @param {String} msg, text to output
  * @param {String} color, whose the output text should be <optional>
@@ -54,6 +68,8 @@ const logInfo = (msg, color) => {
 };
 
 exports.colors     = colors;
+exports.devLog     = devLog;
 exports.throwError = throwError;
 exports.logError   = logError;
+exports.logWarning = logWarning;
 exports.logInfo    = logInfo;
