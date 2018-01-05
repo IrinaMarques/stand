@@ -40,23 +40,21 @@ class Filter extends Component {
                             <div className='col-sm-6 second-group'>
                                 <Select 
                                     options={[
-                                        { value: 'Ligeiro' },
-                                        { value: 'Pesado' },
-                                        { value: 'Motoc&iacute;clo' }
+                                        { value: 'opcao 1' },
+                                        { value: 'opcao 2' },
+                                        { value: 'opcao 3' }
                                     ]}
-                                    placeholder='Selecione'
-                                    id='v-categoria'
-                                    labelText='Categoria'
+                                    placeholder='Marca'
+                                    id='marca'
                                 />
                                 <Select 
                                     options={[
-                                        { value: 'Ligeiro' },
-                                        { value: 'Pesado' },
-                                        { value: 'Motoc&iacute;clo' }
+                                        { value: 'opcao 4' },
+                                        { value: 'opcao 5' },
+                                        { value: 'xxxxxxxxxxxxxxxx sss &iacute;clo' }
                                     ]}
-                                    placeholder='Selecione'
-                                    id='v-categoria'
-                                    labelText='Categoria'
+                                    placeholder='Consumo'
+                                    id='consumo'
                                 />
                             </div>
 

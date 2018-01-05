@@ -140,7 +140,7 @@ class NewArticleBasicData extends Component {
 													{ value: 'Especiais' }
 												]}
 												placeholder='Selecione'
-												id='aaa'
+												id='v-sub'
 												labelText='Sub-categoria'
 											/>
 										</div>
@@ -158,7 +158,7 @@ class NewArticleBasicData extends Component {
 													{ value: 'Outros' }
 												]}
 												placeholder='Selecione'
-												id='ddd'
+												id='v-estado'
 												labelText='Estado'
 											/>
 										</div>
