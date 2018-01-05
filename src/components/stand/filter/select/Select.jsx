@@ -25,7 +25,6 @@ class Select extends Component {
                             <i className="fa fa-chevron-down" aria-hidden="true"></i>
                         </span>
                     </button>
-                    <div className='text-line'></div>
                     <ul className='drop-options'>
                         <li>opção 1</li>
                         <li>opção 2</li>

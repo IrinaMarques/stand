@@ -1,0 +1,8 @@
+.radio-group {
+    display: block;
+
+    input[type=radio] + label {
+        width: 95%;
+        margin: 10px 0;
+    }
+}

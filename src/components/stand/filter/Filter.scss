@@ -44,9 +44,15 @@
             }
         }
 
-        .filter-main {
-            clear: both;
-                        
+        .container-fluid {
+            padding: 0;
+            
+            .filter-main {
+                clear: both;
+                margin: 10px 0;
+                padding: 0;
+                            
+            }
         }
     }
 }

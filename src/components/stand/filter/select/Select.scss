@@ -18,9 +18,9 @@
             box-shadow: none;
             background:white;
             border: none;
+            border-bottom: 2px solid $grey;
             display: inline-block;
-            position: relative;
-            z-index: 2;
+            transition: border-color .2s;
             
             .text {
                 padding: 10px 7px 5px 10px;
@@ -28,8 +28,7 @@
                 float: left;
                 color: $dark-grey;
                 font-size: $pmd;
-                transition: text-shadow .2s;
-                
+                transition: text-shadow .2s;              
             }
 
             .dropdown {
@@ -41,17 +40,11 @@
             }
         }
 
-        .text-line {
-            height: 2px;
-            width: 176px;
-            background: $grey;
-            position: absolute;
-            z-index: 1;
-            top: 39px;
-            margin: 0 auto;    
-        }
-
     &:hover {
+
+        .text-control {
+        border-bottom-color: #0f161d; 
+        }
 
         .text{
            color: $blue; 
@@ -61,10 +54,6 @@
         .dropdown {
             color: $blue;  
             text-shadow: 0 0 .15px #333, 0 0 .15px #333; 
-        }
-
-        .text-line {
-            background: $blue;
         }
     }
 

@@ -2,6 +2,10 @@
 
    .filter-container { 
         width: 100%;
-        border-radius: 0;    
+        border-radius: 0; 
+        
+        .col-sm-6 {
+            padding: 0;
+        }
    }
 }
