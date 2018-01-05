@@ -4,13 +4,17 @@
 	@import '../../components/stand/filter/Filter1200';
 }
 
-@media (max-width: 924px) {
-	@import '../../components/stand/filter/select/Select924';
+@media (max-width: 992px) {
+	@import '../../components/stand/search/Search992';
 }
 
 @media (max-width: 768px) {
 	@import '../../components/stand/topMenu/TopMenu768';
 	@import '../../components/stand/banner/Banner768';
+}
+
+@media (max-width: 600px) {
+	@import '../../components/stand/search/Search600';
 }
 
 
