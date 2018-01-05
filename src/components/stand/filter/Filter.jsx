@@ -38,8 +38,26 @@ class Filter extends Component {
                             </div>
 
                             <div className='col-sm-6 second-group'>
-                                <Select />
-                                <Select />
+                                <Select 
+                                    options={[
+                                        { value: 'Ligeiro' },
+                                        { value: 'Pesado' },
+                                        { value: 'Motoc&iacute;clo' }
+                                    ]}
+                                    placeholder='Selecione'
+                                    id='v-categoria'
+                                    labelText='Categoria'
+                                />
+                                <Select 
+                                    options={[
+                                        { value: 'Ligeiro' },
+                                        { value: 'Pesado' },
+                                        { value: 'Motoc&iacute;clo' }
+                                    ]}
+                                    placeholder='Selecione'
+                                    id='v-categoria'
+                                    labelText='Categoria'
+                                />
                             </div>
 
                             <div>
