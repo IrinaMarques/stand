@@ -1,42 +1,35 @@
 .select-group {
     display: inline-block;
     vertical-align: middle;
-    
+
+    &:last-child {
+    margin-left: 10%;
+    }
+
     .text-group {
         display: inline-block;
-        margin: 10px 30px;
-
+        
         .drop-options {
             display: none;
         }
 
-        .text-line {
-            height: 2px;
-            background: $grey;
-            width: 90%;
-            position: relative;
-            top: -8px;
-            margin: 0 auto;
-
-            &:hover {
-                background: $blue; 
-            }
-        }
-
         .text-control {
-            padding: 4px;
-            width: 185px;
+            width: 176px;
             box-shadow: none;
-            background: none;
+            background:white;
             border: none;
             display: inline-block;
+            position: relative;
+            z-index: 2;
             
             .text {
                 padding: 10px 7px 5px 10px;
                 font-family: $sfont;
                 float: left;
                 color: $dark-grey;
-                font-size: $plg;
+                font-size: $pmd;
+                transition: text-shadow .2s;
+                
             }
 
             .dropdown {
@@ -46,6 +39,32 @@
                 padding: 10px 10px 5px 7px;;
             }
         }
+
+        .text-line {
+            height: 2px;
+            width: 176px;
+            background: $grey;
+            position: absolute;
+            z-index: 1;
+            top: 39px;
+            margin: 0 auto;    
+        }
+
+    &:hover {
+
+        .text{
+           color: $blue; 
+           text-shadow: 0 0 .15px #333, 0 0 .15px #333;        
+        }
+
+        .dropdown {
+            color: $blue;   
+        }
+
+        .text-line {
+            background: $blue;
+        }
+    }
 
         &.open {
 

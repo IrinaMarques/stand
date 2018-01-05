@@ -15,7 +15,7 @@ class Select extends Component {
     render() {
         return (
             <div className='select-group'>
-                <div className='text-group open'>
+                <div className='text-group'>
 
                     <button className='text-control'>
                         <span className='text'>

@@ -33,13 +33,13 @@ class Filter extends Component {
                     <form className='container-fluid' action="javascript:void(0)">
                         <div className='filter-main row'>
 
-                            <div className='col-md-6'>
+                            <div className='col-sm-6'>
                                <Radio/> 
                             </div>
 
-                            <div className='col-md-6'>
-                                <Select/>
-                                <Select/>
+                            <div className='col-sm-6'>
+                                <Select className='col-sm-6'/>
+                                <Select className='col-sm-6'/>
                             </div>
 
                             <div>
