@@ -36,7 +36,8 @@
                 float: right;
                 vertical-align: middle;
                 color: $dark-grey;
-                padding: 10px 10px 5px 7px;;
+                padding: 10px 10px 5px 7px;
+                transition: text-shadow .2s;
             }
         }
 
@@ -54,11 +55,12 @@
 
         .text{
            color: $blue; 
-           text-shadow: 0 0 .15px #333, 0 0 .15px #333;        
+           text-shadow: 0 0 .05px #333, 0 0 .05px #333;        
         }
 
         .dropdown {
-            color: $blue;   
+            color: $blue;  
+            text-shadow: 0 0 .15px #333, 0 0 .15px #333; 
         }
 
         .text-line {
