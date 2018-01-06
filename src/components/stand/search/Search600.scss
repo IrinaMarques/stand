@@ -4,7 +4,8 @@
 
         .inp-btt-warper {
             width: 100%;
-            margin: 0 30px;
+            padding: 0 30px;
+            box-sizing: border-box;
             
             input[type='text'] {
                 right: 15px;
