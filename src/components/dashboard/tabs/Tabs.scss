@@ -76,6 +76,8 @@
 
 .main-box {
 	.tabs-container {
+		min-width: 320px;
+		
 		.tabs-content {
 			height: 600px;
 		    position: relative;

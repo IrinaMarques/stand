@@ -31,7 +31,7 @@ class NewArticleBasicData extends Component {
 									Existem campos por preencher
 								</h6>
 							</div>
-							<div className='col-lg-5 basic-left'>
+							<div className='col-lg-5 col-xs-12 basic-left'>
 								<div className='col-xs-12 dados-nome'>
 										<TextInput
 											id='v-nome'
@@ -43,7 +43,7 @@ class NewArticleBasicData extends Component {
 										/>
 								</div>
 								
-								<div className='col-sm-6'>
+								<div className='col-xs-12 col-sm-6'>
 										<NumberInput
 											id='v-preço'
 											placeholder='00,00'
@@ -55,7 +55,7 @@ class NewArticleBasicData extends Component {
 										/>
 								</div>
 
-								<div className='col-sm-6'>
+								<div className='col-xs-12 col-sm-6'>
 										<NumberInput
 											id='v-kms'
 											placeholder='0'
@@ -66,7 +66,7 @@ class NewArticleBasicData extends Component {
 										/>
 								</div>
 								
-								<div className='col-sm-6'>
+								<div className='col-xs-12 col-sm-6'>
 										<NumberInput
 											id='v-potencia'
 											placeholder='0'
@@ -77,7 +77,7 @@ class NewArticleBasicData extends Component {
 										/>
 								</div>
 
-								<div className='col-sm-6'>
+								<div className='col-xs-12 col-sm-6'>
 										<NumberInput
 											id='v-cilindrada'
 											placeholder='0'
@@ -88,7 +88,7 @@ class NewArticleBasicData extends Component {
 										/>
 								</div>
 								
-								<div className='col-sm-6'>
+								<div className='col-xs-12 col-sm-6'>
 										<DateInput
 											id='v-datav'
 											placeholder='DD/MM/AA'
@@ -100,7 +100,7 @@ class NewArticleBasicData extends Component {
 										/>
 								</div>
 
-								<div className='col-sm-6'>
+								<div className='col-xs-12 col-sm-6'>
 										<DateInput
 											id='v-data-e'
 											placeholder='DD/MM/AA'
@@ -113,8 +113,8 @@ class NewArticleBasicData extends Component {
 								</div>
 							</div>
 
-							<div className='col-lg-7 basic-right'>
-								<div className='col-lg-4 col-sm-6'>
+							<div className='col-lg-7 col-xs-12 basic-right'>
+								<div className='col-lg-4 col-sm-6 col-xs-12'>
 										<div className='col-drop'>
 											<Dropdown
 												options={[
@@ -129,7 +129,7 @@ class NewArticleBasicData extends Component {
 										</div>
 								</div>
 
-								<div className='col-lg-4 col-sm-6'>
+								<div className='col-lg-4 col-sm-6 col-xs-12'>
 										<div className='col-drop'>
 											<Dropdown
 												options={[
@@ -146,7 +146,7 @@ class NewArticleBasicData extends Component {
 										</div>
 								</div>
 
-								<div className='col-lg-4 col-sm-6'>
+								<div className='col-lg-4 col-sm-6 col-xs-12'>
 										<div className='col-drop'>
 											<Dropdown
 												options={[
@@ -164,7 +164,7 @@ class NewArticleBasicData extends Component {
 										</div>
 								</div>								
 								
-								<div className='col-lg-4 col-sm-6'>
+								<div className='col-lg-4 col-sm-6 col-xs-12'>
 										<div className='col-drop'>
 											<Dropdown
 												options={[
@@ -179,7 +179,7 @@ class NewArticleBasicData extends Component {
 										</div>
 								</div>
 
-								<div className='col-lg-4 col-sm-6'>
+								<div className='col-lg-4 col-sm-6 col-xs-12'>
 										<div className='col-drop'>
 											<Dropdown
 												options={[
@@ -195,7 +195,7 @@ class NewArticleBasicData extends Component {
 										</div>
 								</div>
 
-								<div className='col-lg-4 col-sm-6'>
+								<div className='col-lg-4 col-sm-6 col-xs-12'>
 										<div className='col-drop'>
 											<Dropdown
 												options={[
@@ -210,7 +210,7 @@ class NewArticleBasicData extends Component {
 										</div>
 								</div>
 								
-								<div className='col-lg-4 col-sm-6'>
+								<div className='col-lg-4 col-sm-6 col-xs-12'>
 										<TextInput
 											id='v-marca'
 											placeholder='Selecione'
@@ -221,7 +221,7 @@ class NewArticleBasicData extends Component {
 										/>
 								</div>
 
-								<div className='col-lg-4 col-sm-6'>
+								<div className='col-lg-4 col-sm-6 col-xs-12'>
 										<TextInput
 											id='v-cor'
 											placeholder='Selecione'
@@ -232,7 +232,7 @@ class NewArticleBasicData extends Component {
 										/>
 								</div>
 
-								<div className='col-lg-4 col-sm-6'>
+								<div className='col-lg-4 col-sm-6 col-xs-12'>
 										<TextInput
 											id='v-lugares'
 											placeholder='Selecione'
