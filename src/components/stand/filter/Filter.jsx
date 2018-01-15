@@ -33,39 +33,52 @@ class Filter extends Component {
                     <form className='container-fluid' action="javascript:void(0)">
                         <div className='filter-main row'>
 
-                            <div className='col-sm-6 '>
-                                <Radio /> 
+                            <div className="row">
+                                <div className='col-sm-6 '>
+                                    <Radio /> 
+                                </div>
+
+                                <div className='col-sm-6 second-group'>
+                                    <Select 
+                                        options={[
+                                            { value: 'opcao 1' },
+                                            { value: 'opcao 2' },
+                                            { value: 'opcao 3' }
+                                        ]}
+                                        placeholder='Marca'
+                                        id='marca'
+                                    />
+                                    <Select 
+                                        options={[
+                                            { value: 'opcao 4' },
+                                            { value: 'opcao 5' },
+                                            { value: 'xxxxxxxxxxxxxxxx sss &iacute;clo' }
+                                        ]}
+                                        placeholder='Consumo'
+                                        id='consumo'
+                                    />
+                                </div>
                             </div>
 
-                            <div className='col-sm-6 second-group'>
-                                <Select 
-                                    options={[
-                                        { value: 'opcao 1' },
-                                        { value: 'opcao 2' },
-                                        { value: 'opcao 3' }
-                                    ]}
-                                    placeholder='Marca'
-                                    id='marca'
-                                />
-                                <Select 
-                                    options={[
-                                        { value: 'opcao 4' },
-                                        { value: 'opcao 5' },
-                                        { value: 'xxxxxxxxxxxxxxxx sss &iacute;clo' }
-                                    ]}
-                                    placeholder='Consumo'
-                                    id='consumo'
+
+                            <div className='row'>
+                                <Range 
+                                    className='price col-sm-12'
+                                    label='Preço'
                                 />
                             </div>
 
-                            <div>
-                                <Range className='price'/>
+                            <div className='row'>
+                                <Range 
+                                    className='kms col-sm-12'
+                                    label='Kms'
+                                />
                             </div>
-                            <div>
-                                <Range className='kms'/>
-                            </div>
-                            <div>
-                                <Range className='year'/>
+                            <div className='row'>
+                                <Range 
+                                    className='year col-sm-12'
+                                    label='Ano'
+                                />
                             </div>
                                 
                         </div>

@@ -1,0 +1,38 @@
+
+
+$line-height: 2px;
+$ball-size: 15px;
+
+.range-group {
+    user-select: none;
+
+    .range-wrapper{
+        position: relative;
+    }
+    
+    .range-line {
+        display: block;
+        width: 100%;
+        height: $line-height;
+        background: #797979;
+
+        .ball {
+            display: inline-block;
+            background: #797979;
+            border-radius: 50%;
+            height: $ball-size;
+            width: $ball-size;
+            margin: 0;
+            position: absolute;
+            top: -(($ball-size / 2) - ($line-height / 2));
+            cursor: e-resize;
+
+            &:first-child {
+                left: 0;
+            }
+            &:last-child {
+                right: 0;
+            }
+        }
+    }
+}

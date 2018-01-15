@@ -30,7 +30,10 @@
                 color: $dark-grey;
                 font-size: $pmd;
                 transition: text-shadow .2s;  
-                max-width: 130px;            
+                max-width: 130px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;            
             }
 
             .dropdown {
@@ -77,6 +80,9 @@
 
                 li {
                     margin: 3px 5px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
 
                     a {
                         text-decoration: none;

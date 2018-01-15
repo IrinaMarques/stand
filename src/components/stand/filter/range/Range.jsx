@@ -16,12 +16,23 @@ class Range extends Component {
         const {props} = this;
 
         return (
-            <div className={`range ${props.className}`}>
-                <div className='label'></div>
-                <div className='line'></div>
-                <div className='ball'></div>
-                <div className='ball'></div>
-                <div className='value'></div>
+            <div className={`range-group ${props.className}`}>
+
+                <h4 className='range-label'>
+                    {props.label}
+                </h4>
+
+                <div className='range-wrapper'>
+                    <div className='range-line'>
+                        <div className='ball'>
+                            <div className='value'></div>
+                        </div>
+                        <div className='ball'>
+                            <div className='value'></div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         );
     }
