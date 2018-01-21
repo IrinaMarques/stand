@@ -1,11 +1,13 @@
-
-
 $line-height: 2px;
 $ball-size: 15px;
 
 .range-group {
     user-select: none;
 
+    .range-label {
+        text-align: left;
+    }
+    
     .range-wrapper{
         position: relative;
     }
