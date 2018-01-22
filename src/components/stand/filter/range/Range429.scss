@@ -17,6 +17,7 @@
             display: inline-block;
             border-bottom: 2px solid #797979;
             width: 42%;
+            transition: text-shadow .2s;
 
             &:first-child {
                 margin-right: 15px;
@@ -27,20 +28,49 @@
             }
 
             .value {
-                padding: 10px 7px 8px 10px;
+                padding: 33px 7px;
                 font-family: $sfont;
                 float: left;
                 font-size: $pmd;
                 color: #797979;
+                transition: text-shadow .2s;
             }
 
             .dropdown {
                 float: right;
                 vertical-align: middle;
-                color: $dark-grey;
-                padding: 10px 10px 11px 7px;
+                color: $dark-grey; 
+                transition: text-shadow .2s;
+
+                .fa {
+                    display: block;
+                    padding: 15px;
+                    
+                }
 
             }
         }
     }
+
+    &:hover {
+
+        .range-line-sm {
+            border-bottom-color: $blue; 
+
+            .value {
+                color: $blue; 
+                text-shadow: 0 0 .05px #333, 0 0 .05px #333;  
+            }
+
+            .dropdown {
+                color: $blue;  
+                text-shadow: 0 0 .15px #333, 0 0 .15px #333;    
+            }
+        }
+    }
+/*
+    &.open {
+
+    }
+*/
 }

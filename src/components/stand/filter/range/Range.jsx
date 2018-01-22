@@ -37,6 +37,7 @@ class Range extends Component {
                     <div className='range-line-sm'>
                         <div className='value'>Escolha</div>
                         <div className='dropdown'>
+                            <i className="fa fa-chevron-up" aria-hidden="true"></i>
                             <i className="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>     
                     </div>
@@ -46,6 +47,7 @@ class Range extends Component {
                     <div className='range-line-sm'>
                         <div className='value'>Escolha</div>
                         <div className='dropdown'>
+                            <i className="fa fa-chevron-up" aria-hidden="true"></i>
                             <i className="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
                     </div>

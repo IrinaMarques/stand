@@ -44,10 +44,10 @@ $ball-size: 15px;
     &:hover {
 
         .range-line {
-            background: #0f161d; 
+            background: $blue; 
 
             .ball {
-                background: #0f161d; 
+                background: $blue; 
             }
         }
     }
