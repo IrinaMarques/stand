@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Radio from './radio/Radio';
 import Select from './select/Select';
 import Range from './range/Range';
+import ButtonFilter from './bttFilter/ButtonFilter';
 
 class Filter extends Component {
     constructor(props) {
@@ -84,11 +85,12 @@ class Filter extends Component {
                         </div>
                     </form>
 
-                    <div className='filter-footer'>
-                        <button>
-                            <h3>Proximo</h3>
-                            <i className="fa fa-angle-right" aria-hidden="true"></i>
-                        </button>
+                    <div className='row'>
+                        <div className='col-xs-4 col-xs-offset-8'>
+                            <ButtonFilter
+                                className='btt-filter'
+                            />
+                        </div>
                     </div>
 
                 </div>
