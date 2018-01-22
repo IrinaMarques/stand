@@ -3,6 +3,7 @@ $ball-size: 15px;
 
 .range-group {
     user-select: none;
+    padding: 0 25px;
 
     .range-label {
         text-align: left;
@@ -36,5 +37,9 @@ $ball-size: 15px;
                 right: 0;
             }
         }
+    }
+
+    .range-wrapper-sm {
+        display: none;
     }
 }

@@ -1,10 +1,46 @@
 .range-group {
+    padding: 0 5px;
 
     .range-label {
-        text-align: center;             
+        text-align: center;
+        margin: 25px 0 0;             
     }
 
     .range-wrapper{
         display: none;
+    }
+
+    .range-wrapper-sm {
+        display: block;
+
+        .range-line-sm {
+            display: inline-block;
+            border-bottom: 2px solid #797979;
+            width: 42%;
+
+            &:first-child {
+                margin-right: 15px;
+            }
+
+            &:last-child {
+                margin-left: 15px;
+            }
+
+            .value {
+                padding: 10px 7px 8px 10px;
+                font-family: $sfont;
+                float: left;
+                font-size: $pmd;
+                color: #797979;
+            }
+
+            .dropdown {
+                float: right;
+                vertical-align: middle;
+                color: $dark-grey;
+                padding: 10px 10px 11px 7px;
+
+            }
+        }
     }
 }
