@@ -83,15 +83,16 @@ class Filter extends Component {
                             </div>
                                 
                         </div>
+                        <div className='filter-footer row'>
+                            <div className='col-xs-2 col-xs-offset-10'>
+                                <ButtonFilter
+                                    className='btt-filter'
+                                />
+                            </div>
+                        </div>
                     </form>
 
-                    <div className='row'>
-                        <div className='col-xs-4 col-xs-offset-8'>
-                            <ButtonFilter
-                                className='btt-filter'
-                            />
-                        </div>
-                    </div>
+                    
 
                 </div>
             </div>

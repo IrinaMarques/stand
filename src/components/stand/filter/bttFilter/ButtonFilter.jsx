@@ -17,7 +17,7 @@ class Button extends Component {
 		
 		return (
 			<button className={'btt-footer ' + this.props.className }>
-				<h3>Proximo</h3>
+				<h3>Próximo</h3>
 				<i className="fa fa-angle-right" aria-hidden="true"></i>
 			</button>	
 		);
