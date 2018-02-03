@@ -2,20 +2,18 @@
     background: white;
     border: none;
     width: 100%;
-    clear: both;
     text-align: right;
     padding: 0;
     
     h3 {
         display: inline-block;
-        
+        vertical-align: middle;       
     }
 
     .fa {
         display: inline-block;  
         font-size: 22px;
         vertical-align: middle;
-        float: right;
         margin: 16px 2px;
         padding-left: 18px;
     }

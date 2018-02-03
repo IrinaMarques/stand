@@ -11,62 +11,38 @@
     }
 
     .range-wrapper-sm {
-        display: block;
+         display: inline-block;
 
-        .range-line-sm {
-            display: inline-block;
-            border-bottom: 2px solid #797979;
+        .range-number {
+            display: inline-block;            
             width: 42%;
             transition: text-shadow .2s;
 
-            &:first-child {
-                margin-right: 15px;
-            }
-
-            &:last-child {
-                margin-left: 15px;
-            }
-
-            .value {
-                padding: 33px 7px;
-                font-family: $sfont;
-                float: left;
-                font-size: $pmd;
-                color: #797979;
-                transition: text-shadow .2s;
-            }
-
-            .dropdown {
-                float: right;
-                vertical-align: middle;
-                color: $dark-grey; 
-                transition: text-shadow .2s;
+            button {
+                background: white;
+                border: none; 
+                padding: 13px;
 
                 .fa {
-                    display: block;
-                    padding: 15px;
-                    
+                    font-size: 18px;
                 }
-
             }
+
+            .number-display {
+                text-align: center;
+
+                input {
+                    width:72%;
+                }
+            }
+        }    
+        span {
+                display: inline-block;
         }
     }
-
+        
     &:hover {
 
-        .range-line-sm {
-            border-bottom-color: $blue; 
-
-            .value {
-                color: $blue; 
-                text-shadow: 0 0 .05px #333, 0 0 .05px #333;  
-            }
-
-            .dropdown {
-                color: $blue;  
-                text-shadow: 0 0 .15px #333, 0 0 .15px #333;    
-            }
-        }
     }
 /*
     &.open {

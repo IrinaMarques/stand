@@ -34,23 +34,34 @@ class Range extends Component {
                 </div>
 
                 <div className='range-wrapper-sm'>
-                    <div className='range-line-sm'>
-                        <div className='value'>Escolha</div>
-                        <div className='dropdown'>
+                    <div className='range-number'>
+                        
+                        <button className='range-up'>
                             <i className="fa fa-chevron-up" aria-hidden="true"></i>
+                        </button>
+                        <div className='number-display'>
+                            <input id="number" type="number" value="0" />
+                        </div>
+                        <button className='range-down'>
                             <i className="fa fa-chevron-down" aria-hidden="true"></i>
-                        </div>     
+                        </button>
                     </div>
 
                     <span><b> a </b></span>
 
-                    <div className='range-line-sm'>
-                        <div className='value'>Escolha</div>
-                        <div className='dropdown'>
+                    <div className='range-number'>    
+                        <button className='range-up'>
                             <i className="fa fa-chevron-up" aria-hidden="true"></i>
-                            <i className="fa fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div className='number-display'>
+                            <input id="number" type="number" value="0" />
                         </div>
-                    </div>
+                        <button className='range-down'>
+                            <i className="fa fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                    </div>    
+
+
 
                 </div>
 
