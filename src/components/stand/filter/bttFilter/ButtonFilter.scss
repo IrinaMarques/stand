@@ -17,4 +17,10 @@
         margin: 16px 2px;
         padding-left: 18px;
     }
+    
+    &:hover {
+    color: $blue; 
+    text-shadow: 0 0 .05px #333, 0 0 .05px #333;
+    }
 }
+
