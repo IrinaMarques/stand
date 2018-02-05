@@ -39,9 +39,8 @@ process.on("SIGINT", function () {
 	//graceful shutdown
 	logInfo('> shutdown');
 
-	rimraf(resolve('./', process.env.npm_package_config_public_dir), () => {
 
-		child.kill('SIGKILL');
-		process.exit(0);
-	});
+	child.kill('SIGKILL');
+	process.exit(0);
+	
 });
