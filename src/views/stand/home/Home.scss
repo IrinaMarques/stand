@@ -4,6 +4,11 @@
 
     .header-sm {
         display: none;
+
+        h2 {
+            font-family: $pfont;
+            color: $dark-red; 
+        }
     }
 
     .img-container{
@@ -28,6 +33,32 @@
             margin: 65px 60px;
             max-width: 100%; 
             width: 75%;
+        }
+    }
+
+    .text-container {
+        
+        .header-lg {
+            width: 100%;
+            margin: 65px 0 10px;
+
+            h2 {
+            display: inline-block;
+            width: 45%;
+            font-family: $pfont;
+            color: $dark-red;
+            margin-top: 0;
+            
+            }
+        }
+
+        .header-line {
+            display: inline-block;
+            width: 55%;
+            vertical-align: middle;
+            height: 2px;
+            background: $grey;
+            
         }
     }
 }
