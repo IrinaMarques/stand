@@ -1,10 +1,13 @@
 .filter-warpper {
     width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
 
     .filter-container {
             background: $white;
             width: 95%;
-            margin: 15px auto;
+            margin: 15px auto 0 auto;
             border-radius: 7px;
             padding: 10px;
 
@@ -64,5 +67,11 @@
                 }
             }
         }
+    }
+}
+
+.filter-open {
+    .filter-warpper {
+        max-height: 500px;
     }
 }

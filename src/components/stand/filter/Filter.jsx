@@ -27,7 +27,7 @@ class Filter extends Component {
                             <h3>Filtro</h3>
                         </div>
                         <div className='right-header'>
-                            <i className="fa fa-sliders" aria-hidden="true"></i>
+                            <i className="fa fa-sliders" aria-hidden="true" onClick={(evt) => this.props.onToggleFilerk(evt)} ></i>
                         </div>
                     </div>
 

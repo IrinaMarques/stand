@@ -68,7 +68,7 @@ class Search extends Component {
                         </div>
                     </form>
 
-                    <Filter/>
+                    <Filter onToggleFilerk={(evt) => this.toggleFiler(evt)} />
                 </div>
             </div>
         );
