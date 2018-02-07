@@ -43,22 +43,54 @@
             margin: 65px 0 10px;
 
             h2 {
-            display: inline-block;
-            width: 45%;
-            font-family: $pfont;
-            color: $dark-red;
-            margin-top: 0;
-            
+                display: inline-block;
+                width: 45%;
+                font-family: $pfont;
+                color: $dark-red;
+                vertical-align: middle;
+            }
+
+            .header-line {
+                display: inline-block;
+                width: 55%;
+                vertical-align: middle;
+                height: 2px;
+                background: $grey;
             }
         }
 
-        .header-line {
-            display: inline-block;
-            width: 55%;
+        p {
+            font-family: $sfont;
+            font-size: $pmd;
+            color: $blue;
+        }
+
+        .footer-lg {
+            width: 100%;
+            color: $dark-red;
             vertical-align: middle;
-            height: 2px;
-            background: $grey;
+            text-align: right;
             
+            .footer-line{
+                display: inline-block;
+                width: 25%;
+                vertical-align: middle;
+                height: 2px;
+                background: $grey;
+                width: 25%;
+            }
+
+            h3 {
+                display: inline-block;
+                font-family: $pfont;  
+                width: 65%;    
+            }
+
+            .fa {
+                display: inline-block;
+                padding: 15px 0 15px 30px;
+                width: 10%;
+            }
         }
     }
 }

@@ -49,7 +49,7 @@ class Home extends Component {
                             <p>Lorem ipsum dolor sit amet, pri ea autem mundi, an cum possim maiorum cotidieque, nec idque nemore percipit ex. Ne vim quem moderatius. Volumus definiebas ut per. Dictas hendrerit voluptaria sea ut, vivendum conceptam his id. Vel cu tota admodum corpora, numquam suscipit intellegat vim eu. Te purto vide dolor est, aliquip voluptaria reprehendunt vim te. No vim diam accusata, qui liber everti signiferumque cu. Et elitr dicam nam. Adhuc recusabo lobortis te nec, sed cu wisi expetendis, et ignota concludaturque mea.</p>
                         <div className='footer-lg'>
                             <div className='footer-line'></div>
-                            <h2>Consulte as Novidades</h2>
+                            <h3>Consulte as Novidades</h3>
                             <i className="fa fa-chevron-right"></i>
                         </div>
                     </div>
