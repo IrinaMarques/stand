@@ -24,25 +24,27 @@ class Home extends Component {
                     </div>
 
                     <div className='col-sm-6'>
-                        <div className='slider-wrapper'>
-                            <picture className='img-container'>
-                                <source srcSet={require("../../../assets/stand/images/smart_car_1024x763.jpg")} media='(min-width: 1200px)' />
-                                <source srcSet={require("../../../assets/stand/images/smart_car_800x596.jpg")} media='(min-width: 768px)' />
-                                <source srcSet={require("../../../assets/stand/images/smart_car_400x298.jpg")} media='(min-width: 480px)' />
-                                <img src={require("../../../assets/stand/images/smart_car_1024x763.jpg")} alt="Banner" />
-                            </picture>   
-                        </div>
+                        <div className='thumb-wrapper'>
+                            <div className='slider-wrapper'>
+                                <picture className='img-container'>
+                                    <source srcSet={require("../../../assets/stand/images/smart_car_1024x763.jpg")} media='(min-width: 1200px)' />
+                                    <source srcSet={require("../../../assets/stand/images/smart_car_800x596.jpg")} media='(min-width: 768px)' />
+                                    <source srcSet={require("../../../assets/stand/images/smart_car_400x298.jpg")} media='(min-width: 480px)' />
+                                    <img src={require("../../../assets/stand/images/smart_car_1024x763.jpg")} alt="Banner" />
+                                </picture>   
+                            </div>
 
-                        <div className='news-shadow'></div>
-                        
-                        <div className='btt-container'>
-                            <button className='back-btt'>
-                                <i className="fa fa-chevron-left"></i>
-                            </button>
-                            <button className='next-btt'>
-                                <i className="fa fa-chevron-right"></i>
-                            </button>
-                        </div> 
+                            <div className='news-shadow'></div>
+                            
+                            <div className='btt-container'>
+                                <button className='back-btt'>
+                                    <i className="fa fa-chevron-left"></i>
+                                </button>
+                                <button className='next-btt'>
+                                    <i className="fa fa-chevron-right"></i>
+                                </button>
+                            </div> 
+                        </div>
                     </div>
 
                     <div className='text-container col-sm-6'>
