@@ -30,9 +30,10 @@ class Home extends Component {
                                 <source srcSet={require("../../../assets/stand/images/smart_car_800x596.jpg")} media='(min-width: 768px)' />
                                 <source srcSet={require("../../../assets/stand/images/smart_car_400x298.jpg")} media='(min-width: 480px)' />
                                 <img src={require("../../../assets/stand/images/smart_car_1024x763.jpg")} alt="Banner" />
-                            </picture>
-                            <div className='news-shadow'></div>
+                            </picture>   
                         </div>
+
+                        <div className='news-shadow'></div>
                         
                         <div className='btt-container'>
                             <button className='back-btt'>
