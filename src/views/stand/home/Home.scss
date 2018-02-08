@@ -28,12 +28,23 @@
             box-shadow: 0px 10px 21px -9px rgba(0,0,0,0.81);
             
             .img-container {
-                position: absolute;
+                position: relative;
                 height: 100%;
-                min-width: 100%;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
+                width: 100%;
+                display: block;
+                background: #0f161d;
+
+                img {
+                    max-height: 105%;
+                    max-width: 120%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    margin: auto;
+                    width: auto;
+                    height: auto;
+                    transform: translate(-50%, -50%);
+                }
             }
         }
     
