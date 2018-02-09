@@ -4,6 +4,10 @@
 	@import '../../components/stand/filter/Filter1200';
 }
 
+@media (max-width: 1040px) {
+	@import 'home/Home1040';
+}
+
 @media (max-width: 992px) {
 	@import '../../components/stand/search/Search992';
 }
