@@ -1,0 +1,45 @@
+.news-wrapper {
+    height: 670px;
+
+    .header-sm {
+
+        .h2 {
+            margin: 6% 0 5% 5%;
+            width: 35%;
+        }
+
+        .header-line {
+            margin: 6% 0 5% 0;
+            width: 56%;
+        }
+    }
+
+    .thumb-wrapper {
+        width: 400px;
+        height: 280px;
+    }
+
+    .text-container {
+
+        p {
+            height: 187px;
+            margin: 10% 0 2% 0;
+        }
+    }
+
+    .footer-sm {
+
+        .footer-line {
+            width: 30%;
+        }
+
+        h3 {
+            width: 53%;
+        }
+
+        .fa {
+            width: 9%;
+            padding: 0 3% 0 7%;
+        }
+    }
+}
