@@ -19,16 +19,20 @@
 @media (max-width: 768px) {
 	@import '../../components/stand/topMenu/TopMenu768';
 	@import '../../components/stand/banner/Banner768';
-	@import 'home/Home768';
 }
 
 @media (max-width: 767px) {
 	@import '../../components/stand/filter/Filter767';
 	@import '../../components/stand/filter/select/Select767';
+	@import 'home/Home767';
 }
 
 @media (max-width: 600px) {
 	@import '../../components/stand/search/Search600';
+}
+
+@media (max-width: 480px) {
+	@import 'home/Home480';
 }
 
 @media (max-width: 429px) {

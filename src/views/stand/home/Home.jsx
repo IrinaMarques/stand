@@ -24,7 +24,7 @@ class Home extends Component {
                     </div>
 
                     <div className='row'>
-                        <div className='col-sm-6'>
+                        <div className='col-sm-6 col-sm-push-6'>
                             <div className='thumb-wrapper'>
                                 <div className='slider-wrapper'>
                                     <picture className='img-container'>
@@ -48,7 +48,7 @@ class Home extends Component {
                             </div>
                         </div>
 
-                        <div className='text-container col-sm-6'>
+                        <div className='text-container col-sm-6 col-sm-pull-6'>
                             <div className='header-lg'>
                                 <h2>Novidades</h2>
                                 <div className='header-line'></div>
